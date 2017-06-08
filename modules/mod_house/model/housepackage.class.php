@@ -11,6 +11,7 @@ class Housepackage{
 		$this->name = $name;
 		$this->description = $desc;
 	}
+	
 }
 
 ?>

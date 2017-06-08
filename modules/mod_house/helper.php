@@ -15,7 +15,6 @@
 				//decode json string
 				$houseconfig = json_decode($data);
 				
-				
 				//Get Current User
 				$user = JFactory::getUser();
 	
@@ -23,6 +22,7 @@
 				$db = JFactory::getDbo();
 				$query = $db->getQuery(true);
 				
+				//insert houseconfiguration from user 
 				/*
 				$query
 					->select($db->quoteName(array('','','')))

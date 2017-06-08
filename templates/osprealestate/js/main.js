@@ -1,4 +1,4 @@
-
+//Main JS for House Module
 var list = [];
 var houseconfig = {
 	

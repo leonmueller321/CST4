@@ -35,7 +35,6 @@
 	
 ?>
 
-<button onClick="help();">click</button>
 
 
 

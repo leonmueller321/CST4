@@ -9,23 +9,7 @@
 	
 	$db = new Database();
 	$row = $db->getHousepackage($_GET['choosePackage']);
-	$allElements = $db->getAllElements();
-	
-	/*
-	$json = '{"houseid":"3","items":[{"elementid":"1","elementname":"Halbdach","elementpreis":"2999€"},{"elementid":"2","elementname":"Außenjalousien","elementpreis":"1999€"}],"gesamtpreis":" 4998"}';
-	$config = json_decode($json);
-	
-	echo $config->houseid;
-	echo $config->gesamtpreis;
-	echo "<br>";
-	
-	foreach($config->items as $item){
-		echo $item->elementid;
-		echo $item->elementname;
-		echo $item->elementpreis;
-	}
-	*/
-	
+	$allElements = $db->getAllElements();	
 	
 	echo "<h3>Hauskonfiguration</h3>";
 	echo "<div class='row'>";

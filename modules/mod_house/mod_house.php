@@ -1,6 +1,6 @@
 <?php
     defined('_JEXEC') or die;
-    //include ('helper.php');
+
 	include_once __DIR__ . '/helper.php';
 	
 	// Instantiate global document object
