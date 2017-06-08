@@ -1,0 +1,7 @@
+Norte Israel:Afula,Akko,Bet Shean,Carmiel,Maalot-tarshija,Migdal Haemek,Naharia,Nazaret,Natzeret Illit,Kiriat Shemona,Tzfat,Sakhnin,Shagor,Shefa-amr,Tamra,Tiberia
+Haifa:Baqa-jat,Ciudad de Carmel,Hadera,Haifa,Nesher,Or Akiva,Kiriat Atta,Kiriat Bialik,Kiriat Motzkin,Kiriat Yam,Tirat Karmel,Umm Al-fahm
+Centro Israel:Hod Hasharon,Kfar Saba,Lod,Modiin-maccabim-reut,Ness Tziona,Netania,Petaj Tikva,Qalansawe,Raanana,Ramla,Rejovot,Rishon Letzion,Rosh Haayin,Tayibe,Tira,Yavne,Yehud-monosson
+Tel Aviv:Bat Yam,Bnei Brak,Givatayim,Hertzlia,Jolón,Or Yehuda,Kiriat Ono,Ramat Gan,Ramat Hasharon,Tel Aviv-yafo
+Jerusalem:Bet Shemesh,Jerusalem
+Sur Israel:Arad,Ashdod,Ashkelon,Beer Sheva,Dimona,Eilat,Netivot,Ofakim,Kiriat Gat,Kiriat Malaji,Rahat,Sderot
+Judea y Samaria:Ariel,Beitar Illit,Maalé Adumim,Givat Zeev

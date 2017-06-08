@@ -1,0 +1,19 @@
+Akershus:Asker,Aurskog-høland,Bærum,Eidsvoll,Enebakk,Fet,Frogn,Gjerdrum,Hurdal,Lørenskog,Nannestad,Nes,Nesodden,Nittedal,Oppegård,Rælingen,Skedsmo,Ski,Sørum,Ullensaker,Vestby,Ås
+Aust-agder:Åmli,Arendal,Birkenes,Bygland,Bykle,Evje Og Hornnes,Froland,Gjerstad,Grimstad,Iveland,Lillesand,Risør,Tvedestrand,Valle,Vegårshei
+Buskerud:Ål,Drammen,Flesberg,Flå,Gol,Hemsedal,Hol,Hole,Hurum,Kongsberg,Krødsherad,Lier,Modum,Nedre Eiker,Nes,Nore Og Uvdal,Øvre Eiker,Ringerike,Rollag,Røyken,Sigdal
+Finnmark:Alta,Batsfjord,Berlevag,Hammerfest,Hasvik,Havoysund,Honningsvag,Kamoyvaer,Karasjok,Kautokeino,Kirkenes,Lakselv,Mehamn,North Cape,Oksfjord,Repvag,Skarsvag,Talvik,Tana,Vadso,Vardo
+Hedmark:Alvdal,Eidskog,Elverum,Engerdal,Folldal,Grue,Hamar,Kongsvinger,Løten,Nord-odal,Os,Rendalen,Ringsaker,Stange,Stor-elvdal,Sør-odal,Tolga,Trysil,Tynset,Våler,Åmot,Åsnes
+Hordaland:Askøy,Austevoll,Austrheim,Bergen,Bømlo,Eidfjord,Etne,Fedje,Fitjar,Fjell,Fusa,Granvin,Jondal,Kvam,Kvinnherad,Lindås,Masfjorden,Meland,Modalen,Odda,Os,Osterøy,Øygarden,Radøy,Samnanger,Stord,Sund,Sveio,Tysnes,Ullensvang,Ulvik,Vaksdal,Voss
+Møre Og Romsdal:Ålesund,Aukra,Aure,Averøy,Eide,Fræna,Frei,Giske,Gjemnes,Halsa,Haram,Hareid,Herøy,Kristiansund,Midsund,Molde,Nesset,Norddal,Ørskog,Ørsta,Rauma,Rindal,Sande,Sandøy,Skodje,Smøla,Stordal,Stranda,Sula,Sunndal,Surnadal,Sykkylven,Tingvoll,Tustna,Ulstein,Vanylven,Vestnes,Volda
+Nordland:Alstahaug,Andøy,Ballangen,Beiarn,Bindal,Bø,Bodø,Brønnøy,Dønna,Evenes,Fauske,Flakstad,Gildeskål,Grane,Hadsel,Hamarøy,Hattfjelldal,Hemnes,Herøy,Leirfjord,Lødingen,Lurøy,Meløy,Moskenes,Narvik,Nesna,Øksnes,Rana,Rødøy,Røst,Saltdal,Sømna,Sørfold,Sortland,Steigen,Tjeldsund,Træna,Tysfjord,Værøy,Vågan,Vefsn,Vega,Vestvågøy,Vevelstad
+Nord-trøndelag:Flatanger,Fosnes,Frosta,Grong,Høylandet,Inderøy,Leka,Leksvik,Levanger,Lierne,Meråker,Mosvik,Nærøy,Namdalseid,Namsos,Namsskogan,Overhalla,Røyrvik,Snåsa,Steinkjer,Stjørdal,Verdal,Verran,Vikna
+Oppland:Dovre,Etnedal,Gausdal,Gjøvik,Gran,Jevnaker,Lesja,Lillehammer,Lom,Lunner,Nord-aurdal,Nord-fron,Nordre Land,Østre Toten,Øyer,Øystre Slidre,Ringebu,Sel,Skjåk,Søndre Land,Sør-aurdal,Sør-fron,Vågå,Vang,Vestre Slidre,Vestre Toten
+Oslo:Bjerke,Bygdøy-frogner,Bøler,Ekeberg-bekkelaget,Furuset,Gamle Oslo,Grefsen-kjelsås,Grorud,Grünerløkka-sofienberg,Hellerud,Helsfyr-sinsen,Lambertseter,Manglerud,Nordstrand,Romsås,Røa,Sagene-torshov,Sogn,St. Hanshaugen-ullevål,Stovner,Søndre Nordstrand,Ullern,Uranienborg-majorstuen,Vinderen,Østensjø
+Østfold:Aremark,Askim,Eidsberg,Fredrikstad,Halden,Hobøl,Hvaler,Marker,Moss,Rakkestad,Rygge,Rømskog,Råde,Sarpsborg,Skiptvet,Spydeberg,Trøgstad,Våler
+Rogaland:Bjerkreim,Bokn,Eigersund,Finnøy,Forsand,Gjesdal,Haugesund,Hjelmeland,Hå,Karmøy,Klepp,Kvitsøy,Lund,Randaberg,Rennesøy,Sandnes,Sauda,Sokndal,Sola,Stavanger,Strand,Suldal,Time,Tysvær,Utsira,Vindafjord
+Sogn Og Fjordane:Årdal,Askvoll,Aurland,Balestrand,Bremanger,Eid,Fjaler,Flora,Førde,Gaular,Gloppen,Gulen,Hornindal,Høyanger,Hyllestad,Jølster,Lærdal,Leikanger,Luster,Naustdal,Selje,Sogndal,Solund,Stryn,Vågsøy,Vik
+Sør-trøndelag:Åfjord,Agdenes,Bjugn,Frøya,Hemne,Hitra,Holtålen,Klæbu,Malvik,Meldal,Melhus,Midtre Gauldal,Oppdal,Orkdal,Ørland,Osen,Rennebu,Rissa,Roan,Røros,Selbu,Skaun,Snillfjord,Trondheim,Tydal
+Telemark:Bamble,Bø,Drangedal,Fyresdal,Hjartdal,Kragerø,Kviteseid,Nissedal,Nome,Notodden,Porsgrunn,Sauherad,Seljord,Siljan,Skien,Tinn,Tokke,Vinje
+Troms:Balsfjord,Bardu,Berg,Bjarkøy,Dyrøy,Gratangen,Harstad,Ibestad,Kåfjord,Karlsøy,Kvæfjord,Kvænangen,Lavangen,Lenvik,Lyngen,Målselv,Nordreisa,Salangen,Skånland,Skjervøy,Sørreisa,Storfjord,Torsken,Tranøy,Tromsø
+Vest-agder:Åseral,Audnedal,Farsund,Flekkefjord,Hægebostad,Kristiansand,Kvinesdal,Lindesnes,Lyngdal,Mandal,Marnardal,Sirdal,Songdalen,Søgne,Vennesla
+Vestfold:Andebu,Hof,Holmestrand,Horten,Lardal,Larvik,Nøtterøy,Re,Sande,Sandefjord,Stokke,Svelvik,Tjøme,Tønsberg

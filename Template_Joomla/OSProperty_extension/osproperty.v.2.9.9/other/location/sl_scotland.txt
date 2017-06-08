@@ -1,0 +1,12 @@
+East Lothian:Prestonpans, Tranent
+Falkirk: Airth, Bo\'ness, Bonnybridge, Borrowstounness, Carron, Denny, Duniplace, Dunmore, Falkirk, Grahamston, Grangemouth, Larbert, Stenhousemuir
+Fife: Anstruther,Auchtermuchty,Balcurvie,Ballingry,Benarty,Buckhaven,Burntisland,Collydean,Cowdenbeath,Crail,Cupar,Dalgety Bay,Dunfermline,Dysart,East Wemyss,Falkland,Glenrothes,Inverkeithing,Kelty,Kincardine,Kinghorn,Kinglassie,Kirkcaldy,Ladybank,Letham,Leuchars,Leven,Levenmouth,Lochgelly,Markinch,Methil,Newburgh,Newport on Tay,North Queensferry,Pitcoudie,Pittenweem,Rosyth,St Andrews,St Monans,Tayport,Woodhaven,Wormit
+Highlands:Alness,Aviemore,Brora,Cromarty,Dingwall,Dornoch,Fort William,Fortrose,Grantown on Spey,Invergordon,Inverlochy,Inverness,Kingussie,Mallaig,Nairn,Portree,Tain,Thurso,Ullapool,Wick
+Lothian: Bathgate,Dalkeith,Dunbar,Edinburgh,Haddington,Linlithgow,Loanhead,Musselburgh,North Berwick,Penicuik
+Moray: Buckie,Cullen,Dufftown,Elgin,Forres,Keith,Lossiemouth
+Perth and Kinross: Aberfeldy,Auchterarder,Birnam,Blackford,Blair Atholl,Blairgowrie and Rattray,Bridge of Earn,Bridge of Tilt,Comrie,Coupar Angus,Crieff,Kinross,Perth,Pitlochry,Scone
+Scottish Borders: Coldstream,Duns,Earlston,Eyemouth,Galashiels,Greenlaw,Hawick,Innerleithen,Jedburgh,Kelso,Lauder,Melrose,Newtown St Boswells,Peebles,Selkirk
+Stirlingshire: Bridge of Allan,Callander,Doune,Dunblane,Stirling
+Strathclyde: Airdrie,Ayr,Barrhead,Bearsden,Bellshill,Biggar,Campbeltown,Carluke,Clydebank,Coatbridge,Cumbernauld,Dumbarton,Dunoon,East Kilbride,Glasgow,Gourock,Greenock,Hamilton,Helensburgh,Inveraray,Irvine,Johnstone,Kilbarchan,Kilmarnock,Kilwinning,Lanark,Largs,Lochgilphead,Maybole,Milngavie,Motherwell,Oban,Paisley,Prestwick,Rothesay,Rutherglen,Saltcoats,Tobermory,Troon
+West Lothian: Armadale,Ballencrieff,Bathgate,Blackburn,Blackridge,Bridgend,Broxburn,East Calder,Linlithgow,Livingston,Stoneyburn,Whitburn
+Western Isles: Kirkwall,Lerwick,Stornoway

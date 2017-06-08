@@ -1,0 +1,81 @@
+Abra:Villaviciosa,Tubo,Tineg,San Quintin,San Juan East,San Isidro,Pilar,Peñarrubia,Manabo,Malibcong,Bangkagan,Langiden,Lagayan,Lacub,Laang,Danglas,Daguioman,Bucloc,Bucay,Boliney,Licuan-Baay,Sallapadan,Dolores,Tayum,Pidigan,La Paz,Bangued
+Agusan del Norte:Santiago,Las Nieves,Butuan,Remedios T. Romualdez,Jabonga,Carmen,Magallanes,Kitcharao,Tubay,Nasipit,Buenavista,Cabadbaran
+Agusan del Sur:Rosario,Prosperidad,Bayugan,La Paz,Santa Josefa,Sibagat,Loreto,Esperanza,San Luis,Bunawan,Talacogon,Trento,Veruela,San Francisco
+Aklan:Tangalan,Numancia,Nabas,Malinao,Malay,Madalag,Leso,Dapdap Makato,Buruanga,Balete,Kalibo,Bañga,Ibajay,Altavas,Libacao,Batan,New Washington
+Albay:Santo Domingo,Oas,Malinao,Guinobatan,Camalig,Legazpi,Manito,Jovellar,Rapu-Rapu,Daraga,Ligao,Libon,Polangui,Pio Duran,Bacacay,Tiwi,Malilipot,Tabaco
+Antipolo:
+Antique:Valderrama,San Jose,Pandan,San Remigio,Laua-an,Caluya,Barbaza,Anini-y,Libertad,Bugasong,Tobias Fornier,Sebaste,Tibiao,Culasi,Belison,Hamtic,Patnongon,Sibalom
+Apayao:Calanasan,Conner,Flora,Kabugao,Luna,Pudtol,Santa Marcela
+Aurora:San Luis,Dipaculao,Dilasag,Casiguran,Baler,Dinalungan,Maria Aurora,Dingalan
+Basilan:Akbar,Al-Barka,Hadji Mohammad Ajul,Hadji Muhtamad,Tabuan-Lasa,Ungkaya Pukan,Tairan Camp,Tipo-Tipo,Sumisip,Lamitan,Tuburan,Maluso,Isabela
+Bataan:Bagac,Morong,Pilar,Samal,Hermosa,Abucay,Orani,Orion,Limay,Dinalupihan,Balanga,Mariveles
+Batanes:Uyugan,Sabtang,Mahatao,Ivana,Itbayat,Basco
+Batangas:Batangas City,Lipa City,Tanauan City,Bauan
+Benguet:Kabayan,Kapangan,Bokod,Bakun,Baguio,Tuba,Atok,Sablan,Tublay,Buguias,Kibungan,Mankayan,Itogon,La Trinidad
+Biliran:Almeria,Biliran,Cabucgayan,Caibiran,Culaba,Kawayan,Maripipi,Naval
+Bohol:Talibon,Sikatuna,Sevilla,Catigbian,San Isidro,Loboc,Loay,Lila,Jagna,Inabanga,Duero,Dimiao,Danao,Cortes,Corella,Buenavista,Bilar,Baclayon,Antequera,Anda,Batuan,Dagohoy,President Carlos P. Garcia,Tagbilaran,San Miguel,Valencia,Maribojoc,Dauis,Garcia Hernandez,Alburquerque,Pilar,Balilihan,Sierra Bullones,Clarin,Trinidad,Calape,Ubay,Candijay,Alicia,Jetafe,Guindulman,Sagbayan,Bien Unido,Mabini,Panglao,Carmen,Loon,Tibigan
+Bukidnon:New Baungon,San Fernando,Cabanglasan,Impasug-ong,Pangantucan,Malitbog,Kitaotao,Dancagan,Lantapan,Kibawe,Sumilao,Libona,Kadingilan,Talakag,Damulog,Kalilangan,Don Carlos,Manolo Fortich,Quezon,Maramag,Malaybalay,Valencia
+Bulacan:Santa Maria,San Miguel,San Jose,San Rafael,Doña Remedios Trinidad,Pandi,Angat,Paombong,Bustos,Balagtas,Obando,San Ildefonso,Plaridel,Bulacan,Guiguinto,Pulilan,Norzagaray,Marilao,Calumpit,Bocaue,Hagunoy,Baliuag,Meycauayan,Malolos
+Cagayan:Solana,Santa Praxedes,Sanchez Mira,Rizal,Lal-lo,Camalaniugan,Bidduang,Baggao,Calayan,Buguey,Tuao,Amulung,Abulug,Santa Teresita,Peñablanca,Iguig,Gattaran,Allacapan,Alcala,Santo Niño,Ballesteros,Piat,Santa Ana,Lasam,Gonzaga,Enrile,Claveria,Aparri,Tuguegarao City
+Camarines Norte:San Lorenzo Ruiz,Capalonga,San Vicente,Basud,Talisay,Paracale,Vinzons,Santa Elena,Mercedes,Labo,Jose Pañganiban,Daet
+Camarines Sur:Siruma,Libmanan,Bolongay,Iriga,Naga,Gainza,Cabusao,Lupi Viejo,Ocampo,Canaman,Caramoan,Sagnay,Del Gallego,Balatan,Parabcan,Minalabac,Pamplona,Garchitorena,Bombon,Camaligan,San Fernando,Lagonoy,Milaor,Ragay,Tinambac,Pasacao,Tigaon,Sipocot,Bula,Magarao,Bato,Baao,Goa,Pili,Nabua,Calabanga,Buhi
+Camiguin:Guinisiliban,Catarman,Mahinog,Sagay,Mambajao
+Capiz:Roxas,Ma-ayon,Sapi-an,Jamindan,Tapas,Dumalag,Panay,Pontevedra,Dumarao,Sigma,Cuartero,Ivisan,Panitan,Mambusao,President Roxas,Pilar,Dao
+Catanduanes:San Miguel,San Andres,Baras,Bagamanoc,Bato,Gigmoto,Panganiban,Viga,Caramoran,Pandan,Virac
+Cavite:Tanza,Rosario,General Mariano Alvarez,Cavite,Tagaytay,Trece Martires,Magallanes,Alfonso,General Emilio Aguinaldo,Amadeo,Ternate,Mendez-Nuñez,Maragondon,Noveleta,Indang,Naic,Carmona,Kawit,General Trias,Silang,Imus,Bacoor,Dasmariñas
+Cebu:Tudela,Tuburan,Tabogon,Ronda,Pilar,Compostela,Alegria,Cebu,Danao,Lapu-Lapu,Mandaue,Toledo,Santa Fe,Santander,Poro,Ginatilan,Aloguinsan,Malabuyoc,Sogod,Alcoy,Boljoon,Dumanjog,Badian,Samboan,Oslob,San Remigio,Tabuelan,Alcantara,Borbon,Argao,Madridejos,Moalboal,Barili,Asturias,Catmon,Dalaguete,San Francisco,Medellin,Sibonga,Daanbantayan,Bantayan,Cogan,Balamban,Pinamungahan,Bogo,San Fernando,Naga,Cordova,Carcar,Consolacion,Liloan,Minglanilla,Talisay
+Compostela Valley:Compostela,Laak,Mabini,Maco,Maragusan,Mawab,Monkayo,Montevista,Nabunturan,New Bataan,Pantukan
+Cotabato:Alamada,Aleosan,Antipas,Arakan,Banisilan,Carmen,Kabacan,Kidapawan,Libungan,Magpet,Makilala,Matalam,Midsayap,Pigkawayan,Pikit,President Roxas,Tulunan
+Davao del Norte:Tagum,Santo Tomas,Kapalong,San Isidro,Braulio E. Dujali,Island Garden of Samal,Talaingod,Carmen,Asuncion,New Corella,Panabo
+Davao del Sur:Santa Cruz,Padada,Kiblawan,Jose Abad Santos,Davao,Malalag,Sulop,Matanao,Hagonoy,Sarangani,Talagutong,Magsaysay,Santa Maria,Bansalan,Malita,Digos
+Davao Oriental:Banaybanay,Lupon,Mati,Boston,Tarragona,Caraga,Cateel,Sigaboy,Batobato,Baganga,Manay
+Eastern Samar:Mercedes,Maslog,Lawaan,San Julian,Balangkayan,Quinapundan,San Policarpo,Salcedo,Hipadpad,Taft,General MacArthur,Sulat,Arteche,Giporlos,Maydolong,Balangiga,Can-Avid,Llorente,Oras,Dolores,Guiuan,Borongan
+Guimaras:Buenavista,Jordan,Nueva Valencia,San Lorenzo,Sibunag
+Ifugao:Mayoyao,Kiangan,Hunduan,Hingyon,Tinoc,Aguinaldo,Alfonso Lista,Asipulo,Banaue,Lamut,Lagawe
+Ilocos Norte:Batac City,Laoag City
+Ilocos Sur:Candon City,Vigan City
+Iloilo:Zona Sur,Zona Sur,Tubungan,Tigbauan,Santa Barbara,San Rafael,Passi,Igbaras,Calinog,Batad,Badiañgan,Iloilo,Leganes,San Enrique,Mina,Carles,Lucena,San Dionisio,Lemery,Zarraga,Maasin,Bingawan,Dueñas,Balasan,Sara,San Miguel,San Joaquin,Leon,Lambunao,Pavia,Cabatuan,Dingle,Concepcion,Guimbal,Alimodian,Barotac Viejo,Ajuy,Miagao,Dumangas,Pototan,Estancia,Barotac Nuevo,Janiuay,Oton
+Isabela:San Agustin,Quirino,Palanan,San Mariano,Mallig,Magsaysay,Maconacon,Ipil Pequeño,Dinapigue,Cauayan,Cabatuan,Auitan,Santiago,Santo Tomas,Santa Maria,San Isidro,San Mateo,Aurora,Divilacan,Burgos,Luna,Tumauini,San Guillermo,Angadanan,Cordon,Benito Soliven,Jones,Gamu,Reina Mercedes,Echague,Naguilian,San Manuel,Roxas,Alicia,Cabagan,Ramon,Ilagan
+Kalinga:Tinglayan,Tanudan,Tabuk,Balbalan,Lubuagan,Pinukpuk,Liwan,Pasil
+La Union:Tubao,Sudipen,Santo Tomas,Santol,San Juan,Rosario,Naguilian,Luna,Burgos,Agoo,Bangar,Bagulin,Pugo,Balaoan,Bacnotan,San Gabriel,Caba,Bauang,Aringay,San Fernando
+Laguna:Siniloan,Santa Rosa,San Pedro,San Pablo,Protacio Rizal,Santa Cruz,Pangil,Calauan,Cabuyew,Biñan,Magdalena,Famy,Pagsanjan,Luisiana,Santa Maria,Kalayaan,Cavinti,Pakil,Majayjay,Mabitac,Lilio,Victoria,Nagcarlan,Paete,Lumbang,Alaminos,Bay,Pila,Los Baños,Calamba
+Lanao del Norte:Tankal,Tagoloan,Poona-Piagapo,Pantar,Pantao-Ragat,Nunuñgan,Matungao,Magsaysay,Balimbing,Bacolod,Linamon,Sultan Naga Dimaporo,Munai,Kolambugan,Baroy,Sapad,Kauswagan,Maigo,Mamungan,Kapatagan,Tubod,Lala,Iligan City
+Lanao del Sur:Tubaran,Taraka,Saguiaran,Ramain,Pualas,Piagapo,Tatarikan,Masiu,Maguing,Madalum,Lumbayanague,Lumbatan,Kapay,Calanogas,Bumbaran,Bubung,Buadiposo-Buntong,Balindong,Madamba,Bacolod-Kalawi,Kapatagan,Lumba-Bayabao,Lumbaca-Unayan,Marawi,Mulondo,Picong,Poona Bayabao,Sultan Dumalondong,Tagoloan II,Tamparan,Ganassi,Balabagan,Tugaya,Marantao,Marogong,Binidayan,Malabang,Butig,Bayang,Wao
+Leyte:Uban,Tunga,Tolosa,Tarrogona,San Miguel,Inopacan,Calubian,Bato,Matag-ob,Ormoc,Tacloban,Santa Fe,Tabontabon,Mayorga,Pastrana,Bugho,Julita,Villaba,Merida,Mahaplag,Hindang,La Paz,Matalom,Dagami,Albuera,Tabango,Babatngon,Barugo,Leyte,Hilongos,Kananya,Jaro,Alangalang,Capoocan,Isabel,Dulag,Palompon,Burauen,Abuyog,Tanauan,Carigara,Palo,Baybay
+Maguindanao:Talayan,Sultan sa Barongis,Sultan Kudarat,Pandag,Paglat,Matanog,Tumbao,Buldon,Cotabato,Datu Abdullah Sangki,Datu Anggal Midtimbang,Datu Blah T. Sinsuat,Datu Hoffer Ampatuan,Datu Montawal,Datu Odin Sinsuat,Datu Salibo,Datu Saudi-Ampatuan,Datu Unsay,General Salipada K. Pendatun,Guindulungan,Mamasapano,Mangudadatu,Northern Kabuntalan,Rajah Buayan,Shariff Aguak,Shariff Saydona Mustapha,Sultan Mastura,Barira,Datu Paglas,Ampatuan,Talitay,Pagalungan,Datu Piang,Upi,South Upi,Buluan,Parang
+Marikina:
+Marinduque:Gasan,Buenavista,Torrijos,Mogpog,Boac,Santa Cruz
+Masbate:Esperanza,Cawayan,Mandaon,Claveria,Balud,Batuan,Palanas,Dimasalang,Limbuhan,Aroroy,Baleno,Mobo,Uson,Monreal,San Pascual,Placer,Milagros,San Fernando,San Jacinto,Cataingan,Masbate
+Metro Manila:Caloocan,Las Piñas,Makati,Malabon,Mandaluyong,Manila,Marikina,Muntinlupa,Navotas,Parañaque,Pasay,Pasig,Pateros,Quezon,San Juan,Taguig,Valenzuela
+Mindoro Occidental:San Jose,Rizal,Calintaan,Looc,Abra de Ilog,Paluan,Lubang,Magsaysay,Santa Cruz,Mamburao,Sablayan
+Mindoro Oriental:Victoria,Pola,Bongabong,Proper Bansud,Baco,Calapan,Naujan,Puerto Galera,San Teodoro,Socorro,Gloria,Bulalacao,Roxas,Mansalay,Pinamalayan
+Misamis Occidental:Panaon,Concepcion,Bonifacio,Baliangao,Aloran,Don Victoriano Chiongbian,Oroquieta,Ozamiz,Tangub,Sinacaban,Sapang Dalaga,Plaridel,Tudela,Lopez Jaena,Jimenez,Calamba,Clarin
+Misamis Oriental:Magsaysay,Binuangan,Balingoan,Cagayan de Oro,Gingoog,Kinoguitan,Talisayan,Sugbongkogon,Lagindingan,Gitagum,Alubijid,Opol,Naawan,Libertad,Salay,El Salvador,Lugait,Villanueva,Claveria,Manticao,Lagonglong,Medina,Balingasag,Initao,Jasaan,Tagoloan
+Mountain:Sadanga,Sabangan,Natonin,Besao West,Bauko,Barlig,Tadian,Sagada,Paracelis,Bontoc
+Negros Occidental:Valladolid,Robles,Moises Padilla,Jinoba-an,Bacolod,Cadiz,La Carlota,Salvador Benedicto,San Carlos,Silay,Candoni,Ilog,Pontevedra,Cawayan,Calatrava,San Enrique,Toboso,Isabela,Murcia,Saravia,Sipalay,Himamaylan,Pulupandan,Manapla,Binalbagan,Hinigaran,Talisay,Sagay,Victorias City,Kabankalan,Bago City
+Negros Oriental:Valencia,Tayasan,San Jose,Tolong,Manjuyod,Ayuquitan,Ayungon,Canlaon,Dumaguete,Jimalalud,Dauin,Payabon,Basay,Bacong,Mabinay,La Libertad,Zamboanguita,Siaton,Vallehermoso,Pamplona,Guihulñgan,Sibulan,Bayawan,Tanjay,Bais
+Northern Samar:San Vicente,San Roque,San Antonio,San Jose,Rosario,San Isidro,Gamay,Lope de Vega,Biri,Victoria,Silvino Lobos,Las Navas,Mapanas,Lapinig,Lavezares,Catubig,Capul,Bobon,Mondragon,Allen,Palapag,Pambujan,Laoang,Catarman
+Nueva Ecija:Zaragoza,Santo Domingo,San Jose,San Antonio,Cabanatuan,Nampicuan,Palayan,Science of Muñoz,Llanera,Pantabangan,Talugtug,Licab,Gabaldon,Cuyapo,Lupao,Carranglan,Santa Rosa,General Natividad,Quezon,Laur,Rizal,Peñaranda,Guimba,General Tinio,Aliaga,San Leonardo,Bongabon,Jaen,Cabiao,Talavera,Gapan
+Nueva Vizcaya:Santa Fe,Kayapa Proper,Kasibu,Dupax del Sur,Dupax del Norte,Ambaguio,Alfonso Castañeda,Villaverde,Diadi,Quezon,Aritao,Bambang,Bagabag,Solano,Bayombong
+Palawan:Puerto Princesa City
+Pampanga:Santo Tomas,Macabebe,Floridablanca,Bacolor,Santa Rita,Guagua,Minalin,Sexmoan,Porac,San Simon,San Luis,Masantol,Mexico,Santa Ana,Candaba,Lubao,Magalang,Apalit,Arayat,Mabalacat,San Fernando,Angeles City
+Pangasinan:Sison,San Tomas,San Quintin,San Manuel,San Fabian,San Carlos,Malasiqui,Laoac West,Dagupan,Burgos,Bolinao,Bani,Balungao,Agno,Santa Maria,San Nicolas,Binmaley,Pozzorubio,Labrador,Basista,Mabini,Bautista,Anda,Infanta,Dasol,Umingan,Sual,Natividad,Binalonan,Alcala,Asingan,Aguilar,Alaminos,San Jacinto,Mapandan,Tayug,Bugallon,Mangatarem,Urbiztondo,Rosales,Villasis,Santa Barbara,Bayambang,Calasiao,Lingayen,Manaoag,Mangaldan,Urdaneta
+Quezon:Tagkawayan,San Antonio,Quezon,Buenavista,Lucena,Jomalig,Guinayangan,Panukulan,Padre Burgos,General Nakar,Agdangan,Plaridel,Burdeos,Unisan,Tiaong,San Andres,Infanta,Polillo,Macalelon,Sampaloc,Patnanungan,Dolores,Mulanay,Pitogo,Alabat,Real,General Luna,San Narciso,San Francisco,Calauag,Gumaca,Lopez,Catanauan,Atimonan,Lucban,Mauban,Tayabas,Pagbilao,Sariaya,Candelaria
+Quirino:Aglipay,Nagtipunan,Cabarroguis,Saguday,Diffun,Maddela
+Rizal:Jalajala,Baras,Cardona,Pililla,Teresa,Morong,Tanay,Angono,San Mateo,Rodriguez,Binangonan,Taytay,Cainta,Antipolo
+Romblon:San Fernando,Despujols,Ferrol,Corcuera,Cajidiocan,Jones,Santa Maria,Calatrava,Alcantara,Santa Fe,Magdiwang,Agcogon,Looc,San Agustin,Concepcion,Odiongan,Romblon
+Samar:Zumarraga,Tagapul-an,San Jorge,Pinabacdao,Pagsanghan,Matuguinao,Marabut,Hinabangan,Almagro,Calbayog,Paranas,San Sebastian,Talalora,Motiong,Tarangnan,San Jose de Buan,Calbiga,Daram,Villareal,Gandara,Jiabong,Santa Rita,Santa Margarita,Basey,Catbalogan
+Sarangani:Alabel,Glan,Kiamba,Maasim,Maitum,Malapatan,Malungon
+Siquijor:San Juan,Maria,Larena,Enrique Villanueva,Lazi,Siquijor
+Sorsogon:Prieto Diaz,Magallanes,Castilla,Barcelona,Santa Magdalena,Juban,Donsol,Bulusan,Matnog,Pilar,Casiguran,Gubat,Irosin,Bulan,Sorsogon
+South Cotabato:Banga,General Santos,Koronadal,Lake Sebu,Norala,Polomolok,Santo Niño,Surallah,Tampakan,Tantangan,Tupi
+Southern Leyte:San Ricardo,San Juan,Saint Bernard,Pintuyan,Padre Burgos,Libagon,Hinunangan,Bontoc,Anahawan,Limasawa,Silago,Tomas Oppus,San Francisco,Hinundayan,Malitbog,Macrohon,Liloan,Sogod,Maasin
+Sultan Kudarat:Salaman,Bagumbayan,Lutayan,Senator Ninoy Aquino,President Quirino,Palimbang,Columbio,Esperanza,Lambayong,Kalamansig,Isulan,Tacurong
+Sulu:Luuk,Banting,Patikulhingad,Pandami,Licup,Kalingalan Caluang,Banguingui,Hadji Panglima Tahil,Old Panamao,Omar,Panglima Estino,Pata,Talipao,Maimbung,Simbahan,Lugus,Parang,Siasi,Jolo
+Surigao del Norte:Tubod,San Jose,San Francisco,Malimono,Libjo,General Luna,San Isidro,Basilisa,Surigao,Santa Monica,San Benito,Pilar,Dinagat,Cagdianao,Tubajon,Gigaquit,Sison,Del Carmen,Tagana-an,Loreto,Bacuag,Mainit,Alegria,Claver,Dapa,Socorro,Placer
+Surigoa del Sur:San Agustin,Cagwait,Bayabas,Lanuza,Carmen,San Miguel,Cortes,Madrid,Marihatag,Carrascal,Tago,Lingig,Cantilan,Barobo,Hinatuan,Tagbina,Lianga,Tandag,Bislig
+Tarlac:Victoria,San Jose,Moncada,Camiling,Bamban,Anao,San Clemente,San Manuel,Mayantoc,Pura,Santa Ignacia,Ramos,La Paz,Gerona,Paniqui,Concepcion,Capas,Tarlac
+Tawi-Tawi:South Ubian,Sibutu,Sapa-Sapa,Tandubas,Mapun,Taganak,Simunul,Balimbing,Languyan,Sitangkai,Bongao
+Zambales:Candelaria,Cabangaan,San Antonio,Olongapo,San Felipe,Palauig,San Narciso,San Marcelino,Botolan,Santa Cruz,Iba,Castillejos,Masinloc,Subic
+Zamboanga del Sur:Pagadian,Dinas,Josefina,Tigbao,Midsalip,Sominot,Vincenzo A. Sagun,Zamboanga,San Miguel,San Pablo,Dumalinao,Guipos,Dimataling,Bayog,Ramon Magsaysay,Tabina,Lapuyan,Pitogo,Dumingag,Rancheria Payau,Kumalarang,Tambulig,Aurora,Labangan,Tucuran,Margosatubig,Mahayag,Molave
+Zamboanga Sibugay:Alicia,Buug,Diplahan,Imelda,Ipil,Kabasalan,Mabuhay,Malangas,Naga,Olutanga,Payao,Roseller Lim,Siay,Talusan,Titay,Tungawan

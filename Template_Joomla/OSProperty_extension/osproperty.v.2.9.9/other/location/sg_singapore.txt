@@ -1,0 +1,9 @@
+Central:District 9,District 10
+Central East:District 12,District 13,District 14
+Central North:District 19,District 20
+Central West:District 11,District 21
+City Central:District 1,District 2,District 3,District 4,District 5,District 6,District 7,District 8
+East Coast:District 15,District 16
+Far East:District 17,District 18
+North:District 25,District 26,District 27,District 28
+West:District 22,District 23,District 24

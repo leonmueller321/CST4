@@ -1,0 +1,6 @@
+County Antrim: Antrim,Ballycastle,Ballyclare,Ballymena,Ballymoney,Bushmills,Carrickfergus,Crumlin,Greenisland,Larne,Lisburn,Merville Garden Village,Newtownabbey,Portrush,Randalstown
+County Armagh: Armagh,Craigavon,Lurgan,Markethill,Newry,Portadown
+County Down: Ballynahinch,Banbridge,Bangor,Carryduff,Castlewellan,Comber,Donaghadee,Doromore,Downpatrick,Dundonald,Holywood,Kilkeel,Killyleagh,Lisburn,Newcastle,Newtownards,Portaferry,Rostrevor,Saintfield,Warrenpoint
+County Fermanagh: Enniskillen,Lisnaskea
+County Londonderry: Coleraine,Derry,Limavady,Magherafelt,Portstewart
+County Tyrone: Castlederg,Clogher,Coalisland,Cookstown,Dungannon,Fintona,Fivemiletown,Omagh,Strabane

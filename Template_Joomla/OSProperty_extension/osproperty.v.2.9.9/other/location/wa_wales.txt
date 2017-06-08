@@ -1,0 +1,14 @@
+Anglesey: Amlwch,Beaumaris,Benllech,Holyhead,Llanfairpwllgwyngyll,Llangefni,Menai Bridge
+Carmarthenshire: Ammanford,Burry Port,Carmarthen,Garnant,Glanamman,Kidwelly,Laugharne,Llandeilo,Llandovery,Llanelli,Newcastle Emlyn,St Clears,Whitland
+Ceredigion: Aberaeron,Aberystwyth,Cardigan,Lampeter,Llandysul,New Quay,Tregaron
+Conwy: Abergele,Colwyn Bay,Conwy,Deganwy,Llandudno,Llandudno Junction,Llanfairfechan,Llanrwst,Old Colwyn,Penmaenmawr,Towyn
+Denbighshire: Carrog,Corwen,Denbigh,Gellifor,Llangollen,Prestatyn,Rhuddlan,Rhyl,Ruthin,St Asaph
+Flintshire: Bagallit,Broughton,Buckley,Caerwys,Connah\'s Quay,Ewole,Flint,Hawarden,Holywell,Mold,Queensferry,Saltney,Shotton
+Gwent: Abertillery,Blaina,Brynmawr,Cwmbran,Ebbw Vale,Newport,Tafarnaubach,Tredegar
+Gwynedd: Bala,Bangor,Barmouth,Beaumaris,Betws y Coed,Blaenau Ffestiniog,Caernarfon,Conwy,Criccieth,Dolgellau,Ffestiniog,Harlech,Holyhead,Llanberis,Llanfachreth,Nefyn,Porthmadog,Pwllheli,Tywyn,Y Felinheli
+Mid Glamorgan: Aberdare,Bridgend,Caerphilly,Llantrisant,Maesteg,Merthyr Tydfil,Pontypridd,Porth,Porthcawl
+Monmouthshire:Abergavenny,Caldicot,Chepstow,Monmouth,Usk
+Pembrokeshire:Fishguard,Goodwick,Hakin,Haverfordwest,Milford Haven,Narberth,Newport,Neyland,Pembroke,Pembroke Dock,St Davids,Tenby
+Powys: Brecon,Builth Wells,Cefnllys,Crickhowell,Hay on Wye,Knighton,Llandrindod Wells,Llanfair Caereinion,Llanfyllin,Llangors,Llanidloes,Llanwrtyd Wells,Machynlleth,Montgomery,Newtown,Old Radnor,Presteigne,Rhayader,Talgarth,Welshpool
+South Glamorgan: Barry,Cardiff,Cowbridge,Llantwit Major,Penarth
+West Glamorgan: Gorseinon,Lliw Valey,Neath,Port Talbot,Swansea,Chirk,Overton on Dee,Rhosllannerchrugog,Rhosnesni,Wrexham

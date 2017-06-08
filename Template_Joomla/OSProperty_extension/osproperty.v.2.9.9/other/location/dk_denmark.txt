@@ -1,0 +1,5 @@
+Hovedstaden:Albertslund,Allerød,Ballerup,Bornholm,Brøndby,Copenhague,Dragør,Egedal,Fredensborg,Frederiksberg,Frederikssund,Frederiksværk-Hundested,Furesø,Gentofte,Gladsaxe,Glostrup,Gribskov,Helsingør,Herlev,Hillerød,Hvidovre,Høje-Taastrup,Hørsholm,Ishøj,Lyngby-Taarbæk,Rudersdal,Rødovre,Tårnby,Vallensbæk
+Midtjylland:Århus,Favrskov,Hedensted,Herning,Holstebro,Horsens,Ikast-Brande,Lemvig,Norddjurs,Odder,Randers,Ringkøbing-Skjern,Samsø,Silkeborg,Skanderborg,Skive,Struer,Syddjurs,Viborg
+Nordjylland:Ålborg,Brønderslev,Frederikshavn,Hjørring,Jammerbugt,Læsø,Mariagerfjord,Morsø,Rebild,Thisted,Vesthimmerland
+Sjælland:Faxe,Greve,Guldborgsund,Holbæk,Kalundborg,Køge,Lejre,Lolland,Næstved,Odsherred,Ringsted,Roskilde,Slagelse,Solrød,Sorø,Stevns,Vordingborg
+Syddanmark:Aabenraa,Assens,Billund,Esbjerg,Faaborg-Midtfyn,Fanø,Fredericia,Haderslev,Kerteminde,Kolding,Langeland,Middelfart,Nordfyn,Nyborg,Odense,Svendborg,Sønderborg,Tønder,Varde,Vejen,Vejle,Ærø

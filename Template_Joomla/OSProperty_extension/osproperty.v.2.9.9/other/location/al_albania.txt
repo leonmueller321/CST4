@@ -1,0 +1,12 @@
+Berat:Berat,Kuçovë,Skrapar
+Dibër:Bulqizë,Dibër,Mat
+Durrës:Durrës,Krujë
+Elbasan:Elbasan,Gramsh,Librazhd,Peqin
+Fier:Fier,Lushnjë,Mallakastër
+Gjirokastër:Gjirokastër,Përmet,Tepelenë
+Korçë:Devoll,Kolonjë,Korçë,Pogradec
+Kukës:Has,Kukës,Tropojë
+Lezhë:Kurbin,Lezhë,Mirditë
+Shkodër:Malësi E Madhe,Pukë,Shkodër
+Tiranë:Kavajë,Tiranë
+Vlorë:Delvinë,Sarandë,Vlorë

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site" 
+	method="upgrade">
+	<name>Quick Search for OSP Real Estate template</name>
+	<author>Dang Thuc Dam</author>
+	<creationDate>20th July 2014</creationDate>
+	<copyright>Copyright (C)  2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>damdt@joomservices.com</authorEmail>
+	<authorUrl>www.joomdonation.com</authorUrl>
+	<version>1.0</version>
+	<description>This module will be shown on slideshow module. You can select position of Quicksearch module at the parameters form.</description>
+	<files>
+		<filename module="mod_osquicksearch">mod_osquicksearch.php</filename>
+		<folder>tmpl</folder>
+		<folder>asset</folder>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>mod_osquicksearch.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_osquicksearch.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="module_position"
+					type="list"
+					label="Module position"
+					description="Please select module position">
+						<option value="0">Center</option>
+						<option value="1">Left</option>
+						<option value="2">Right</option>
+				</field>
+				<field
+					name="distance"
+					type="text" default="0"
+					label="Distance from the border (left,right) in pixel"
+					description="If you select position left or right, please enter the distance from the border of site to the module" class="input-mini" />
+			</fieldset>
+			<fieldset name="source_setting" label="Source Setting"
+				addfieldpath="/modules/mod_osquicksearch/elements">
+				<field name="osp_type" type="ospmultipropertytypes" 
+					default="" size="10" multiple="multiple" label="Property types"
+					description="Select Property Types that you want to show" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,6 @@
+Åland:Brändö,Eckerö,Finström,Föglö,Geta,Hammarland,Jomala,Kumlinge,Kökar,Lemland,Lumparland,Mariehamn,Saltvik,Sottunga,Sund,Vårdö
+Finlandia Meridional:Carelia del Sur,Kymenlaakso,Päijänne Tavastia,Tavastia Propia,Uusimaa,Uusimaa del Este
+Finlandia Occidental:Finlandia Central,Finlandia Propia,Ostrobothnia,Ostrobothnia Central,Ostrobothnia del Sur,Pirkanmaa,Satakunta
+Finlandia Oriental:Carelia del Norte,Savonia del Norte,Savonia del Sur
+Laponia:Rovaniemi,Kemi,Tornio,Kemijärvi
+Oulu:Kainuu,Ostrobothnia del Norte

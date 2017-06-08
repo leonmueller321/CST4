@@ -1,0 +1,33 @@
+Aceh:Aceh Besar,Aceh Jaya,Aceh Singkil,Aceh Tamiang,Bener Meriah,Bireuën,Central Aceh,East Aceh,Gayo Lues,Nagan Raya,North Aceh,Pidie,Pidie Jaya,Simeulue,South Aceh,Southeast Aceh,Southwest Aceh,West Aceh,Banda Aceh,Langsa,Lhokseumawe,Sabang,Subulussalam
+Bali:Badung,Bangli,Buleleng,Gianyar,Jembrana,Karangasem,Klungkung,Tabanan,Denpasar
+Bangka Belitung Islands:Bangka,Belitung,Central Bangka,East Belitung,South Bangka,West Bangka,Pangkal Pinang
+Banten:Lebak,Pandeglang,Serang,Cilegon,South Tangerang,Tangerang
+Bengkulu:Central Bengkulu,Kaur,Kepahiang,Lebong,Muko-Muko,North Bengkulu,Rejang Lebong,Seluma,South Bengkulu,Bengkulu
+Central Java:Banjarnegara,Banyumas,Batang,Blora Regency,Boyolali,Brebes,Cilacap,Demak,Grobogan,Jepara,Karanganyar,Kebumen,Kendal,Klaten,Magelang,Pati,Pekalongan,Pemalang,Purbalingga,Purworejo,Rembang,Semarang,Sragen,Sukoharjo,Tegal,Temanggung,Wonogiri,Wonosobo,Surakarta,Salatiga,Kudus
+Central Kalimantan:East Barito,East Kotawaringin,Gunung Mas,Kapuas,Katingan,Lamandau,Murung Raya,North Barito,Pulang Pisang,Sukamara,Seruyan,South Barito,West Kotawaringin,Palangkaraya
+Central Sulawesi:Banggai,Banggai Islands,Buol,Donggala,Morowali,Parigi Moutong,Poso,Sigi,Tojo Una-Una,Toli-Toli,Palu
+East Java:Bangkalan Regency,Banyuwangi,Blitar,Bojonegoro,Bondowoso,Gresik,Jember,Jombang,Kediri,Lamongan,Lumajang,Madiun,Magetan,Malang,Mojokerto,Ngawi Regency,Pacitan,Pasuruan,Ponorogo,Probolinggo,Sampang,Sidoarjo,Situbondo,Sumenep,Trenggalek,Tuban,Tulungagung,Batu,Surabaya,Nganjuk,Pamekasan
+East Kalimantan:Berau,Bulungan,East Kutai,Kutai Kartanegara,Malinau,North Penajam Paser,Nunukan,Paser,Tana Tidung,West Kutai,Tarakan,Bontang,Samarinda,Balikpapan
+East Nusa Tenggara:Alor,Belu,Central Sumba,East Flores,East Manggarai,East Sumba,Ende,Kupang,Lembata,Manggarai,Nagekeo,Ngada,North Central Timor,Rote Ndao,Sabu Raijua,Sikka,South Central Timor,Southwest Sumba,West Manggarai,West Sumba
+Gorontalo:Boalemo,Bone Bolango,Gorontalo,North Gorontalo,Pahuwato
+Jakarta:Seribu Islands,Jakarta
+Jambi:Batang Hari,Bungo,Kerinci,Merangin,Muaro Jambi,Sarolangun,East Tanjung Jabung,West Tanjung Jabung,Tebo,Jambi,Sungai Penuh
+Lampung:Central Lampung,East Lampung,Mesuji,North Lampung,Pesawaran,Pringsewu,South Lampung,Tanggamus,Tulang Bawang,Way Kanan,West Lampung,West Tulang Bawang,Metro,Bandar Lampung
+Maluku:Aru Islands,Buru,Central Maluku,Eastern Seram,South Buru,Southeast Maluku,Southwest Maluku,Western Seram,Western Southeast Maluku,Ambon,Tual
+North Maluku:Central Halmahera,East Halmahera,Morotai Islands,North Halmahera,South Halmahera,Sula Islands,West Halmahera,Ternate,Tidore Islands
+North Sulawesi:Bolaang Mongondow Regency,East Bolaang Mongondow Regency,Minahasa Regency,North Bolaang Mongondow Regency,North Minahasa Regency,Sangihe Islands Regency,Sitaro Islands Regency,South Bolaang Mongondow Regency,South Minahasa Regency,Southeast Minahasa Regency,Talaud Islands Regency,Bitung,Kotamobagu,Tomohon,Manado
+North Sumatra:Asahan,Batubara,Central Tapanuli,Dairi,Humbang Hasundutan,Karo,Labuhan Batu,Langkat,Mandailing Natal,Nias,North Labuhan Batu,North Nias,North Padang Lawas,North Tapanuli,Padang Lawas,Pakpak Bharat,Samosir,Serdang Bedagai,Simalungun,South Labuhan Batu,South Nias,South Tapanuli,Toba Samosir,West Nias,Binjai,Gunungsitoli,Medan,Padang Sidempuan,Sibolga,Tanjung Balai,Tebing Tinggi,Pematangsiantar,Deli Serdang
+Papua:Asmat,Biak Numfor,Boven Digoel,Central Mamberamo,Deiyai,Dogiyai,Intan Jaya,Jayawijaya,Keerom,Lanny Jaya,Mamberamo Jaya,Mappi,Merauke,Mimika,Nabire,Nduga,Paniai,Bintang Mountains,Puncak,Puncak Jaya,Sarmi,Supiori,Tolikara,Waropen,Yahukimo,Yalimo,Yapen Islands,Jayapura
+Riau:Bengkalis Regency,Indragiri Hilir,Indragiri Hulu Regency,Kampar Regency,Kuantan Singingi,Meranti Islands,Pelalawan,Rokan Hulu,Rokan Hilir,Siak Regency,Dumai,Pekanbaru
+Riau Islands:Anambas Islands,Bintan,Karimun,Lingga,Natuna,Batam,Tanjung Pinang
+South East Sulawesi:Bombana,Buton,Kolaka,Konawe,Muna,North Buton,North Kolaka,North Konawe,South Konawe,Wakatobi,Bau-Bau,Kendari
+South Kalimantan:Balangan,Banjar,Barito Kuala,Central Hulu Sungai,Kotabaru,North Hulu Sungai,South Hulu Sungai,Tabalong,Tanah Laut,Tanah Bumbu,Tapin,Banjarbaru,Banjarmasin
+South Sulawesi:Bantaeng,Barru,Bone,Bulukumba,East Luwu,Enrekang,Gowa,Jeneponto,Luwu,North Luwu,Maros,Pangkajene Islands,Pinrang,Selayar Islands,Sidenreng Rappang,Soppeng,Takalar,Tana Toraja,Wajo,Palopo,Pare-Pare,Sinjai,Makassar
+South Sumatra:Banyuasin,East Ogan Komering Ulu,Empat Lawang,Muarama Enim,Musi Banyuasin,Musi Rawas,Ogan Ilir,Ogan Komering Ilir,Ogan Komering Ulu,South Ogan Komering Ulu,Pagar Alam,Palembang,Lahat,Prabumulih,Lubuklinggau
+West Java:Bandung,Bekasi,Bogor,Ciamis,Cianjur,Cirebon,Garut,Karawang,Kuningan,Subang,Sukabumi,Sumedang,West Bandung,Banjar,Cimahi,Depok,Majalengka,Indramayu,Purwakarta,Tasikmalaya
+West Kalimantan:Bengkayang Regency,Kapuas Hulu Regency,North Kayong Regency,Ketapang Regency,Kubu Raya Regency,Landak Regency,Melawi Regency,Sambas Regency,Sanggau Regency,Sekadau Regency,Sintang Regency,Singkawang,Pontianak
+West Nusa Tenggara:Bima,Central Lombok,Dompu,East Lombok,North Lombok,Sumbawa,West Lombok,West Sumbawa,Mataram
+West Papua:Fak-Fak,Kaimana,Maybrat,Raja Ampat,Sorong,South Sorong,Tambrauw,Teluk Bintuni,Teluk Wondama,Manokwari
+West Sulawesi:Majene,Mamasa,Mamuju,North Mamuju,Polewali Mandar
+West Sumatra:Agam,Dharmasraya,Lima Puluh Kota,Mentawai Islands,Padang Pariaman,Pasaman,Sawahlunto Sijunjung,Solok,South Pesisir,South Solok,Tanah Datar,West Pasaman,Bukittinggi,Padang,Padang Panjang,Pariaman,Payakumbuh,Sawahlunto
+Yogyakarta:Bantul,Gunung Kidul,Kulon Progo,Sleman,Yogyakarta

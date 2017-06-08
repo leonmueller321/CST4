@@ -1,0 +1,21 @@
+Blekinge:Karlshamn,Olofström,Sölvesborg,Ronneby,Karlskrona
+Dalarna:Mora,Säter,Gagnef,Älvdalen,Vansbro,Rättvik,Smedjebacken,Malung,Orsa,Leksand,Hedemora,Ludvika,Avesta,Falun,Borlänge
+Gävleborg:Ljusdal,Nordanstig,Ovanåker,Sandviken,Söderhamn,Ockelbo,Hofors,Bollnäs,Hudiksvall,Gävle
+Gotland:Gotland
+Halland:Halmstad,Hylte,Laholm,Falkenberg,Kungsbacka,Varberg
+Jämtland:Berg,Bräcke,Härjedalen,Ragunda,Strömsund,Åre,Krokom,Östersund
+Jönköping:Aneby,Eksjö,Gislaved,Gnosjö,Habo,Jönköping,Mullsjö,Nässjö,Sävsjö,Tranås,Vaggeryd,Vetlanda,Värnamo
+Kalmar:Borgholm,Emmaboda,Hultsfred,Högsby,Kalmar,Mönsterås,Mörbylånga,Nybro,Oskarshamn,Torsås,Vimmerby,Västervik
+Kronoberg:Ljungby,Uppvidinge,Älmhult,Lessebo,Tingsryd,Markaryd,Alvesta,Växjö
+Norrbotten:Arjeplog,Arvidsjaur,Boden,Gällivare,Haparanda,Jokkmokk,Kalix,Kiruna,Luleå,Pajala,Piteå,Älvsbyn,Överkalix,Övertorneå
+Örebro:Askersund,Degerfors,Hallsberg,Hällefors,Karlskoga,Kumla,Laxå,Lekeberg,Lindesberg,Ljusnarsberg,Nora,Örebro
+Östergötland:Boxholm,Finspång,Kinda,Linköping,Mjölby,Motala,Norrköping,Söderköping,Vadstena,Valdemarsvik,Ydre,Åtvidaberg,Ödeshög
+Skåne:Bjuv,Bromölla,Burlöv,Båstad,Eslöv,Helsingborg,Hässleholm,Höganäs,Hörby,Höör,Klippan,Kristianstad,Kävlinge,Landskrona,Lomma,Lund,Malmö,Osby,Perstorp,Simrishamn,Sjöbo,Skurup,Staffanstorp,Svalöv,Svedala,Tomelilla,Trelleborg,Vellinge,Ystad,Åstorp,Ängelholm,Örkelljunga,Ö. Göinge
+Södermanland:Katrineholm,Vingåker,Trosa,Gnesta,Flen,Oxelösund,Strängnäs,Nyköping,Eskilstuna
+Stockholm:Botkyrka,Danderyd,Ekerö,Haninge,Huddinge,Järfälla,Lidingö,Nacka,Norrtälje,Nykvarn,Nynäshamn,Salem,Sigtuna,Sollentuna,Solna,Stockholms Stad,Stockholms Stad-Bromma,Stockholms Stad-Enskede,Stockholms Stad-Årsta,Stockholms Stad-Skarpnäck,Stockholms Stad-Hägersten,Stockholms Stad-Liljeholmen,Stockholms Stad-Katarina,Stockholms Stad-Sofia,Stockholms Stad-Kista,Stockholms Stad-Hässelby,Stockholms Stad-Vällingby,Stockholms Stad-Spånga,Stockholms Stad-Kungsholmen,Stockholms Stad-Maria,Stockholms Stad-Gamla Stan,Stockholms Stad-Högalid,Stockholms Stad-Skärholmen,Stockholms Stad-Bredäng,Stockholms Stad-Vasastan,Stockholms Stad-Norrmalm,Stockholms Stad-Älvsjö,Stockholms Stad-Farsta,Stockholms Stad-Vantör,Stockholms Stad-Östermalm,Stockholms Stad-Djurgården,Sundbyberg,Södertälje,Tyresö,Täby,Upplands-Bro,Upplands Väsby,Vallentuna,Vaxholm,Värmdö,Österåker,
+Uppsala:Enköping,Heby,Håbo,Knivsta,Tierp,Uppsala,Älvkarleby,Östhammar
+Värmland:Hammarö,Kil,Kristineholm,Torsby,Eda,Storfors,Årjäng,Munkfors,Sunne,Grums,Hagfors,Filipstad,Forshaga,Säffle,Arvika,Karlstad
+Västerbotten:Norsjö,Malå,Bjurholm,Sorsele,Dorotea,Åsele,Robertsfors,Storuman,Vindeln,Nordmaling,Vilhelmina,Vännäs,Lycksele,Skellefteå,Umeå
+Västernorrland:Ånge,Kramfors,Sollefteå,Timrå,Härnösand,Örnsköldsvik,Sundsvall
+Västmanland:Arboga,Fagersta,Hallstahammar,Kungsör,Köping,Norberg,Sala,Skinnskatteberg,Surahammar,Västerås
+Västra Götaland:Ale,Alingsås,Bengtsfors,Bollebygd,Borås,Dals-Ed,Essunga,Falköping,Färgelanda,Grästorp,Gullspång,Göteborg,Götene,Herrljunga,Hjo,Härryda,Karlsborg,Kungälv,Lerum,Lidköping,Lilla Edet,Lysekil,Mariestad,Mark,Mellerud,Munkedal,Mölndal,Orust,Partille,Skara,Skövde,Sotenäs,Stenungsund,Strömstad,Svenljunga,Tanum,Tibro,Tidaholm,Tjörn,Tranemo,Trollhättan,Töreboda,Uddevalla,Ulricehamn,Vara,Vårgårda,Vänersborg,Åmål,Öckerö

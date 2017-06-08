@@ -1,0 +1,25 @@
+Amazonas:Bagua,Bongara,Condorcanqui,Luya,Rodriguez de Mendoza,Utcubamba,Chachapoyas
+Ancash:Aija,Antonio Raymondi,Asunción,Bolognesi,Carlos F. Fitzcarrald,Casma,Corongo,Huari,Huaylas,Mariscal Luzuriaga,Ocros,Pallasca,Pomabamba,Recuay,Santa,Sihuas,Yungay,Carhuaz,Huarmey,Huaraz
+Apurimac:Antabamba,Aymaraes,Chincheros,Cotabambas,Grau,Andahuaylas,Abancay
+Arequipa:Arequipa,Caraveli,Castilla,Caylloma,Condesuyos,Islay,La Unión,Camaná
+Ayacucho:Cangallo,Huamanga,Huanca Sancos,La Mar,Lucanas,Parinacochas,Paucar del Sara Sara,Sucre,Victor Fajardo,Vilcas Huaman,Huanta
+Cajamarca:Cajamarca,Chota,Contumaza,Cutervo,Hualgayoc,San Ignacio,San Marcos,San Miguel,San Pablo,Santa Cruz,Cajabamba,Celendin,Jaen
+Callao:Callao
+Cusco:Acomayo,Anta,Calca,Canas,Canchis,Chumbivilcas,Espinar,La Convención,Paruro,Paucartambo,Quispicanchi,Urubamba,Cusco
+Huancavelica:Acobamba,Angaraes,Castrovirreyna,Churcampa,Huancavelica,Huaytara,Tayacaja
+Huanuco:Dos de Mayo,Huacaybamba,Huamalies,Huanuco,Lauricocha,Leoncio Prado,Marañon,Pachitea,Puerto Inca,Yarowilca,Ambo
+Ica:Chincha,Nazca,Palpa,Pisco,Ica
+Junín:Chanchamayo,Chupaca,Concepción,Huancayo,Junín,Tarma,Yauli,Satipo,Jauja
+La Libertad:Bolivar,Gran Chimu,Julcan,Otuzco,Pacasmayo,Pataz,Sanchez Carrion,Trujillo,Viru,Santiago de Chuco,Ascope,Chepen
+Lambayeque:Chiclayo,Ferreñafe,Lambayeque
+Lima:Barranca,Cajatambo,Canta,Huarochirí,Lima,Oyón,Yauyos,Huaura,San Vicente de Cañete,Huaral
+Loreto:Alto Amazonas,Loreto,Mariscal Ramon Castilla,Maynas,Requena,Ucayali
+Madre de Dios:Manu,Tahuamanu,Tambopata
+Moquegua:General Sanchez Cerro,Mariscal Nieto,Ilo
+Pasco:Daniel Alcides Carrion,Oxapampa,Pasco
+Piura:Huancabamba,Morropon,Piura,Sullana,Ayabaca,Sechura,Paita,Talara
+Puno:Azangaro,Carabaya,Chucuito,El Collao,Huancane,Lampa,Melgar,Moho,Puno,San Antonio de Putina,San Roman,Sandia,Yunguyo
+San Martín:Bellavista,El Dorado,Huallaga,Mariscal Caceres,Moyobamba,Rioja,San Martin,Picota,Lamas,Tocache
+Tacna:Jorge Basadre,Tacna,Tarata,Candarave
+Tumbes:Contralmirante Villar,Tumbes,Zarumilla
+Ucayali:Atalaya,Coronel Portillo,Padre Abad,Purus

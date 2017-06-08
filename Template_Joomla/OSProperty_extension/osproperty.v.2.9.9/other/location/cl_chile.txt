@@ -1,0 +1,50 @@
+Parinacota:General Lagos,Putre
+Arica:Camarones,Arica
+Tamarugal:Camiña,Colchane,Huara,Pica,Pozo Almonte
+Iquique:Alto Hospicio,Iquique
+Antofagasta:María Elena,Mejillones,Ollagüe,Sierra Gorda,San Pedro de Atacama,Taltal,Tocopilla,Calama,Antofagasta
+Chañaral:Chañaral,Diego de Almagro
+Copiapó:Caldera,Tierra Amarilla,Copiapó
+Huasco:Alto del Carmen,Freirina,Huasco,Vallenar
+Elqui:Andacollo,La Higuera,Paihuano,Vicuña,La Serena,Coquimbo
+Limarí:Combarbalá,Punitaqui,Río Hurtado,Monte Patria,Ovalle
+Choapa:Canela,Los Vilos,Salamanca,Illapel
+Petorca:Cabildo,La Ligua,Papudo,Petorca,Zapallar
+Los Andes:Calle Larga,Rinconada,San Esteban,Los Andes
+San Felipe de Aconcagua:Catemu,Panquehue,Putaendo,Santa María,Llaillay,San Felipe
+Quillota:Hijuelas,La Calera,La Cruz,Nogales,Quillota
+Valparaíso:Casablanca,Concón,Juan Fernández,Puchuncaví,Quintero,Valparaíso,Viña del Mar
+Marga Marga:Olmué,Limache,Villa Alemana,Quilpué
+San Antonio:Algarrobo,Cartagena,El Quisco,El Tabo,San Antonio,Santo Domingo
+Isla de Pascua:Isla de Pascua
+Cachapoal:Codegua,Coltauco,Coínco,Doñihue,Graneros,Las Cabras,Malloa,Mostazal,Olivar,Peumo,Pichidegua,Quinta de Tilcoco,Requínoa,San Vicente de Tagua Tagua,Machalí,Rengo,Rancagua
+Curicó:Hualañé,Licantén,Rauco,Romeral,Sagrada Familia,Vichuquén,Teno,Molina,Curicó
+Talca:Curepto,Empedrado,Maule,Pelarco,Pencahue,Río Claro,San Rafael,Talca,San Clemente,Constitución
+Linares:Colbún,Parral,Retiro,San Javier de Loncomilla,Villa Alegre,Yerbas Buenas,Longaví,Linares
+Cauquenes:Chanco,Pelluhue,Cauquenes
+Ñuble:Chillán Viejo,Cobquecura,Coelemu,Coihueco,El Carmen,Ninhue,Pemuco,Pinto,Portezuelo,Quillón,Quirihue,Ránquil,San Carlos,San Fabián,San Ignacio,San Nicolás,Treguaco,Yungay,Ñiquén,Bulnes,Chillán
+Biobío:Alto Biobío,Antuco,Los Ángeles,Negrete,Quilaco,Quilleco,San Rosendo,Santa Bárbara,Tucapel,Yumbel,Laja,Cabrero,Nacimiento,Mulchén
+Concepción:Coronel,Florida,Hualpén,Hualqui,San Pedro de la Paz,Santa Juana,Penco,Tomé,Lota,Chiguayante,Concepción,Talcahuano
+Arauco:Cañete,Contulmo,Los Álamos,Tirúa,Lebu,Arauco,Curanilahue
+Malleco:Curacautín,Ercilla,Lonquimay,Los Sauces,Lumaco,Purén,Renaico,Traiguén,Collipulli,Victoria,Angol
+Cautín:Cholchol,Cunco,Curarrehue,Galvarino,Gorbea,Melipeuco,Padre Las Casas,Perquenco,Saavedra,Temuco,Teodoro Schmidt,Toltén,Freire,Vilcún,Carahue,Pitrufquén,Loncoche,Nueva Imperial,Lautaro,Pucón,Villarrica
+Valdivia:Lanco,Los Lagos,Mariquina,Máfil,Paillaco,Valdivia,Corral,Panguipulli
+Ranco:Futrono,La Unión,Lago Ranco,Río Bueno
+Osorno:Puerto Octay,Puyehue,Río Negro,San Juan de la Costa,San Pablo,Purranque,Osorno
+Puerto Montt:Cochamó,Fresia,Frutillar,Llanquihue,Los Muermos,Maullín,Calbuco,Puerto Varas,Puerto Montt
+Chiloé:Curaco de Vélez,Dalcahue,Puqueldón,Queilén,Quellón,Quemchi,Quinchao,Chonchi,Ancud,Castro
+Palena:Hualaihué,Palena,Futaleufú,Chaitén
+Coyhaique:Lago Verde,Coyhaique
+Aysén:Cisnes,Guaitecas,Aysén
+General Carrera:Río Ibáñez,Chile Chico
+Capitán Prat:O\'Higgins,Tortel,Cochrane
+Última Esperanza:Torres del Paine,Natales
+Magallanes:Laguna Blanca,Río Verde,San Gregorio,Punta Arenas
+Tierra del Fuego:Porvenir,Primavera,Timaukel
+Antártica Chilena:Antártica,Cabo de Hornos
+Chacabuco:Colina,Tiltil,Lampa
+Cordillera:Pirque,San José de Maipo,Puente Alto
+Maipo:Calera de Tango,San Bernardo,Paine,Buin
+Talagante:Isla de Maipo,Padre Hurtado,Peñaflor,El Monte,Talagante
+Melipilla:Alhué,Curacaví,María Pinto,San Pedro,Melipilla
+Santiago:Cerrillos,Cerro Navia,Conchalí,El Bosque,Estación Central,Huechuraba,Independencia,La Cisterna,La Florida,La Granja,La Reina,Las Condes,Lo Barnechea,Lo Espejo,Macul,Maipú,Pedro Aguirre Cerda,Peñalolén,Providencia,Pudahuel,Quilicura,Quinta Normal,Recoleta,Renca,San Joaquín,San Miguel,San Ramón,Vitacura,Ñuñoa,Lo Prado,La Pintana,Santiago

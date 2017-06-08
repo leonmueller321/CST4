@@ -1,0 +1,37 @@
+Abuja:Maitama,Apo,Garki,Asokoro,Chika,Wuse,Wuse II,Dakibiyu,Gwarimpa,Gwagwa,Utako,Kwali,Gwagwalada,Kubwa,Dakwo,Dape,Guzape District,Dei-Dei,Duboyi,Durumi,Dutse,Gaduwa,Galadimawa,Gudu,Idu,Jabi,Jikwoyi,Kado,Kafe,Karimu,Karu,Katampe,Kuchigworo,Kukwuaba,Lugbe,Mabuchi,Mpape,Nbora,Nyanya,Pyakassa,Wumba,Wuye,Abaji
+Abia:Aba North,Aba South,Arochukwu,Bende,Ikwuano,Isiala ngwa North,Isiala ngwa South,Isuikwuato,Obi ngwa,Ohafia,Osisioma ngwa,Ugwunagbo,Ukwa East,Ukwa West,Umuahia North,Umuahia South,Umu Nneochi
+Adamawa:Fufore,Demsa,Song,Mubi South,Madagali,Ganye,Gombi,Maiha,Yola,Yola South,Mayo-Belwa,Guyuk,Hong,Michika,Girei,Toungo,Mubi North,Jada,Shelleng,Numan,Lamurde
+Akwa Ibom:Abak,Eastern Obolo,Eket,Esit-Eket,Essien Udim,Etim-Ekpo,Etinan,Ibeno,Ibesikpo-Asutan,Ibiono-Ibom,Ika,Ikono,Ikot Abasi,Ikot Ekpene,Ini,Itu,Mbo,Mkpat-Enin,Nsit-Atai,Nsit-Ibom,Nsit-Ubium,Obot-Akara,Okobo,Onna,Oron,Oruk Anam,Ukanafun,Udung-Uko,Uruan,Urue-Offong/Oruko,Uyo
+Anambra:Awka North,Aguata,Awka South,Anambra East,Anambra West,Anaocha,Ayamelum,Dunukofia,Ekwusigo,Idemili North,Idemili South,Ihiala,Njikoka,Nnewi North,Nnewi South,Ogbaru,Onitsha North,Onitsha South,Orumba North,Orumba South,Oyi
+Bauchi:Bauchi,Tafawa Balewa,Dass,Toro,Bogoro,Ningi,Warji,Ganjuwa,Kirfi,Alkaleri,Darazo,Misau,Giade,Shira,Katagum,Itas/Gadau,Zaki,Gamawa,Damban
+Benue:Agatu,Apa,Ado,Buruku,Gboko,Guma,Gwer East,Gwer West,Katsina-Ala,Konshisha,Kwande,Logo,Makurdi,Obi,Ogbadibo,Ohimini,Oju,Okpokwu,Oturkpo,Tarka,Ukum,Ushongo,Vandeikya
+Bayelsa:Brass,Ekeremor,Kolokuma/Opokuma,Nembe,Ogbia,Sagbama,Southern Ijaw,Yenagoa
+Borno:Abadam,Askira/Uba,Bama,Bayo,Biu,Chibok,Damboa,Dikwa,Gubio,Guzamala,Gwoza,Hawul,Jere,Kaga,Konduga,Kala/Balge,Kukawa,Kwaya Kusar,Mafa,Magumeri,Maiduguri,Mobbar,Marte,Monguno,Ngala,Nganzai,Shani
+Cross River:Abi,Akamkpa,Akpabuyo,Bekwarra,Biase,Boki,Etung,Ikom,Obanliku,Obubra,Obudu,Odukpani,Ogoja,Yakuur,Yala
+Delta:Aniocha North,Aniocha South,Bomadi,Burutu,Ethiope East,Ethiope West,Ika North East,Ika South,Isoko North,Isoko South,Ndokwa East,Ndokwa West,Okpe,Oshimili North,Oshimili South,Patani,Sapele,Udu,Ughelli North,Ughelli South,Ukwuani,Uvwie,Warri North,Warri South,Warri South West
+Ebonyi:Abakaliki,Afikpo North,Afikpo South,Ebonyi,Ezza North,Ezza South,Ikwo,Ishielu,Ivo,Izzi,Ohaozara,Ohaukwu,Onicha
+Edo:Akoko Edo,Egor,Esan North-East,Esan Central,Esan South-East,Esan West,Etsako Central,Etsako East,Etsako West,Igueben,Ikpoba Okha,Oredo,Orhionmwon,Ovia North-East,Ovia South-West,Owan East,Owan West,Uhunmwonde
+Ekiti:Oye,Ado-Ekiti,Aiyekire (Gbonyin),Efon,Ekiti East,Ekiti South-West,Ekiti West,Emure,Ido-Osi,Ijero,Ikere,Ikole,Ilejemeje,Irepodun/Ifelodun,Ise/Orun,Moba
+Enugu:Aninri,Awgu,Enugu East,Enugu North,Enugu South,Ezeagu,Igbo Etiti,Igbo Eze North,Igbo Eze South,Nkanu East,Nkanu West,Isi Uzo,Nsukka,Oji River,Udenu,Udi,Uzo Uwani
+Lagos:Agege,Alimosho,Ifako-Ijaye,Ikeja,Kosofe,Mushin,Oshodi-Isolo,Shomolu,Apapa,Eti-Osa,Lagos Island,Lagos Mainland,Surulere,Ajeromi-Ifelodun,Amuwo-Odofin,Ojo,Badagry,Ikorodu,beju-Lekki,Epe
+Imo:Owerri Municipal,Aboh Mbaise,Ahiazu Mbaise,Ehime Mbano,Ezinihitte,Ideato North,Ideato South,Ihitte/Uboma,Ikeduru,Isiala Mbano,Isu,Mbaitoli,Ngor Okpala,Njaba,Nkwerre,Nwangele,Obowo,Oguta,Ohaji/Egbema,Okigwe,Onuimo,Orlu,Orsu,Oru East,Oru West,Owerri North,Owerri West
+Gombe:Akko,Balanga,Billiri,Dukku,Funakaye,Gombe,Kaltungo,Kwami,Nafada,Shongom,Yamaltu/Deba
+Jigawa:Auyo,Gagarawa,Garki,Babura,Biriniwa,Birnin Kudu,Buji,Dutse,Gumel,Guri,Gwaram,Gwiwa,Hadejia,Jahun,Kafin Hausa,Kaugama,Kazaure,Kiri Kasama,Kiyawa,Maigatari,Malam Madori,Miga,Ringim,Roni,Sule Tankarkar,Taura,Yankwashi
+Kaduna:Birnin Gwari,Chikun,Giwa,Igabi,Ikara,Jaba,Kachia,Kaduna North,Kaduna South,Kagarko,Kajuru,Kaura,Kauru,Kubau,Kudan,Lere,Makarfi,Sabon Gari,Sanga,Soba,Zangon Kataf,Zaria
+Kano:Fagge,Dala,Gwale,Kano Municipal,Tarauni,Nassarawa,Kumbotso,Ungogo,Dawakin Tofa,Tofa,Rimin Gado,Bagwai,Gezawa,Gabasawa,Minjibir,Dambatta,Makoda,Kunchi,Bichi,Tsanyawa,Shanono,Gwarzo,Karaye,Rogo,Kabo,Bunkure,Kibiya,Rano,Tudun Wada,Doguwa,Madobi,Kura,Garun Mallam,Bebeji,Kiru,Sumaila,Garko,Takai,Albasu,Gaya,Ajingi,Wudil,Warawa,Dawakin Kudu
+Kebbi:Aleiro,Arewa Dandi,Argungu,Augie,Bagudo,Birnin Kebbi,Bunza,Dandi,Fakai,Gwandu,Jega,Kalgo,Koko/Besse,Maiyama,Ngaski,Sakaba,Shanga,Suru,Wasagu/Danko,Yauri,Zuru
+Katsina:Bakori,Batagarawa,Batsari,Baure,Bindawa,Charanchi,Dan Musa,Dandume,Danja,Dutsi,Dutsin-Ma,Daura,Faskari,Funtua,Ingawa,Jibia,Kafur,Kaita,Kankara,Kankia,Katsina,Kurfi,Kusada,Malumfashi,Matazu,Mashi,Musawa,Rimi,Sabuwa,Safana,Sandamu,Zango,Mani
+Kogi:Yagba West,Yagba East,Adavi,Ajaokuta,Ankpa,Bassa,Dekina,Ibaji,Idah,Igalamela-Odolu,Ijumu,Kabba/Bunu,Kogi,Lokoja,Mopa-Muro,Ofu,Ogori/Magongo,Okehi,Okene,Olamaboro,Omala
+Kwara:Pategi,Oyun,Oke Ero,Offa,Asa,Baruten,Edu,Ekiti,Ifelodun,Ilorin East,Ilorin South,Ilorin West,Irepodun,Isin,Kaiama,Moro
+Nasarawa:Obi,Toto,Wamba,Akwanga,Awe,Doma,Karu,Keana,Kokona,Lafia,Nasarawa,Nasarawa Egon,Keffi
+Niger:Paikoro,Rafi,Rijau,Shiroro,Suleja,Tafa,Wushishi,Agaie,Agwara,Bida,Borgu,Bosso,Chanchaga,Edati,Gbako,Gurara,Katcha,Kontagora,Lapai,Lavun,Magama,Mariga,Mashegu,Mokwa,Munya
+Ogun:Abeokuta North,Abeokuta South,Ado-Odo/Ota,Ewekoro,Ifo,Ijebu East,Ijebu North,Ijebu North East,Ijebu Igbo,Ijebu Ode,Ikenne,Imeko Afon,Ipokia,Obafemi Owode,Odogbolu,Odeda,Ogun Waterside,Remo North,Sagamu,Yewa North,Yewa South
+Ondo:Akoko North-East,Akoko North-West,Akoko South-East,Akoko South-West,Akure North,Akure South,Ese Odo,Idanre,Ifedore,Ilaje,Ile Oluji/Okeigbo,Irele,Odigbo,Okitipupa,Ondo East,Ondo West,Ose,Owo
+Osun:Aiyedaade,Aiyedire,Atakunmosa East,Atakunmosa West,Boluwaduro,Boripe,Ede North,Ede South,Egbedore,Ejigbo,Ife Central,Ife East,Ife North,Ife South,Ifedayo,Ifelodun,Ila,Ilesa East,Ilesa West,Irepodun,Isokan,Iwo ,Obokun,Odo Otin,Ola Oluwa,Olorunda,Oriade,Orolu,Osogbo
+Oyo:Oyo East,Ori Ire,Orelope,Surulere,Akinyele,Afijio,Egbeda,Ibadan North,Ibadan North-East,Ibadan North-West,Ibadan South-West,Ibadan South-East,Ibarapa Central,Ibarapa East,Ido,Irepo,Iseyin,Kajola,Lagelu,Ogbomosho North,Ogbomosho South,Oyo West,Atiba,Atisbo,Saki West,Itesiwaju,Saki East,Iwajowa,Ibarapa North,Olorunsogo,Oluyole,Ogo Oluwa
+Plateau:Barkin Ladi,Jos North,Langtang North,Pankshin,Wase,Bassa,Bokkos,Jos East,Jos South,Kanam,Kanke,Langtang South,Mangu,Mikang,Riyom,Shendam
+Rivers:Port Harcourt,Obio-Akpor,Okrika,Ogu/Bolo,Eleme,Tai,Gokana,Khana,Oyigbo,Opobo/Nkoro,Andoni,Bonny,Degema,Asari-Toru,Akuku-Toru,Abua/Odual,Ahoada West,Ahoada East,Ogba/Egbema/Ndoni,Emohua,Ikwerre,Etche,Omuma
+Sokoto:Yabo,Wurno,Wamako,Binji,Bodinga,Dange Shuni,Gada,Goronyo,Gudu,Gwadabawa,Illela,Isa,Kebbe,Kware,Rabah,Sabon Birni,Shagari,Silame,Sokoto North,Sokoto South,Tambuwal,Tangaza,Tureta
+Taraba:Zing,Yorro,Wukari,Ussa,Takum,Sardauna,Lau,Kurmi,Karim Lamido,Jalingo,Ibi,Gassol,Gashaka,Donga,Bali,Ardo Kola
+Yobe:Bursari,Damaturu,Geidam,Bade,Gujba,Gulani,Fika,Fune,Jakusko,Karasuwa,Machina,Nangere,Nguru,Potiskum,Tarmuwa,Yunusari,Yusufari
+Zamfara:Anka,Bakura,Birnin Magaji/Kiyaw,Bukkuyum,Bungudu,Chafe,Gummi,Gusau,Kaura Namoda,Maradun,Maru,Shinkafi,Talata Mafara,Zurmi

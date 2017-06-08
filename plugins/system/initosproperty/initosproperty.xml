@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" method="upgrade" type="plugin" group="system">
+<name>System - Init OS Property data</name>
+<author>Dang Thuc Dam</author>
+<creationDate>July 2013</creationDate>
+<version>1.0</version>
+<license>GNU GPL</license>
+<copyright>(c) 2013 Ossolution</copyright>
+<description>Init OS Property data</description>
+<files>
+<filename plugin="initosproperty">initosproperty.php</filename>
+</files>
+</extension>

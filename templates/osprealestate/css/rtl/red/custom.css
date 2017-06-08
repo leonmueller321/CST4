@@ -1,0 +1,149 @@
+.os_search {
+	width:100%;
+}
+#offlajn-ajax-search {
+	padding:5px 0 6px;
+}
+#ajaxvmsearcharea {
+	width:170px !important;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	height:34px !important;
+}
+.os_search_bg {
+	background: #cc0000;
+	border-radius: 10px;
+    bottom: 30px;
+    margin: 0 auto;
+    max-width: 720px;
+    z-index: 998;
+	position:absolute;
+	left:0;
+	right:0;
+	width:100%;
+	opacity:0.7;
+	min-height:270px;
+}
+.os_search {
+	background:none;
+}
+.property-mask h4.os-featured, .feat-thumb h4.os-featured {
+    background: none repeat scroll 0 0 #cc0000;
+    bottom: 28px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    left: 0;
+    margin-bottom: 0;
+    padding: 6px 10px;
+    position: absolute;
+    text-transform: uppercase;
+}
+.property-mask h4, .feat-thumb h4 {
+    background: none repeat scroll 0 0 #445064;
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    left: 0;
+    margin-bottom: 0;
+    padding: 6px 10px;
+    position: absolute;
+    text-transform: uppercase;
+}
+.module_properties .property-mask {
+	margin:0;
+}
+
+.os-inner .grid li {
+	width:100%;
+}
+.os-inner .grid li li {
+	float:left;
+	text-align:center;
+}
+.os-inner .grid li .property-info .property-icon-square , .os-inner .grid li .property-info .property-icon-parking{ 
+	width:30%;
+	
+}
+.os-inner .grid li .property-info .property-icon-bed , .os-inner .grid li .property-info .property-icon-bath{ 
+	width:20%;
+	
+}
+.os-inner .grid li .property-info {
+	overflow:hidden;
+}
+.os-inner .property-icon-parking span {
+	margin:0;
+}
+.property-info .ospico-square, .property-info .ospico-bed, .property-info .ospico-bath, .property-info .ospico-parking{
+	background:url(../images/osp_icon.svg) no-repeat;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 6px;
+    width: 16px;
+}
+.property-info .ospico-bed {
+    background-position: 0 -32px;
+}
+.property-info .ospico-bath {
+    
+    background-position: 0 -16px;
+}
+.property-info .ospico-parking {
+    background-position: 0 -48px;
+}
+.grid li:hover .property-info .ospico-square {
+    background-position: 0 -64px;
+}
+.grid li:hover .property-info .ospico-bed {
+    background-position: 0 -80px;
+}
+.grid li:hover .property-info .ospico-bath {
+    background-position: 0 -96px;
+}
+.grid li:hover .property-info .ospico-parking {
+    background-position: 0 -112px;
+}
+.os-inner .grid li {
+	width:100%;
+}
+.os-inner .grid li li {
+	float:left;
+	text-align:center;
+}
+.os-inner .grid li .property-info .property-icon-square , .os-inner .grid li .property-info .property-icon-parking{ 
+	width:30%;
+	
+}
+.os-inner .grid li .property-info .property-icon-bed , .os-inner .grid li .property-info .property-icon-bath{ 
+	width:20%;
+	
+}
+.os-inner .grid li .property-info {
+	overflow:hidden;
+}
+.os-inner .grid li .property-info span {
+	vertical-align:top;
+}
+.os-inner .property-icon-parking span {
+	margin:0;
+}
+@media (min-width: 320px) and (max-width:980px) {
+	.os-inner .grid li .property-info .property-icon-square, .os-inner .grid li .property-info .property-icon-parking , .os-inner .grid li .property-info .property-icon-bed , .os-inner .grid li .property-info .property-icon-bath {
+		width:auto;
+	}
+}
+
+.t3-slideproperty .cs-style-3 figcaption {
+ top:30%;
+}
+.t3-slideproperty .grid figcaption a {
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+}
+.t3-slideproperty .os-introtext  {
+ 	padding:10px;
+ 	text-align:left;
+}

@@ -1,0 +1,24 @@
+Amazonas:Puerto Ayacucho
+Anzoátegui:Anaco,Barcelona,Boca De Uchire,Cantaura,El Tigre,Lecheria,Pariaguan,Puerto La Cruz,Puerto Piritu,San Mateo
+Apure:San Fernando De Apure
+Aragua:Colonia Tovar,La Victoria,Maracay,Villa De Cura
+Barinas:Barinas
+Bolívar:Ciudad Bolivar,Ciudad Guayana,Puerto Ordaz
+Carabobo:Bejuma,El Roble,Guacara,Guigue,Mariara,Moron,Naguanagua,Puerto Cabello,San Diego,San Joaquin,Valencia
+Cojedes:San Carlos
+Delta Amacuro:Delta Amacuro
+Distrito Capital:Caracas
+Falcón:Coro,Punto Fijo,Tucacas
+Guarico:Calabozo,San Juan,San Rafael de Orituco,Valle de la Pascua
+Lara:Barquisimeto,Cabudare,Carora,Cubiro,Curarigua,El Cuji,El Jebe,Quibor
+Mérida:Bailadores,El Vigia,Merida,Santa Cruz de Mora
+Miranda:Barlovento,Carrizal,Cupira,El Jarillo,Guarenas,Guatire,Higuerote,Las Adjuntas,Los Guayabitos,Los Teques,Paracotos,Rio Chico,San Antonio,Solar del Hatillo,Valles Del Tuy
+Monagas:Maturin,Punta de Mata
+Nueva esparta:La Asuncion,Pampatar,Porlamar
+Portuguesa:Acarigua,Araure,Biscucuy,Guanare
+Sucre:Cumana
+Tachirá:Colon,La Fria,Rubio,San Antonio,San Cristobal
+Trujillo:La Puerta,Trujillo
+Vargas:La Guaira
+Yaracuy:San Felipe,Yaritagua
+Zulia:Maracaibo

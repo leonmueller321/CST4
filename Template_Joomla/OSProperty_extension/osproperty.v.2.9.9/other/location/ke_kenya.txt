@@ -1,0 +1,47 @@
+Baringo:Kabaranet
+Bomet:Bomet town
+Bungoma:Bungoma town
+Busia:Busia town
+Elgeiyo-Marakwet:Kapsowar
+Embu:Embu town
+Garissa:Garissa town
+Homa Bay:Homa Bay town
+Isiolo:Isiolo town
+Kajiado:Kitengela,Ngong,Kiserian,Kajiado Town 
+Kakamega:Kakamega town
+Kericho:Kericho town
+Kiambu:Chania,Cianda,Githiga,Githobokoni,Githunguri,Kabete,Kiambaa,Kihara,Kinale,Limuru,Ndumberi,Ruaka,Ruiru,Thika East,Tigoni 
+Kilifi:Kilifi town
+Kirinyaga:Kirinyaga town
+Kisii:Kisii town
+Kisumu:Kisumu,Milimani,Mamboleo,Migosi,Car wash,Kondele,Usaid,Riat,Kenya Re,Manyatta,Okore,Tom Mboya,Arina,Brilliant,Dunga,Industrial Area,Kaloleni,Kibos,Kibuye Market,Kibuyu Estate,Makasembo Estate,Mega City,Nyalenda,Nyamasaria,Nyawita,Ondiek,Patel Flats,Polyview,Railways,Robert Ouko
+Kitui:Kitui town
+Kwale:Kwale town
+Laikipia:Nanyuki,Nyahururu 
+Lamu:Lamu town
+Machakos:Athi River,Konza,Muthini Estate,Sweet Waters,Mavivye Market 
+Makueni:Makueni town
+Mandera:Mandera town
+Marsabit:Marsabit town
+Meru:Meru town
+Migori:Migori town
+Mombasa:Mombasa Island,Nyali,Bamburi,Mtwapa,Ganjoni,Tudor,Diani Beach,Changamwe,Likoni,Kilifi,Kisauni,Bombolulu,Kibokoni,Kiembeni,Kilindini,Kizingo,Kongowea,Kuze,Magongo,Makadara,Makupa,Miritini,Mkindani,Mkomani,Mnazi moja,Mto Panga,Mwembe tayari,North Coast,Shanzu,South Coast
+Muranga:Muranga town
+Nairobi:Airbase,Avenue Park,Bahati,Boabadogo,Brookside,Buruburu,California,Central Business District (CBD),Chereni,Clay City,Dandora Area I,Dandora Area II,Dandora Area III,Dandora Area IV,Donhohm,Eastleigh North,Eastleigh South,Embakasi,Fedha,Garden Estate,Gatina,General Mathenge,Gigiri,Githurai,Harambee,Highrise,Hospital,Hurlingham,Huruma,Imara Daima,Industrial Area,Jamhuri,Jericho,Juja,Kabiro,Kangundo Road,Kahawa,Kahawa Soweto,Kahawa Sukari,Kahawa West,Kamiti,Kangawa Zone,Kangemi,Karen,Kariobangi,Kariobangi North,Kariobangi South,Karura,Karura,Kasarani,Kawangware,Kayole,Kayole North,Kayole NorthCentral,Kayole South,Kiamaiko,Kibera,Kileleshwa,Kilimani,Kimbo Zone,Kitisuru,Komarock,Korogocho Kubwa,Kwa Njenga,Kwa Reuben,Kware,Kyuna,Laini Saba,Landimawe,Lavington,Lindi,Loresho,Lower Kabete,Lucky Summer,Mabatini,Madaraka,Makina,Makongeni,Maringo|Hamza,Maruri,Mathare North,Matopeni|Spring Valley,Maziwa,Mihango,Mirema,Mlango,Mountain View,Mowlem,Muthaiga,Muthithi Gardens,Mwiki,Nairobi Central,Nairobi Hardy,Nairobi South,Nairobi West,Ngando,Ngara,Ngei,Ngumba Estate,Njiru,North Muthaiga,Nyari,Old Muthaiga,Ongata Rongai,Pangani,Parklands|Highridge,Pipeline,Pumwani,Riara,Ridgeways,Riruta Nyayo,Riverside,Roslynn,Roysambu,Ruai,Runda,Sarangombe,Savanna,Shade Zone,South B,South C,Spring Valley,State House,Sub zone,Thigiri,Thika Road,Umoja,Umoja I,Umoja II,Upper Hill,Utalii,Utawala,Uthiru|Ruthimitu,Valley Arcade,Valley Road,Viwandani,Waithaka,Waiyaki Way,Windsor,Woodley-Kenyatta Golf Course,Zimmermann,Ziwani|Kariokor 
+Nakuru:Bahati,Gilgil,Kuresoi,North Kuresoi,South Molo,Naivasha,Nakuru Town East,Nakuru Town West,Njoro,Rongai,Subukia
+Nandi:Nandi town
+Narok:Narok town
+Nyamira:Nyamira town
+Nyandarua:Ol Karau
+Nyeri:Karatina,Kingongo,Othaya,Ring Road Estate,Kimathi Estate,Skuta,Ruringu,Kamakwa,Hospital quaters,Mumbi Estate,Baraka Estate,Chania
+Samburu:Maralal, Baragoi
+Siaya:Siaya town
+Taita Taveta:Voi,Taveta,Wudanyi,Mwatate 
+Tana River:Hola
+Tharaka - Nithi:Chuka,Chogoria 
+Trans Nzoia:Kibomet,Milimani,Laini moja,Lessos,Section six,Tuwani,Shauri Moyo,Mitume,Machinjoni,Bondeni,Kaloleni,Matato Estate 
+Turkana:Lodwar
+Uasin Gishu:Ainabkoi,Chemngoror,Cheptiret,Eldoret North,Hospital,Huruma,Kamagut,Kamukunji,Kapsoya,Kaptagat,Kapyemit,Karuna,Kidiwa,Kimumu,Kipchamo 
+Vihiga:Mbale
+Wajir:Wajir town
+West Pokot:Kapenguria

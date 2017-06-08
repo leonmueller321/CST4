@@ -1,0 +1,16 @@
+Auckland: Auckland, Orewa, Helensville, Warkworth, Wellsford, Pukekohe, Waiuku, Clevedon, Maraetai, Muriwai, Piha, Coatesville, Kumeu, Drury
+Bay of Plenty: Tauranga, Rotorua, Whakatane, Te Puke, Taneatua, Edgecumbe, Opotiki, Kawerau, Murupara, Matata, Maketu, Mount Maunganui, Ngongotaha
+Coromandel: Christchurch, Timaru, Kaikoura, Ashburton, Leeston, Rolleston, Fairlie, Temuka, Methven, Rakaia, Geraldine, Rangiora, Oxford
+Gisborne: Gisborne,Tokomaru Bay,Tolaga Bay, Ruatoria
+Hawke\'s Bay:Hastings, Napier, Taradale, Havelock North, Wairoa, Waipukurau, Waipawa 
+Manawatu-Whanganui:Palmerston North, Pahiatua, Wanganui, Taihape, Levin, Bulls, Feilding, Woodville, Dannevirke, Shannon, Marton, Raetihi, Taumarunui, Waiouru, Foxton,Ohakune. 
+Marlborough: Blenheim, Picton, Havelock, Seddon, Ward, Rai Valley, Renwick, Clarence, Clifford Bay,
+Nelson Tasman: Nelson North, City Centre, Tahunanui-Port Hills, Stoke 
+Northland: Whangarei, Kaitaia, Kaeo, Kawakawa, Moerewa, Kaikohe, Ohaeawai, Okaihau, Kerikeri, Russell, Paihia, Waitangi, Mangonui, Taipa, Opononi, Omapere, Rawene, Kohukohu, Ruakaka, Waipu, Kaiwaka, Mangawhai, Dargaville, Ruawai, Maungaturoto, Paparoa, Hikurangi.
+Otago: Dunedin, Alexandra, Balclutha, Brighton, Cromwell, Ettrick, Frankton, Kaitangata, Lawrence, Middlemarch, Milton, Moeraki, Mosgiel, Oamaru, Palmerston, Queenstown, Ranfurly, Roxburgh, Waikouaiti, Wanaka 
+Southland: Invercargill, Gore, Lumsden, Winton, Mataura, Te Anau
+Taranaki: New Plymouth,Ahititi, Alton, Auroa, Awakino, Bell Block, Cardiff, Douglas, Eltham, Hawera, Huiakama, Huiroa, Hurleyville, Hurworth, Inglewood, Kakaramea, Kaponga, Kapuni, Lepperton, Manaia, Mangatoki, Mangorei, Midhirst, Mokau, Motunui, Ngaere, Ngamatapouri, Normanby, Oakura, Oaonui, Ohangai, Okato, Omata, Onaero, Opunake, Patea, Pungarehu, Puniho, Rahotu, Ratapiko, Rawhitiroa, Stratford, Strathmore, Te Popo, Toko, Tongaporutu, Tututawa, Urenui, Uruti, Vogeltown, Waipuku, Waitara, Waitoriki, Warea, Waverley, Welbourn, Westown, Whenuakura
+Waikato: Hamilton, Cambridge, Coromandel, Huntly, Matamata, Miranda, Morrinsville, Ngaruawahia, Ngatea, Paeroa, Pirongia, Putaruru, Raglan, Taupiri, Taupo, Te Aroha, Te Awamutu, Te Kauwhata, Te Kowhai, Te Kuiti, Thames, Tirau, Tokoroa, Waihi
+Wellington: 	Wellington,Lower Hutt,Porirua,Upper Hutt,Paraparaumu,Masterton,Waikanae,Raumati,Otaki,Carterton,Featherston,Greytown,Paekakariki,Martinborough
+West Coast: Greymouth, Hokitika, Westport, Reefton, Karamea, Kumara, Fox Glacier, Haast, Okuru, Jackson Bay
+Tasman:Richmond, Motueka, Collingwood, Takaka, Brightwater, Murchison, Mapua

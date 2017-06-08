@@ -1,0 +1,12 @@
+﻿Sofia:Sofia
+Varna:Varna
+Burgas:Burgas
+Albena:albena
+Obzor:Obzor
+Sandy Beach:Sandy Beach
+Golden Sands:Golden Sands
+Nessebar:Nessebar
+Pomorie:Pomorie
+Chernomorets:Chernomorets
+Primorsko:Primorsko
+Tsarevo:Tsarevo

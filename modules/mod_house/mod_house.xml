@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>House Module</name>
+    <author>Leon</author>
+    <version>0.0.1</version>
+    <description>House module</description> 
+    <files>
+        <filename>mod_house.xml</filename>
+        <filename module="mod_house">mod_house.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/form_success.php</filename>
+		<filename>tmpl/element_list.php</filename>
+        <filename>tmpl/index.html</filename>
+		<media folder="media" destination="mod_house">
+			<folder>css</folder>
+			<folder>js</folder>
+		</media>
+    </files>
+</extension>

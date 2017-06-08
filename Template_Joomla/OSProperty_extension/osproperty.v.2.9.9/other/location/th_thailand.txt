@@ -1,0 +1,6 @@
+Central:Ang Thong,Ayutthaya,Chainat,Kamphaeng Phet,Lopburi,Nakhon Nayok,Nakhon Pathom,Nakhon Sawan,Nonthaburi,Pathum Thani,Phetchabun,Phichit,Phitsanulok,Samut Prakan,Samut Sakhon,Samut Songkhram,Saraburi,Singburi,Sukhothai,Suphanburi,Uthai Thani
+East:Chachoengsao,Trat,Chanthaburi,Chonburi,Pattaya,Prachinburi,Rayong,Sa Kaeo
+North:Chiang Mai,Chiang Rai,Lampang,Lamphun,Mae Hong Son,Nan,Phayao,Phrae,Uttaradit
+North-East:Amnat Charoen,Bueng Kan,Buri Ram,Chaiyaphum,Kalasin,Khon Kaen,Loei,Maha Sarakham,Mukdahan,Nakhon Phanom,Nakhon Ratchasima,Nong Khai,Nongbua Lamphu,Roi Et,Sakon Nakhon,Sisaket,Surin,Ubon Ratchathani,Udon Thani,Yasothon
+South:Chumphon,Krabi,Nakhon Si Thammarat,Narathiwat,Pattani,Phang Nga,Phatthalung,Phuket,Ranong,Satun,Songkhla,Surat Thani,Trang,Yala
+West:Hua Hin,Kanchanaburi,Phetchaburi,Prachuap Khiri Khan,Ratchaburi,Tak

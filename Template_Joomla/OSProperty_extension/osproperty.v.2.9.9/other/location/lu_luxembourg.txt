@@ -1,0 +1,12 @@
+Clervaux:Clervaux,Consthum,Heinerscheid,Hosingen,Munshausen,Troisvierges,Weiswampach,Wincrange
+Diekirch:Bettendorf,Bourscheid,Diekirch,Ermsdorf,Erpeldange,Ettelbruck,Feulen,Hoscheid,Medernach,Mertzig,Reisdorf,Schieren
+Redange:Arsdorf,Beckerich,Bettborn,Bigonville,Ell,Everlange,Folschette,Grevels,Grosbous,Holtz,Hostert,Hovelange,Nagem,Niederpallen,Noerdange,Oberpallen,Ospern,Perlé,Platen,Pratz,Rambrouch,Redange,Reimberg,Rombach,Roodt,Saeul,Schandel,Schweich,Useldange
+Vianden:Bettel,Bivels,Fouhren,Gralingen,Longsdorf,Merscheid,Nachtmanderscheid,Putscheid,Stolzembourg,Vianden,Walsdorf,Weiler
+Wiltz:Baschleiden,Bavigne,Berlé,Boulaide,Büderscheid,Dahl,Doncols,Enscherange,Erpeldange,Eschdorf,Esch-sur-Sûre,Eschweiler,Goesdorf,Harlange,Heiderscheid,Insenborn,Kaundorf,Kautenbach,Knaphoscheid,Merckholtz,Merscheid,Nocher,Nocher-Route,Noertrange,Nothum,Pintsch,Surré,Tadler-Ringel-Dirbach,Tarchamps,Wiltz,Wilwerwiltz,Winseler
+Echternach:Beaufort,Bech,Berdorf,Consdorf,Echternach,Mompach,Rosport,Waldbillig
+Grevenmacher:Ahn-Dreiborn,Altlinster,Beidweiler,Berbourg,Betzdorf,Beyren,Biwer,Bourglinster,Ehnen,Eisenborn,Eschweiler,Flaxweiler,Godbrange,Gonderange,Gostingen,Grevenmacher,Imbringen,Junglinster,Lellig,Machtum,Manternach,Mensdorf,Mertert,Münschecker,Niederdonven,Oberdonven,Olingen,Roodt-sur-Syr,Wasserbillig,Wecker,Wormeldange,Wormeldange-Haut
+Remich:Altwies,Assel,Bech-Kleinmacher,Bous,Burmerange,Canach,Dalheim,Ellange,Elvange,Emerange,Erpeldange,Filsdorf,Greiveldange,Lenningen,Mondorf-les-Bains,Remerschen,Remich,Rolling,Schengen,Schwebsingen,Stadtbredimus,Trintange,Trintange-Ersange-Roedt,Waldbredimus,Welfrange,Wellenstein,Wintrange
+Capellen:Bascharage,Clemency,Dippach,Garnich,Hobscheid,Kehlen,Koerich,Kopstal,Mamer,Septfontaines,Steinfort
+Esch-sur-Alzette:Aspelt,Belvaux,Berchem,Bergem,Bettembourg,Bivange,Crauthem,Differdange,Dudelange,Ehlerange,Esch-Alzette,Fousbann,Frisange,Hellange,Huncherange,Kayl,Lamadelaine,Leudelange,Mondercange,Niedercorn,Noertzange,Obercorn,Peppange,Pétange,Pontpierre,Rodange,Roeser,Rumelange,Sanem,Schifflange,Soleuvre,Tétange
+Luxemburgo:Bertrange,Contern,Hesperange,Luxemburgo,Niederanven,Sandweiler,Schuttrange,Steinsel,Strassen,Walferdange,Weiler-la-Tour
+Mersch:Angelsberg,Beringen,Bissen,Blaschette,Boevange,Bofferdange,Brouch,Buschdorf,Colmar-Berg,Cruchten,Ernzen,Fischbach,Gosseldange,Grevenknapp-Bill-Finsterthal,Heffingen,Helmdange,Hollenfels,Hünsdorf,Larochette,Lintgen,Lorentzweiler,Mersch,Moesdorf,Nommern,Pettingen,Reckange,Reuland,Rollingen,Schoenfels,Schoos,Schrondweiler,Tuntange

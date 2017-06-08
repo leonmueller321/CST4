@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="User: Registtration">
+		<message>
+			<![CDATA[User registration.]]>
+		</message>
+	</layout>
+	<state>
+		<name>User: Registration</name>
+		<description>User registration layout.</description>
+	</state>
+</metadata>

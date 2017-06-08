@@ -1,0 +1,26 @@
+Cairo:Cairo, New Cairo 5th District, Madenaty, Rehab, Shorouk, New Heliopolis, Badr
+Giza:Giza, 6th Of October, El-Sheikh Zayed City 
+Alexandria:Alexandria, New Alameen, Borg El-Arab, 
+Port-Said:Port Said, East Port Said
+Suez:Suez, North Suez Gulf
+Dakahlia:Al-Mansoura, Mit Ghamr, Al-Matareya, Bilqas, Senbellawein, Talkha, Manzala, Dikirnis, El-Gamalia, Minyet Al-Nasr, Sherbin, Nabaroh, Mit Salsil, Bani Ubayd, Aga
+Sharkia:Zagazig, Belbeis, 10th of Ramadan City, Abu Kabir, Faqous, Al-Kareen, Minya al-Qamh, Drib Nigm, Mashtul el-Sook, Hehya, Al-Kanayat, Abu Hammad, Al-Ibrahimiya, Al-Husseinieh, Kafr Saqr, Awlad Saqr, New Salhia
+Qalyubia:Shubra El-Khema, Khusus, Banha, Qalyub, El-Kanater Al-Khiria, Khanka, Shibin Al-Qanater, El-Ubour, Tukh, Qaha,Kafr Shukr
+Kafr-El-Sheikh:Kafr Al-Sheikh, Desouk, Beila, Fuwa, Al-Hamool, Sidi Salem, Baltim, Qallin, Metoubes, Riyadh
+Gharbia:El-Mahalla El-Kubra, Tanta, Zifta, Kafr Al-Zayat, Samannoud, Basyoun, El-Santa, Kotoor
+Menoufia:Shibin El-Kom, Menouf, Ashmoun, Sers el-Lyan, Tala, Ash-Shuhada, Sadat City, Quesna, Bagour, Birkat Al-Sab
+Beheira:Damanhur, Kafr El-Dawwar, Edko, Rosetta, Hosh Issa, Abul Matamir, El-Delengat, Etay El-Barud, Abu Hummus, Kom Hamadah, El-Rahmaniyah, Shubrakhit, El-Mahmoudiyah, Wadi Al-Natrun, Badr
+Ismailia:Ismailia, At-Tall al-Kabir, Al-Qantara, Abu Suweir Al-Mahatta, Fayed, Al-Qantara Sharq
+Beni-Suef:Beni Suef, Bush, Al-Fashn, Biba, Sumusta al-Waqf, Al-Wasta, Ihnasiya, New Beni Suef
+Fayoum:Fayoum, Senuris, Ibshawai, Tamiya, Itsa, Yusuf as-Siddiq
+Menia:Minya, Mallawi, Samalut, Beni Mazar, Maghagha, Abu Qirqas, Matai, Deir Mawas, El-Idwa
+Asyut:Asyut, Manfalut, Dairut, Abu Tig, Qis, Abnub, El-Ghanayem, El-Badari, Sahel Selim, Sedfa
+Suhag:Sohag, Girga, Akhmim, Tahta, Tima, Al-Mansha, Al-Baliyana, Juhayna, Al-Maragha, Dar as-Salam, Saqultah
+Qena:Qena, Armant, Esna, Qus, Dishna, Farshut, Naj Hammadi, Al-Waqf, Qift, Naqadah
+Aswan:Aswan, Kom Ombo, Edfu, Daraw, Al-Basaliyah Bahri, As-Sibaiyah Gharb
+Luxor:Luxor, Al-Bayadiyah
+Red Sea:Hurghada, Al-Quseir, Safaga, Ras Gharib
+New Valley:Kharga, Mut
+Matrouh:Marsa Matruh, Al-Hammam, Sidi Barrani, Ad-Dabah, Siwa
+North Sinai:El Arish, Rafah, Ash-Shaykh Zawid
+South Sinai:Sharm el-Sheikh, Al-Tur

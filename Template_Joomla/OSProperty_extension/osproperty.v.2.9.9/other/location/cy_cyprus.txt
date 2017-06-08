@@ -1,0 +1,14 @@
+﻿Limassol:Limassol,Mesa Geitonia,Tserkezoi,Agios Athanasios,Kato Polemidia,Pano Polemidia,Trachoni,Germasogeia,Asomatos,Ypsonas,Palodia,Mouttagiaka,Kolossi,Paramytha,Agyos Tychonas,Fasoula,Akrotiri,Erimi,Spitali,Foinikaria,Kantou,Mathikoloni,Episkopi,Akrounta,Armenochori,Apesia,Alassa,Apsiou,Parekklisia,Korfi,Kalo Chorio
+Larnaca:Larnaca,Dromolaxia,Meneou,Livadia,Aradippou,Kiti,Kellia,Kalo Chorio,Tersefanou,Oroklini,Softades,Klavdia,Kivisili,Kosi,Avdellero,Troulloi
+Paphos:Paphos,Konia,Empa,Geroskipou,Chloraka,Koloni,Agia Marinouda,Mesa Chorio,Tremithousa,Armou,Marathounta,Kissonerga,AcheleiaTala,Agia Varvara,Tsada,Timi,Episkopi,Koili,Anarita,Kallepia,Mandria,Letymvou,Pitargou,Nata,Akoursos,Axylou,Kourtaka,Foinikas,Pegeia,Stroumpi,Eledio,Nikokleia,Polemi,Amargeti,Lemona,Choletria,Choulou
+Nicosia:Nicosia,Mitsero,Agrokipia,Kato Moni,Kalo Chorio,Agios Epifanios,Malounta,Klirou,Agios Ioannis Malountas,Arediou,Agia Marina,Orounta,Agios Georgios,Xyliatos,Meniko,Gourri,Fikardou,Akaki,Peristerona,Vyzakia,Politiko,Ergates,Tamassos,Episkopeio,Potami,Palaiometocho,Lazanias,Agioi Trimithias,Pera Orinis,Fterikoudi,Anageia,Apliki,Askas,Psimolofou,Kampia,Platanistasa,Astromeritis,Papaichori,Alithinou,Lagoudera,Saranti,Kapedes,Livadia,Deneia,Alona,Kokkinotrimithia,Farmakas,Polystypos,Kampi,Deftera
+Protaras:Protaras
+Kapparis:Kapparis
+Pervolia:Pervolia
+Ayia Napa:Ayia Napa
+Pissouri:Pissouri
+Aphrodite Hills:Aphrodite Hills
+Polis:Polis
+Lachi:Lachi
+Troodos:Troodos
+Paralimni:Paralimni

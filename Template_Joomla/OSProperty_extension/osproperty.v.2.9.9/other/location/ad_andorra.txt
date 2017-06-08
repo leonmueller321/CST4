@@ -1,0 +1,7 @@
+Canillo:Canillo,Soldeu,Bordes dEnvalira,El Tarter,Sant Pere,Ransol,Els Plans,El Vilar,LArmiana,LAldosa,El Forn,Prats,Meritxell,Molleres
+Encamp:Encamp,El Tremat,La Mosquera,Les Bons,Vila
+Ordino:Ordino,Segudet,Sornàs,Ansalonga,La Cortinada,Arans,Llorts,El Serrat
+La Massana:Pal,Arinsal,Erts,Sispony,Anyós,LAldosa,La Massana
+Andorra la Vella:El Pujol del Pui,Escàs,Els Plans,El Mas de Ribafeta,El Pui
+Sant Julià de Lòria:Bixessarri,Fontaneda,Auvinyà,Juberri,Nagol,Certers,Aixovall,Aixirivall,Llumeneres
+Escaldes-Engordany:Escaldes,Engordany,Vilars d Engordany,Engolasters,El Ferrer

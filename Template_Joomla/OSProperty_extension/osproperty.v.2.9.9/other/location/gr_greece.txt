@@ -1,0 +1,13 @@
+Ática:Ática
+Grecia Central:Eubea,Euritania,Fócida,Ftiótide,Beocia
+Macedonia Central:Calcídica,Emacia,Kilkís,Pela,Pieria,Serrai,Tesalónica
+Creta:Candía,Lasezión,Rétino
+Macedonia Oriental y Tracia:Drama,Hebros,Cavalla,Ródope,Xanti
+Epiro:Arta,Ioanina,Preveza,Tesprótida
+Islas Jónicas:Corfú,Cefalonia,Leucas,Zante
+Egeo Septentrional:Chíos,Lesbos,Samos
+Peloponeso:Arcadia,Argólida,Corinto,Laconia,Mesenia
+Egeo Meridional:Cícladas,Dodecaneso
+Tesalia:Karditsa,Larisa,Magnesia,Trikala
+Grecia Occidental:Acaya,Etolia,Élide
+Macedonia Occidental:Florina,Grevená,Kastoria,Kozani

@@ -1,0 +1,56 @@
+#offlajn-ajax-search {
+  padding: 5px 0 6px;
+}
+#ajaxvmsearcharea {
+  width: 170px !important;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  height: 34px !important;
+}
+@media (min-width: 320px) and (max-width: 980px) {
+  .os-inner .grid li .property-info .property-icon-square,
+  .os-inner .grid li .property-info .property-icon-parking,
+  .os-inner .grid li .property-info .property-icon-bed,
+  .os-inner .grid li .property-info .property-icon-bath {
+    width: auto;
+  }
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.inputbox {
+  padding: 4px 6px;
+  display: inline-block;
+}
+.t3-wrapper .off-canvas-toggle {
+  border-radius: 0;
+}
+

@@ -1,0 +1,9 @@
+Sucre:
+Santa Cruz de la Sierra:Santa Cruz de la Sierra,Montero,San Julián,Mineros,La Guardia,Warnes,El Torno,San Ignacio,Cotoca,Yapacaní,Pailón,Camiri,San Carlos,Charagua,Cabezas,Portachuelo,Puerto Suárez
+Cochabamba:Arani,Esteban Arce,Arque,Ayopaya,Campero,Capinota,Cercado,Carrasco,Chapare,Germán Jordán,Mizque,Punata,Quillacollo,Tapacarí,Bolívar,Tiraque
+La Paz:Aroma,Bautista Saavedra,Abel Iturralde,Caranavi,Eliodoro Camacho,Franz Tamayo,Gualberto Villaroel,Ingavi,Inquisivi,José Manuel Pando,Larecaja,José Ramón Loayza,Los Andes,Manco Kapac,Muñecas,Nor Yungas,Omasuyos,Pacajes,Pedro Domingo Murillo,Sud Yungas
+Beni:Cercado,Antonio Vaca Díez,General José Ballivián Segurola,Yacuma,Moxos,Marbán,Mamoré,Iténez
+Chuquisaca:Oropeza,Azurduy,Zudañez,Tomina,Hernando Siles,Yamparaez,Nor Cinti,Sur Cinti,Belisario Boeto,Luis Calvo
+Oruro:Atahuallpa,Carangas,Cercado,Eduardo Avaroa,Ladislao Cabrera,Litoral,Puerto de Mejillones,Nor Carangas,Pantaleón Dalence,Poopó,Sajama,San Pedro de Totora,Saucarí,Sebastian Pagador,Sud Carangas,Tomas Barrón
+Pando:Abuná,Federico Román,Madre de Dios,Manuripi,Nicolás Suárez
+Potosí:Alonzo de Ibáñez,Antonio Quijarro,Bernardino Bilbao,Charcas,Chayanta,Cornelio Saavedra,Daniel Campos,Enrique Baldivieso,José María Linares,Modesto Omiste,Nor Chichas,Nor Lípez,Rafael Bustillo,Sud Chichas,Sud Lipez,Tomás Frías

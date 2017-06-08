@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* Techheads Social Media */
+.googleclass {width: 100px; overflow: hidden; margin-top: 8px;}
+.facebooklike {margin-top: 10px;}
+.linkedinshare {margin-top: 10px;}
+.tweetmemeshare {margin-top: 10px;}
+.twittershare {margin-top: 6px;}
+.diggshare {margin-top: 10px;}
+.stumbleuponshare {margin-top: 10px;}
+div.socialcredit {width:100%}
+div.socialcredit a {font-size:10px;}
+.clr {clear:both;}
+

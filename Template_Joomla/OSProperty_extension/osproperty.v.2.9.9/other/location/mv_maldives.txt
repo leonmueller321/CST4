@@ -1,0 +1,8 @@
+Maale:Malé Medhu Uthuru 
+North Central:Haa Alif Atoll, Haa Dhaalu Atoll,Shaviyani Atoll,Kulhudhuffushi,
+Dhidhdhoo Uthuru (North):Noonu Atoll,Raa Atoll,Baa Atoll,Lhaviyani Atoll,Naifaru, Hinnavaru,Dhuvaafaru
+Mathi Uthuru (Upper North):Kaafu Atoll,Alifu Alifu Atoll,Alifu Dhaalu Atoll,Vaavu
+Atoll Medhu (Central):Meemu Atoll,Faafu Atoll,Dhaalu Atoll
+Medhu Dhekunu (South Central):haa Atoll,Laamu Atoll,Gan Mathi
+Dhekunu(Upper South):Gaafu Alifu Atoll,Gaafu Dhaalu Atoll,Thinadhoo
+Dhekunu (South):Gnaviyani Atoll,Addu City,Fuvahmulah

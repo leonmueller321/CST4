@@ -1,0 +1,177 @@
+/*======= BT CONTENT SLIDER ========*/
+.os-cs {
+	position: relative;
+	border: none;
+}
+.slides_container {
+	overflow: hidden;
+	position: relative;
+}
+.os-cs h3 {
+	color: #d67901;
+	line-height: 37px;
+	text-indent: 15px;
+	text-transform: uppercase;
+	background: url(../images/bg-header.png) repeat-x;
+	height: 37px;
+	border: 1px solid #cfcfcf;
+	margin: 0 !important;
+}
+
+/*
+	Handles - Next/prev buttons
+*/
+.os-cs .next,.os-cs .prev {
+	width: 40px;
+	height: 100%;
+	top:0;
+	opacity:0.7;
+}
+.os-cs:hover .next, .os-cs:hover .prev{
+	display:block;
+}
+.os-cs .next:hover, .os-cs .prev:hover{
+	opacity:1;
+}
+.os-cs a.next {
+	background: url(../images/re-right.png) right center no-repeat !important;
+	text-indent: -9999px;
+	position:absolute;
+	z-index:100;
+	margin:0;
+	padding:0;
+	right:0;
+}
+.os-cs a.prev {
+	background: url(../images/re-left.png) left center no-repeat !important;
+	text-indent: -9999px;
+	position:absolute;
+	z-index:999;
+	margin:0;
+	padding:0;
+	left:0;
+}
+
+/*bullet */
+.os-cs .os_handles {
+	border: 1px solid red;
+	position: absolute !important;
+	margin:  0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	z-index:101;
+}
+.os-cs .os_handles li {
+	float: left;
+	margin: 0 1px!important;
+	list-style:none;
+	padding:0px!important;
+	background:none!important;
+}
+.os_handles li a {
+	display: block !important;
+	width: 12px;
+	height: 0;
+	padding-top: 12px;
+	background-image: url(../images/pagination.png);
+	background-position: 0 0;
+	float: left;
+	padding: 12px 0 0 0 !important;
+	overflow: hidden;
+}
+.os_handles li.current a {
+	background-position: 0 -12px;
+}
+
+/*numbering */
+.os-cs .os_handles_num {
+	border: 1px solid red;
+	position: absolute !important;
+	margin:  0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	z-index:101;
+}
+.os-cs .os_handles_num li {
+	float: left;
+	margin: 0 1px!important;
+	list-style:none;
+	padding:0px!important;
+	background:none!important;
+}
+.os_handles_num li a {
+	display: block !important;
+	width:12px;
+	height:15px;
+	line-height:15px;
+	background:grey;
+	float: left;
+	padding:0!important;
+	overflow: hidden;
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	font-size:10px;
+}
+.os_handles_num li a:hover{
+	opacity:0.8;
+}
+.os_handles_num li.current a {
+	background:orange;
+}
+
+/*** CSS STYLE FOR ITEM ****/
+.os-cs .os-row {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+}
+.os-cs .os-inner {
+	position: relative;
+	margin: 0 10px;
+}
+.os-cs .os-inner a {
+	text-decoration: none;
+}
+.os-cs .os-inner img {
+	
+	max-width:99%;
+	margin:5px 0px;
+}
+.os-cs .os-inner .os-title {
+	clear: both;
+	font-weight: bold;
+	text-transform: capitalize;
+	line-height:150%;
+	display:inline-block;
+	
+}
+.os-cs .os-inner .os-category .os-price .os-propertytype .os-address{
+	clear: both;
+	color: #4a4a4a;
+	font-weight: bold;
+	line-height:150%;
+
+}
+.os-cs .os-center{
+	text-align:center;
+}
+.os-cs .os-extra {
+	clear: both;
+	margin-top: 5px;
+}
+.os-cs .os-date,.os-cs .os-author {
+	font-weight: normal;
+	font-size: 80%;
+}
+.os-row-separate {
+	clear: both;
+	height: 1px;
+	border-bottom: 1px dotted #959595;
+	margin: 0px 10px;
+	margin-bottom: 15px;
+}
+.os-item{
+	font-weight:normal;
+}

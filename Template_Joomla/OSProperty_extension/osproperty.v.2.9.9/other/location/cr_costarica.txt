@@ -1,0 +1,7 @@
+Alajuela:Alfaro Ruiz,Atenas,Central Alajuela,Grecia,Guatuso,Los Chiles,Naranjo,Orotina,Palmares,Poás,San Carlos,San Mateo,San Ramón,Upala,Valverde Vega
+Cartago:Alvarado,Cartago,El Guarco,Jiménez,La Unión,Oreamuno,Paraíso,Turrialba
+Guanacaste:Abangares,Bagaces,Cañas,Carrillo,Hojancha,La Cruz,Liberia,Nandayure,Nicoya,Santa Cruz,Tilarán
+Heredia:Barba,Belen,Central Heredia,Flores,San Isidro,San Pablo,Santa Barbara,Santo Domingo,Saraqpiquí
+Limón:Central Limón,Guácimo,Matina,Pococí,Siquirres,Talamanca
+Puntarenas:Aguirre,Buenos Aires,Central Puntarenas,Corredores,Coto Brus,Esparza,Garabito,Golfito,Montes de Oro,Osa,Parrita,Puntarenas
+San José:Acosta,Alajuelita,Aserrí,Central San José,Curridabat,Desamparados,Dota,Escazú,Goicoechea,León Cortés,Montes de Oca,Mora,Moravia,Pérez Zeledón,Puriscal,San Jose,Santa Ana,Tarrazú,Tibás,Turrúbares,Vázquez de Coronado
