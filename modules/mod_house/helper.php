@@ -47,7 +47,7 @@
 			$db= JFactory::getDbo();
 			$query = $db->getQuery(true);
 			$query->select(array('houseid','name', 'description'));
-			$query->from($db->quoteName('houses'));
+			$query->from($db->quoteName('houses_old'));
 			
 			$db->setQuery($query);
 			
@@ -115,7 +115,7 @@
 			// Get the chosen house
 			$query = $db->getQuery(true);
 			$query->select(array('houseid','name', 'description'));
-			$query->from($db->quoteName('houses'));
+			$query->from($db->quoteName('houses_old'));
 			$query->where($db->quoteName('houseid')." = ".$db->quote($houseid));
 			
 			$db->setQuery($query);

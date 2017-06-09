@@ -6,13 +6,14 @@
     <version>0.0.1</version>
     <description>House Configuration</description> 
     <files>
-        <filename>mod_housepackage.xml</filename>
-        <filename module="mod_housepackage">mod_housepackage.php</filename>
+        <filename>mod_houseconfiguration.xml</filename>
+        <filename module="mod_houseconfiguration">mod_houseconfiguration.php</filename>
         <filename>index.html</filename>
         <filename>helper.php</filename>
         <filename>tmpl/default.php</filename>
-        <filename>tmpl/houesepackage.php</filename>
+        <filename>tmpl/form_success.php</filename>
         <filename>tmpl/index.html</filename>
+		<filename>model/housepackage.class.php</filename>
 
     </files>
 </extension>

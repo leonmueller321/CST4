@@ -4,6 +4,21 @@ var houseconfig = {
 	
 }
 
+function showComponents(id){
+	jQuery.ajax({
+		type: "POST",
+		data: "levelid=" + id,
+		url: "?option=com_ajax&module=house&method=getComponentsMethod",
+			success: function(result){	
+				//alert("json from php: "+result);
+				jQuery.each(result, function(key, val){
+					if(key == 'data')
+					alert("json from php: " + val);
+				})		
+			}
+	});
+}
+
 jQuery(document).ready(function () {
 	jQuery('.btn-primary').click(function(){
 		var $gesamtpreis= 0;
