@@ -6,31 +6,31 @@
 	
 	
 	class modHouseHelper{		
-			public static function superAwesomeMethodAjax(){
-				include_once JPATH_ROOT . '/components/com_content/helpers/route.php';
-				
-				//get data from ajax post
-				$data = $_REQUEST['json'];
-				
-				//decode json string
-				$houseconfig = json_decode($data);
-				
-				//Get Current User
-				$user = JFactory::getUser();
-	
-				//connect to db
-				$db = JFactory::getDbo();
-				$query = $db->getQuery(true);
-				
-				//insert houseconfiguration from user 
-				/*
-				$query
-					->select($db->quoteName(array('','','')))
-					->from($db->quoteName()
-				*/
-				
-				return "houseid= ".$houseconfig->houseid." userid= ".$user->id;
-			}
+            public static function superAwesomeMethodAjax(){
+                    include_once JPATH_ROOT . '/components/com_content/helpers/route.php';
+
+                    //get data from ajax post
+                    $data = $_REQUEST['json'];
+
+                    //decode json string
+                    $houseconfig = json_decode($data);
+
+                    //Get Current User
+                    $user = JFactory::getUser();
+
+                    //connect to db
+                    $db = JFactory::getDbo();
+                    $query = $db->getQuery(true);
+
+                    //insert houseconfiguration from user 
+                    /*
+                    $query
+                            ->select($db->quoteName(array('','','')))
+                            ->from($db->quoteName()
+                    */
+
+                    return "houseid= ".$houseconfig->houseid." userid= ".$user->id;
+            }
 	}
 	
 	

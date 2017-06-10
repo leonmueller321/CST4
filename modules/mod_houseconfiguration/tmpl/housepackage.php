@@ -3,6 +3,7 @@
 	//JQUERY
 	$doc = JFactory::getDocument();
 	JHtml::_('jquery.framework');	
+        
 	
 	// get parameter from chosen package
 	$houseid = $_GET['choosePackage'];
@@ -10,10 +11,11 @@
 	$img =  JURI::root().'images/houses/';
 	
 	$db = new Database();
-	$item = $db->getHousepackage($_GET['choosePackage']);
-	//$allElements = $db->getAllElements();	
+	$item = $db->getHousepackage($_GET['choosePackage']);	
 	$levels = $db->getLevels($houseid);
-	
+        $components = $db->getComponents();
+        $buildModules = $db->getAllBuildModules();
+        
 	
 	echo "<h3>Hauskonfiguration</h3>";
 	echo "<div class='row'>";
@@ -33,37 +35,39 @@
 	$houseid = $row->houseid;
 
 	
-	//Element Thumbnail
+	//Component Thumbnail
 	echo "<div class='col-sm-4 col-md-4'>";
-		echo "<div class='thumbnail'>";
-			echo "<div class='caption'>";
-			echo "<h4>Hauskomponenten</h4>";
-			echo "<div class='dropdown'>
-					<button class='btn btn-primary dropdown-toggle' type='button' id='dropdownMenu2' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-						Etagen
-						<span class='caret'></span>
-					  </button>
-					  <ul class='dropdown-menu' aria-labelledby='dropdownMenu2'>";
-			foreach($levels as $level){
-						echo "<li class='levels' id='$level->id' ><a onclick='showComponents($level->id);'>$level->name</a></li>";
-			}
-			echo "</ul></div>";
-			
-			
-			/*
-			foreach($allElements as $element){
-					echo "<tr id='$element->elementid' class='nr'><td>";
-					echo $element->name;
-					echo "</td><td>";
-					echo $element->preis."€";
-					echo "</td><td>";
-					//onclick arraypush element
-					echo "<button type='button' name='addElement' id='$element->elementid' class='btn btn-primary'>Add</button>";
-					echo "</td></tr>";
-			}
-			*/
-			echo "</table>";
-			echo "</div></div></div>";
+            echo "<div class='thumbnail'>";
+                echo "<div class='caption'>";
+                
+                echo "<h4 style='float:left; margin-right:50px;'>Hauskomponenten</h4>";
+                echo "<div class='dropdown'>
+                    <button class='btn btn-primary dropdown-toggle' type='button' id='dropdownMenu2' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Etagen<span class='caret'></span>
+                    </button>
+                    <ul class='dropdown-menu' aria-labelledby='dropdownMenu2'>";
+                    foreach($levels as $level){
+                        echo "<li class='levels' id='$level->id' ><a onclick='showComponents($level->id);'>$level->name</a></li>";
+                    }
+                    echo "</ul></div>";
+                    //Level Components
+                    echo "<table class='table'>";
+                        foreach($buildModules as $m){
+                            echo "<tr><th class='thComponents'>".$m->name."</th><th class='thComponents'></th></tr>";
+                            foreach($components as $c){
+                                if($c->build_module_id == $m->id){
+                                    echo "<tr><td>";
+                                    //echo $c->id;
+                                    //echo "</td><td>";
+                                    echo $c->name;
+                                    echo "</td><td>";
+                                    echo "<button type='button' name='addElement' class='btn btn-primary'>Add</button>";
+                                    echo "</td></tr>";
+                                } 
+                            }
+                        }
+                    echo "</table>";
+	echo "</div></div></div>";
 	
 		echo "<div id='elementlist' class='col-sm-4 col-md-4'>";
 		echo "<div class='thumbnail' id='elementlist_".$houseid."'>";

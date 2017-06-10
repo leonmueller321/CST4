@@ -1,23 +1,47 @@
 <?php
 
 defined('_JEXEC') or die;
-	
+	//SOME TEST
 	include('model/housepackage.class.php');
 	include('model/level.class.php');
+        include('model/component.class.php');
+        include('model/build_modules.class.php');
 	
 	class modHouseconfigurationHelper{		
-			public static function getComponentsMethodAjax(){
-				include_once JPATH_ROOT . '/components/com_content/helpers/route.php';
-				
-				//get data from ajax post
-				$data = $_REQUEST['levelid'];
-				
-				//decode json string
-				$levelid = json_decode($data);
+            public static function getComponentsMethodAjax(){
+                    include_once JPATH_ROOT . '/components/com_content/helpers/route.php';
+                    //get data from ajax post
+                    $data = $_REQUEST['levelid'];
+                    //decode json string
+                    $levelid = json_decode($data);
+                    
+                    //get all components
+                    $db = JFactory::getDbo();
+                    $query = $db->getQuery(true);
+                    
 
-				
-				return "levelid = " + $levelid;
-			}
+
+                    return "levelid = " + $levelid;
+            }
+            
+            public static function superAwesomeMethodAjax(){
+                    include_once JPATH_ROOT . '/components/com_content/helpers/route.php';
+
+                    //get data from ajax post
+                    $data = $_REQUEST['json'];
+
+                    //decode json string
+                    $houseconfig = json_decode($data);
+
+                    //Get Current User
+                    $user = JFactory::getUser();
+
+                    //connect to db
+                    $db = JFactory::getDbo();
+                    $query = $db->getQuery(true);
+
+                    return "some response!";
+            }
 	}
 	
 	class Database{
@@ -25,7 +49,9 @@ defined('_JEXEC') or die;
 		private $db;
 		private $housepackageArray = array();
 		private $elementArray = array();
-        private $levelsArray = array();
+                private $levelsArray = array();
+                private $componentsArray = array();
+                private $buildArray = array();
 		
 		//get all housepackages as array of objects
 		function getAllHousepackages(){
@@ -40,13 +66,13 @@ defined('_JEXEC') or die;
 			$result = $db->loadAssocList();
 			
 			foreach($result as $item){
-				$h = new Housepackage(
-						$item['id'],
-						$item['name'],
-						$item['description'],
-                        $item['area'],
-                        $item['floors'],
-                        $item['img_path']
+                            $h = new Housepackage(
+                                $item['id'],
+                                $item['name'],
+                                $item['description'],
+                                $item['area'],
+                                $item['floors'],
+                                $item['img_path']
 				);
                                
 				array_push($this->housepackageArray, $h);
@@ -103,14 +129,60 @@ defined('_JEXEC') or die;
 						$item['id'],
 						$item['name'],
 						$item['area'],
-                        $item['sketch'],
-                        $item['height']
+                                                $item['sketch'],
+                                                $item['height']
 				);
                                
 				array_push($this->levelsArray, $l);	
 			}
 			return $this->levelsArray;
 		}
+                
+                function getComponents(){
+                    $db = JFactory::getDbo();
+                    
+			$query = $db->getQuery(true);
+                        $query->select(array('id', 'name', 'price_id', 'build_module_id'))
+                                ->from('components');
+                        
+                        /*
+                        $query->select(array('a.id', 'a.name', 'a.price_id', 'a.build_module_id', 'b.build_id', 'b.build_name'))
+                                ->from('components AS a')->join('INNER','build_modules as b ON a.build_module_id = b.build_id')
+                                ->where('a.build_module_id = b.build_id');
+                        */
+                        $db->setQuery($query);
+			$result = $db->loadAssocList();
+                        
+                        foreach($result as $row){
+                            $c = new Component(
+                                    $row['id'],
+                                    $row['name'], 
+                                    $row['price_id'],
+                                    $row['build_module_id']
+                                    );
+                            array_push($this->componentsArray, $c);
+                        }
+                     return $this->componentsArray;
+                }
+                
+                function getAllBuildModules(){
+                    $db = JFactory::getDbo();
+                    $query = $db->getQuery(true);
+                    $query->select(array('id', 'name'))
+                          ->from('build_modules');
+                    $db->setQuery($query);
+                    $result = $db->loadAssocList();
+                    
+                    foreach($result as $row){
+                        $b = new Build_module(
+                                $row['id'],
+                                $row['name']
+                                );
+                        array_push($this->buildArray, $b);
+                    }
+                    
+                    return $this->buildArray;
+                }
 		
 	}
 		
