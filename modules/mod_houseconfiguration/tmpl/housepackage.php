@@ -4,7 +4,11 @@
 	$doc = JFactory::getDocument();
 	JHtml::_('jquery.framework');	
         
-	
+	$url = Juri::base() . 'templates/osprealestate/css/toast.css';
+        $url2 = Juri::base() . 'templates/osprealestate/css/liststyle.css';
+	$doc->addStyleSheet($url);
+        $doc->addStyleSheet($url2);
+        
 	// get parameter from chosen package
 	$houseid = $_GET['choosePackage'];
 	//get root image path
@@ -22,51 +26,52 @@
 	
 	//first div for chosen housepackage
 	//echo the house information
-	echo "<div id='housediv' class='col-sm-6 col-md-4'>";
-		echo "<div class='thumbnail'> <img style='width:100%; height:180px;' src='$img";
-		echo "$item->img_path' alt=''><div class='caption'>";
-		echo "<h3 >$item->name</h3>";
-		echo "<p>$item->description</p>";
-		echo "<h5>Details:</h5>";
-		echo "<p>Grundfläche: $item->area m²</p>";
-		echo "<p>Etagen: $item->floors</p>";
-	echo "</div></div></div>";
-	
-	$houseid = $row->houseid;
 
-	
+	echo "<div class='row'>";
+                echo "<div id='image' class='col-sm-6 col-md-4'>";
+                    echo "<img style='width:100%; height:200px;' src='$img";
+                    echo "$item->img_path' alt=''>";
+                echo "</div>";
+                echo "<div id='details' class='col-sm-6 col-md-4'>";
+                    echo "<h3 >$item->name</h3>";
+                    echo "<p>$item->description</p>";
+                    echo "<h5>Details:</h5>";
+                    echo "<p>Grundfläche: $item->area m²</p>";
+                    echo "<p>Etagen: $item->floors</p>";
+                echo "</div>";
+        echo "</div>";
+        echo "</br>";
+
+        
+        echo "<div class='row'>";
 	//Component Thumbnail
-	echo "<div class='col-sm-4 col-md-4'>";
+	echo "<div class='col-sm-4 col-md-6'>";
             echo "<div class='thumbnail'>";
                 echo "<div class='caption'>";
-                
-                echo "<h4 style='float:left; margin-right:50px;'>Hauskomponenten</h4>";
-                echo "<div class='dropdown'>
-                    <button class='btn btn-primary dropdown-toggle' type='button' id='dropdownMenu2' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                            Etagen<span class='caret'></span>
-                    </button>
-                    <ul class='dropdown-menu' aria-labelledby='dropdownMenu2'>";
+                    echo "<h4 style='float:left; margin-right:50px;'>Hauskomponenten</h4>";
                     foreach($levels as $level){
-                        echo "<li class='levels' id='$level->id' ><a onclick='showComponents($level->id);'>$level->name</a></li>";
-                    }
-                    echo "</ul></div>";
-                    //Level Components
-                    echo "<table class='table'>";
-                        foreach($buildModules as $m){
-                            echo "<tr><th class='thComponents'>".$m->name."</th><th class='thComponents'></th></tr>";
+                        echo "<button class='button button2'>$level->name</button>";
+                    };
+                    
+                    foreach($buildModules as $b){
+                        echo"<ul style='clear:both; margin-top:10px;' class='list list--material'>
+                            <li style='font-size: 18px; background-color: #20b2aa; color: white;' class='list__header'>$b->name</li>";
                             foreach($components as $c){
-                                if($c->build_module_id == $m->id){
-                                    echo "<tr><td>";
-                                    //echo $c->id;
-                                    //echo "</td><td>";
-                                    echo $c->name;
-                                    echo "</td><td>";
-                                    echo "<button type='button' name='addElement' class='btn btn-primary'>Add</button>";
-                                    echo "</td></tr>";
-                                } 
+                                 if($c->build_module_id == $b->id){
+                                     echo "<li class='list__item list__item--material'>
+                                            <div class='list__item__left list__item--material__left'>
+                                              <div class='list__item__title list__item--material__title'>$c->name</div>
+                                            </div>
+
+                                            <div class='list__item__right list__item--material__right'>
+                                              <button class='fab fab--mini'><i class='glyphicon glyphicon-plus'></i></button>
+                                            </div>
+                                          </li>";
+                                 }
                             }
-                        }
-                    echo "</table>";
+                        echo "</ul>";
+                    };
+
 	echo "</div></div></div>";
 	
 		echo "<div id='elementlist' class='col-sm-4 col-md-4'>";
@@ -97,6 +102,7 @@
 				</div>
 			</div>
 		</div>
+                        </div>
 	</div><!-- end of row div -->
 
 	<div class="row">
@@ -107,3 +113,4 @@
 	</div>
 	
 	<div id="toast">Hauskonfiguration erfolgreich gespeichert.</div>
+

@@ -5,10 +5,11 @@ defined('_JEXEC') or die;
 
 	class Database{
 		
-		private $db;
-		
-	
-    }
+            private $db;
+            
+            //put db functions here
+             
+        }
     
  ?>
 

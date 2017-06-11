@@ -117,7 +117,7 @@ defined('_JEXEC') or die;
 			 
 			
 			$query = $db->getQuery(true);
-			$query->select(array('id','name', 'area', 'sketch', 'height'));
+			$query->select(array('id','name', 'area', 'sketch', 'height', 'house_package_id'));
 			$query->from($db->quoteName('levels'));
 			$query->where($db->quoteName('house_package_id')." = ".$db->quote($houseid));
 			$db->setQuery($query);
@@ -130,7 +130,8 @@ defined('_JEXEC') or die;
 						$item['name'],
 						$item['area'],
                                                 $item['sketch'],
-                                                $item['height']
+                                                $item['height'],
+                                                $item['house_package_id']
 				);
                                
 				array_push($this->levelsArray, $l);	

@@ -18,6 +18,7 @@ defined('_JEXEC') or die;
 $doc = JFactory::getDocument(); // chances are this line is already in the file - don't add it twice
 $doc->addScript('templates/' . $this->template . '/js/main.js');
 $doc->addStyleSheet('templates/' . $this->template . '/css/toast.css');
+$doc->addStyleSheet('templates/' . $this->template . '/css/liststyle.css');
 
 //check if t3 plugin is existed
 if (!defined('T3')) {
