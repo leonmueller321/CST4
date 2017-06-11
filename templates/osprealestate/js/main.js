@@ -4,6 +4,8 @@ var houseconfig = {
 	
 }
 
+var levelid;
+
 function showComponents(id){
 	jQuery.ajax({
 		type: "POST",
@@ -21,6 +23,16 @@ function showComponents(id){
 
 function test(){
 	alert("hallo");
+}
+
+function selectLevel(elem){
+    jQuery(elem).css("background-color","#999900");
+    jQuery(elem).closest('.thumbnail').find('.btn-primary').removeAttr('disabled');
+    /*
+    var $levelname = jQuery(elem).text();
+    jQuery('#elementorder').append('<tr><th>' + $levelname + '</th><th></th></tr>');
+    jQuery(elem).closest('.thumbnail').find('.btn-primary').removeAttr('disabled');
+    */
 }
 
 jQuery(document).ready(function () {

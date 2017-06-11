@@ -1,8 +1,9 @@
 <?php
-	
 	//JQUERY
 	$doc = JFactory::getDocument();
 	JHtml::_('jquery.framework');	
+
+        include('model/comp_price.class.php');
         
 	$url = Juri::base() . 'templates/osprealestate/css/toast.css';
         $url2 = Juri::base() . 'templates/osprealestate/css/liststyle.css';
@@ -19,7 +20,25 @@
 	$levels = $db->getLevels($houseid);
         $components = $db->getComponents();
         $buildModules = $db->getAllBuildModules();
+        $prices = $db->getAllPrices();
+        $comp_prices = array();
         
+        //create component array with prices
+        foreach ($prices as $p) {
+            foreach($components as $c){
+                if($p->id == $c->price_id){
+                    $cp = new CompPrice(
+                         $c->id,
+                         $c->name,
+                         $p->price,
+                         $p->id,
+                         $c->build_module_id
+                     );
+                    array_push($comp_prices, $cp);
+                }
+            }
+        }
+     
 	
 	echo "<h3>Hauskonfiguration</h3>";
 	echo "<div class='row'>";
@@ -50,60 +69,62 @@
                 echo "<div class='caption'>";
                     echo "<h4 style='float:left; margin-right:50px;'>Hauskomponenten</h4>";
                     foreach($levels as $level){
-                        echo "<button class='button button2'>$level->name</button>";
+                        echo "<button class='button button2' onclick='selectLevel(this);' id='level_$level->id'>$level->name</button>";
                     };
                     
+                    echo "<table class='table' id='component_table'>"; 
                     foreach($buildModules as $b){
-                        echo"<ul style='clear:both; margin-top:10px;' class='list list--material'>
-                            <li style='font-size: 18px; background-color: #20b2aa; color: white;' class='list__header'>$b->name</li>";
-                            foreach($components as $c){
-                                 if($c->build_module_id == $b->id){
-                                     echo "<li class='list__item list__item--material'>
-                                            <div class='list__item__left list__item--material__left'>
-                                              <div class='list__item__title list__item--material__title'>$c->name</div>
-                                            </div>
-
-                                            <div class='list__item__right list__item--material__right'>
-                                              <button class='fab fab--mini'><i class='glyphicon glyphicon-plus'></i></button>
-                                            </div>
-                                          </li>";
-                                 }
+                        echo "<tr id='baugruppe_$b->id' style='background-color: #20b2aa; color: white;'>";
+			echo "<th>$b->name</th><th></th><th></th></tr>";
+                            foreach($comp_prices as $c){     
+                                if($c->build_module_id == $b->id){
+                                    echo "<tr id='komponenten_$c->id' class='nr'><td>";
+                                    echo $c->name;
+                                    echo "</td><td>";
+                                    echo $c->preis . "€";
+                                    echo "</td><td>";
+                                    //onclick arraypush element
+                                    echo "<button disabled='disabled' class='btn btn-primary' style='border-radius: 50%; background-color:  #1f7a7a; box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.4);'"
+                                    . "><i class='glyphicon glyphicon-plus' id='$c->id'></button>";
+                                    echo "</td></tr>";
+                                }
                             }
-                        echo "</ul>";
-                    };
+                    }
+                echo "</table>";
+                 
 
 	echo "</div></div></div>";
 	
 		echo "<div id='elementlist' class='col-sm-4 col-md-4'>";
 		echo "<div class='thumbnail' id='elementlist_".$houseid."'>";
 ?>
-				<div class='caption'>
-				<h4>Gewählte Komponenten</h4>
-					<table class='table table-hover' id='elementorder'>
-						<tr><th>Name</th><th>Preis</th><th></th></tr>
-						<!-- Elements loaded via JS -->
-					</table>			
-				<div id='ordergesamt' class='alert alert-success' role='alert'>Gesamt: </div>
-					<div class="btn-group btn-group-justified" role="group" aria-label="...">
-				  
-					  <div class="btn-group" role="group">
-						<button type="button" onclick='emptyList();' class="btn btn-danger">Delete All</button>
-					  </div>
-					  <div class="btn-group" role="group">
-						<button type="button" onclick='saveList(this);' class="btn btn-success">Save</button>
-					  </div>
-					</div>
-					</br>
-					<div class="alert alert-danger" role="alert">
-						Sie müssen sich
-					  <a href="#" class="alert-link">einloggen</a>
-						um Ihre Hauskonfiguration zu speichern.
-					</div>
-				</div>
-			</div>
-		</div>
-                        </div>
-	</div><!-- end of row div -->
+                <div class='caption'>
+                <h4>Gewählte Komponenten</h4>
+                        <table class='table table-hover' id='elementorder'>
+
+                                <!-- Elements loaded via JS -->
+                        </table>			
+                <div id='ordergesamt' class='alert alert-success' role='alert'>Gesamt: </div>
+                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+
+                      <div class="btn-group" role="group">
+                            <button type="button" onclick='emptyList();' class="btn btn-danger">Delete All</button>
+                      </div>
+                      <div class="btn-group" role="group">
+                            <button type="button" onclick='saveList(this);' class="btn btn-success">Save</button>
+                      </div>
+                    </div>
+                    </br>
+                    <div class="alert alert-danger" role="alert">
+                            Sie müssen sich
+                      <a href="#" class="alert-link">einloggen</a>
+                            um Ihre Hauskonfiguration zu speichern.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end of row div -->
 
 	<div class="row">
 		<div class='col-sm-4 col-md-4' id="testdiv">

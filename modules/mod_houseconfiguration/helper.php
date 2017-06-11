@@ -6,6 +6,7 @@ defined('_JEXEC') or die;
 	include('model/level.class.php');
         include('model/component.class.php');
         include('model/build_modules.class.php');
+        include('model/prices.class.php');
 	
 	class modHouseconfigurationHelper{		
             public static function getComponentsMethodAjax(){
@@ -52,6 +53,28 @@ defined('_JEXEC') or die;
                 private $levelsArray = array();
                 private $componentsArray = array();
                 private $buildArray = array();
+                private $pricesArray = array();
+                
+                function getAllPrices(){
+                    $db= JFactory::getDbo();
+			$query = $db->getQuery(true);
+                        
+			$query->select(array('id','price'));
+			$query->from($db->quoteName('prices'));
+			$db->setQuery($query);
+			
+			$result = $db->loadAssocList();
+			
+			foreach($result as $item){
+                            $p = new Price(
+                                $item['id'],
+                                $item['price']
+				);
+                               
+				array_push($this->pricesArray, $p);
+			}
+			return $this->pricesArray;
+                }
 		
 		//get all housepackages as array of objects
 		function getAllHousepackages(){
@@ -114,13 +137,16 @@ defined('_JEXEC') or die;
 		function getLevels($houseid){
 			// Get a db connection.
 			$db = JFactory::getDbo();
-			 
-			
+			 		
 			$query = $db->getQuery(true);
-			$query->select(array('id','name', 'area', 'sketch', 'height', 'house_package_id'));
-			$query->from($db->quoteName('levels'));
-			$query->where($db->quoteName('house_package_id')." = ".$db->quote($houseid));
-			$db->setQuery($query);
+                        $sql="
+                            SELECT `c`.`id`, `c`.`name`, `c`.`area`, `c`.`sketch`, `c`.`height`, `a`.`id` as `house_package_id`
+                            FROM `house_packages`as `a`
+                            JOIN `house_package_levels` AS `b` on `a`.`id` = `b`.`house_package_id`
+                            JOIN `levels` AS `c` on `b`.`level_id` = `c`.`id`
+                            where `a`.`id` =".$houseid;
+                       
+                        $db->setQuery($sql);
 			
 			$result = $db->loadAssocList();
 			
