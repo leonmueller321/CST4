@@ -7,8 +7,10 @@
         
 	$url = Juri::base() . 'templates/osprealestate/css/toast.css';
         $url2 = Juri::base() . 'templates/osprealestate/css/liststyle.css';
+	$js = Juri::base() . 'templates/osprealestate/js/main.js';
 	$doc->addStyleSheet($url);
         $doc->addStyleSheet($url2);
+	$doc->addScript($js);
         
 	// get parameter from chosen package
 	$houseid = $_GET['choosePackage'];
