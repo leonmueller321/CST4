@@ -103,7 +103,11 @@
                 <div class='caption'>
                 <h4>Gewählte Komponenten</h4>
                         <table class='table table-hover' id='elementorder'>
-
+                            <?php
+                            foreach($levels as $level){
+                                echo "<tr class='level_$level->id'><th>$level->name</th><th>Preis</th><th></th></tr>";
+                            }
+                            ?>
                                 <!-- Elements loaded via JS -->
                         </table>			
                 <div id='ordergesamt' class='alert alert-success' role='alert'>Gesamt: </div>

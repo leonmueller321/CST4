@@ -26,32 +26,43 @@ function test(){
 }
 
 function selectLevel(elem){
+    //set all buttons to green
+    jQuery(elem).closest('.caption').find('.button2').css("background-color", "#1f7a7a");
+    //set this button to yellow
     jQuery(elem).css("background-color","#999900");
+    //enable buttons for list
     jQuery(elem).closest('.thumbnail').find('.btn-primary').removeAttr('disabled');
-    /*
-    var $levelname = jQuery(elem).text();
-    jQuery('#elementorder').append('<tr><th>' + $levelname + '</th><th></th></tr>');
-    jQuery(elem).closest('.thumbnail').find('.btn-primary').removeAttr('disabled');
-    */
+    //get levelid for append
+    levelid = jQuery(elem).attr('id');
 }
 
 jQuery(document).ready(function () {
 	jQuery('.btn-primary').click(function(){
 		var $gesamtpreis= 0;
 		jQuery(this).closest('tr').each(function(){
+                        var target = jQuery(this).find('td:nth-child(1)').text();
+                        var occ = 1;                  
+                        jQuery.each(list, function (k, v){
+                            if(v.elementname === target){
+                                occ ++;
+                            }
+                        });
 			var $element = {
 				elementid: jQuery(this).attr('id'),
 				elementname: jQuery(this).find('td:nth-child(1)').text(),
-				elementpreis: jQuery(this).find('td:nth-child(2)').text()
+				elementpreis: jQuery(this).find('td:nth-child(2)').text(),
+                                levelid: levelid
 			}
 			list.push($element);
-			jQuery('#elementorder').text("");
+			jQuery('.listcomponents').text("");
 		});	
 		//Get new List content and Gesamtpreis
 		jQuery.each(list, function(key, val){
 			$gesamtpreis += parseInt(val.elementpreis);
 			jQuery('#ordergesamt').text("Gesamt: "+ $gesamtpreis);
-			jQuery('#elementorder').append('<tr id='+ key +'><td>' + val.elementname+ '</td><td>' + val.elementpreis + '</td><td><button onclick="removeRow(this);" class="btn btn-danger" >X</button></td></tr>');
+                        //get levelid of current component
+                        levelid = val.levelid;
+                        jQuery('.'+levelid).after('<tr class="listcomponents" id='+ key +'><td>' + val.elementname+ '</td><td>' + val.elementpreis + '</td><td><button onclick="removeRow(this);" class="btn btn-danger" >X</button></td></tr>');
 		});
 	});
 });
@@ -59,7 +70,7 @@ jQuery(document).ready(function () {
 function emptyList(){
 	list.length = 0 ;
 	jQuery('#ordergesamt').text("Gesamt: 0");
-	jQuery('#elementorder').text("");
+	jQuery('.listcomponents').text("");
 }
 
 function removeRow(elem){
@@ -70,13 +81,18 @@ function removeRow(elem){
 	//remove row
 	list.splice(trid, 1);
 	//empty div
-	jQuery('#elementorder').text("");
+	jQuery('.listcomponents').text("");
 	//refill div with list elements
 	jQuery.each(list, function(key, val){
 		$gesamtpreis += parseInt(val.elementpreis);
-		jQuery('#ordergesamt').text("Gesamt: "+ $gesamtpreis);
-		jQuery('#elementorder').append('<tr id='+ key +'><td>' + val.elementname+ '</td><td>' + val.elementpreis + '</td><td><button onclick="removeRow(this);" class="btn btn-danger" >X</button></td></tr>');
+			jQuery('#ordergesamt').text("Gesamt: "+ $gesamtpreis);
+                        //get levelid of current component
+                        levelid = val.levelid;
+                        jQuery('.'+levelid).after('<tr class="listcomponents" id='+ key +'><td>' + val.elementname+ '</td><td>' + val.elementpreis + '</td><td><button onclick="removeRow(this);" class="btn btn-danger" >X</button></td></tr>');
 	});
+        if(jQuery(list).size() === 0){
+          jQuery('#ordergesamt').text("Gesamt: "+ $gesamtpreis);  
+        }
 }
 
 
