@@ -6,8 +6,6 @@ defined('_JEXEC') or die;
 	$houseArray = $db->getAllHousepackages();
 	//get root image path
 	$img =  JURI::root().'images/houses/';
-	
-	var_dump($img);
 	//Get Current User
     //$user = JFactory::getUser();
     //echo "<p>Hello {$user->name}, your email is {$user->email} ID is {$user->id}</p>";

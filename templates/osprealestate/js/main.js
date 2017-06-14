@@ -27,11 +27,11 @@ function test(){
 
 function selectLevel(elem){
     //set all buttons to green
-    jQuery(elem).closest('.caption').find('.button2').css("background-color", "#1f7a7a");
+    jQuery(elem).closest('.row').find('.button2').css("background-color", "#1f7a7a");
     //set this button to yellow
     jQuery(elem).css("background-color","#999900");
     //enable buttons for list
-    jQuery(elem).closest('.thumbnail').find('.btn-primary').removeAttr('disabled');
+    jQuery(elem).closest('#site').find('.btn-primary').removeAttr('disabled');
     //get levelid for append
     levelid = jQuery(elem).attr('id');
 }

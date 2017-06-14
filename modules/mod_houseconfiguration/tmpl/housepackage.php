@@ -25,6 +25,16 @@
         $prices = $db->getAllPrices();
         $comp_prices = array();
         
+        $compWithArea = $db->getComponentsWithArea();
+        
+        //var_dump($compWithArea);
+        //array to get build modules from componentsWithArea
+        $tmpBuild = array();
+        foreach($compWithArea as $c){
+            array_push($tmpBuild, $c->build_modules_name);     
+        }
+        $buildModulesArea = array_unique($tmpBuild);
+        
         //create component array with prices
         foreach ($prices as $p) {
             foreach($components as $c){
@@ -43,7 +53,7 @@
      
 	
 	echo "<h3>Hauskonfiguration</h3>";
-	echo "<div class='row'>";
+	echo "<div class='row' id='site'>";
 	
 	//first div for chosen housepackage
 	//echo the house information
@@ -62,22 +72,34 @@
                 echo "</div>";
         echo "</div>";
         echo "</br>";
-
         
         echo "<div class='row'>";
-	//Component Thumbnail
-	echo "<div class='col-sm-4 col-md-6'>";
-            echo "<div class='thumbnail'>";
+            echo "<div id='image' class='col-sm-6 col-md-4'>";
+                echo "<h4>Bitte wählen Sie eine Etage aus:</h4>";
+                foreach($levels as $level){
+                        echo "<button class='button button2' onclick='selectLevel(this);' id='level_$level->id'>$level->name</button>";
+                }; 
+            echo "</div>";
+        echo "</div>";
+        echo "</br>";
+        
+        echo "<div class='row'>";
+	//Components per Piece Thumbnail
+	echo "<div class='col-sm-4 col-md-4'>";
+            echo "<div class='thumbnail' id='compPerPiece'>";
                 echo "<div class='caption'>";
-                    echo "<h4 style='float:left; margin-right:50px;'>Hauskomponenten</h4>";
+                    echo "<h4 margin-right:50px;'>Stückkomponenten</h4>";
+                    /*
                     foreach($levels as $level){
                         echo "<button class='button button2' onclick='selectLevel(this);' id='level_$level->id'>$level->name</button>";
                     };
+                     * 
+                     */
                     
                     echo "<table class='table' id='component_table'>"; 
                     foreach($buildModules as $b){
                         echo "<tr id='baugruppe_$b->id' style='background-color: #20b2aa; color: white;'>";
-			echo "<th>$b->name</th><th></th><th></th></tr>";
+			echo "<th>$b->name</th><th>Preis</th><th></th></tr>";
                             foreach($comp_prices as $c){     
                                 if($c->build_module_id == $b->id){
                                     echo "<tr id='komponenten_$c->id' class='nr'><td>";
@@ -92,6 +114,43 @@
                                 }
                             }
                     }
+                echo "</table>";
+                 
+
+	echo "</div></div></div>";
+        
+    //Start of Components with area Div
+        echo "<div class='col-sm-4 col-md-4'>";
+            echo "<div class='thumbnail' id='compWithArea'>";
+                echo "<div class='caption'>";
+                    echo "<h4 margin-right:50px;'>Flächenkomponenten</h4>";
+                    /*
+                    foreach($levels as $level){
+                        echo "<button class='button button2' onclick='selectLevel(this);' id='level_$level->id'>$level->name</button>";
+                    };  
+                     * */
+                             
+                    echo "<table class='table' id='component_table'>"; 
+                    foreach($buildModulesArea as $b){
+                        echo "<tr id='baugruppe_$b' style='background-color: #20b2aa; color: white;'>";
+                        echo "<th>$b</th><th>m²</th><th>Preis/m²</th><th></th></tr>";
+                        foreach($compWithArea as $c){
+                            if($c->build_modules_name == $b){
+                                 echo "<tr id='komponenten_$c->id' class='nr'><td>";
+                                    echo $c->name;
+                                    echo "</td><td>";
+                                    //echo $c->area;
+                                    echo "<input type='number' name='area' min='1' max='500'>";
+                                    echo "</td><td>";
+                                    echo $c->price . "€";
+                                    echo "</td><td>";
+                                    //onclick arraypush element
+                                    echo "<button disabled='disabled' class='btn btn-primary' style='border-radius: 50%; background-color:  #1f7a7a; box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.4);'"
+                                    . "><i class='glyphicon glyphicon-plus' id='$c->id'></button>";
+                                    echo "</td></tr>";
+                            }
+                        }
+                    } 
                 echo "</table>";
                  
 

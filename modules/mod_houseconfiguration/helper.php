@@ -7,6 +7,7 @@ defined('_JEXEC') or die;
         include('model/component.class.php');
         include('model/build_modules.class.php');
         include('model/prices.class.php');
+        include('model/componentWithArea.class.php');
 	
 	class modHouseconfigurationHelper{		
             public static function getComponentsMethodAjax(){
@@ -54,6 +55,7 @@ defined('_JEXEC') or die;
                 private $componentsArray = array();
                 private $buildArray = array();
                 private $pricesArray = array();
+                private $componentsWithArea = array();
                 
                 function getAllPrices(){
                     $db= JFactory::getDbo();
@@ -75,6 +77,41 @@ defined('_JEXEC') or die;
 			}
 			return $this->pricesArray;
                 }
+                
+                function getComponentsWithArea(){
+                    $db= JFactory::getDbo();
+                    $sql = $db->getQuery(true);
+                    $sql="select 
+                            `components_with_area`.`id` as `id`, `components_with_area`.`name` as `name`, `components_with_area`.`area` as `area`, 
+                            `build_modules`.`id` as `build_modules_id`, `build_modules`.`name` as `build_modules_name`, 
+                            `prices`.`id` as `price_id` ,`prices`.`price` as `price`
+                            FROM `components_with_area` 
+                            JOIN `build_modules` on `components_with_area`.`build_module_id` = `build_modules`.`id` 
+                            JOIN `prices` on `components_with_area`.`price_id` = `prices`.`id`";
+                    
+                    $db->setQuery($sql);
+                    $result = $db->loadAssocList();
+                    
+                    foreach($result as $item){
+                        $c = new ComponentWithArea(
+                                $item['id'],
+                                $item['name'],
+                                $item['area'],
+                                $item['build_modules_id'],
+                                $item['build_modules_name'],
+                                $item['price_id'],
+                                $item['price']
+                                );
+                            array_push($this->componentsWithArea, $c);
+                    }
+                    return $this->componentsWithArea;
+                    
+                }
+                
+                function getBuildModulesWithArea(){
+                    
+                }
+                
 		
 		//get all housepackages as array of objects
 		function getAllHousepackages(){
@@ -138,7 +175,7 @@ defined('_JEXEC') or die;
 			// Get a db connection.
 			$db = JFactory::getDbo();
 			 		
-			$query = $db->getQuery(true);
+			$sql = $db->getQuery(true);
                         $sql="
                             SELECT `c`.`id`, `c`.`name`, `c`.`area`, `c`.`sketch`, `c`.`height`, `a`.`id` as `house_package_id`
                             FROM `house_packages`as `a`
@@ -165,18 +202,14 @@ defined('_JEXEC') or die;
 			return $this->levelsArray;
 		}
                 
+                
                 function getComponents(){
                     $db = JFactory::getDbo();
                     
 			$query = $db->getQuery(true);
                         $query->select(array('id', 'name', 'price_id', 'build_module_id'))
                                 ->from('components');
-                        
-                        /*
-                        $query->select(array('a.id', 'a.name', 'a.price_id', 'a.build_module_id', 'b.build_id', 'b.build_name'))
-                                ->from('components AS a')->join('INNER','build_modules as b ON a.build_module_id = b.build_id')
-                                ->where('a.build_module_id = b.build_id');
-                        */
+   
                         $db->setQuery($query);
 			$result = $db->loadAssocList();
                         
