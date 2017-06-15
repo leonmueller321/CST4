@@ -31,18 +31,39 @@ defined('_JEXEC') or die;
 
                     //get data from ajax post
                     $data = $_REQUEST['json'];
-
                     //decode json string
                     $houseconfig = json_decode($data);
-
+                    $componentsarray = array();
+                    foreach($data->items as $item){
+                        array_push($componentsarray, $item);
+                    }
+                    
+                    $house_package_id = $houseconfig->houseid;
+                    $gesamtpreis = $houseconfig->gesamtpreis;
                     //Get Current User
                     $user = JFactory::getUser();
+                    $user_id = $user->id;  
+                    $time = date('Y-m-d H:i:s'); 
+                    $name = $houseconfig->name;
 
                     //connect to db
                     $db = JFactory::getDbo();
                     $query = $db->getQuery(true);
-
-                    return "some response!";
+                    
+                    //insert into houses
+                    $test = new stdClass();
+                    $test->user_id = $user_id;
+                    $test->house_package_id = $house_package_id;
+                    $test->gesamtpreis = $gesamtpreis;
+                    $test->created_at = $time;
+                    $test->name = $name;
+                    $result = JFactory::getDbo()->insertObject('houses', $test);
+                    
+                    if($result == true && $user_id != 0){
+                        return "success";
+                    }
+                    
+                    return "danger";
             }
 	}
 	
@@ -107,19 +128,14 @@ defined('_JEXEC') or die;
                     return $this->componentsWithArea;
                     
                 }
-                
-                function getBuildModulesWithArea(){
-                    
-                }
-                
-		
+
 		//get all housepackages as array of objects
 		function getAllHousepackages(){
 
 			$db= JFactory::getDbo();
 			$query = $db->getQuery(true);
                         
-			$query->select(array('id','name', 'description', 'area', 'floors', 'img_path'));
+			$query->select(array('id','name', 'description', 'area', 'floors', 'img_path', 'basispreis'));
 			$query->from($db->quoteName('house_packages'));
 			$db->setQuery($query);
 			
@@ -132,7 +148,8 @@ defined('_JEXEC') or die;
                                 $item['description'],
                                 $item['area'],
                                 $item['floors'],
-                                $item['img_path']
+                                $item['img_path'],
+                                $item['basispreis']
 				);
                                
 				array_push($this->housepackageArray, $h);
@@ -147,7 +164,7 @@ defined('_JEXEC') or die;
 			 
 			// Get the chosen house
 			$query = $db->getQuery(true);
-			$query->select(array('id','name', 'description', 'area', 'floors', 'img_path'));
+			$query->select(array('id','name', 'description', 'area', 'floors', 'img_path', 'basispreis'));
 			$query->from($db->quoteName('house_packages'));
 			$query->where($db->quoteName('id')." = ".$db->quote($houseid));
 			
@@ -160,7 +177,8 @@ defined('_JEXEC') or die;
 					$row->description,
 					$row->area,
 					$row->floors,
-					$row->img_path
+					$row->img_path,
+                                        $row->basispreis
 			);
 			
 			return $h;

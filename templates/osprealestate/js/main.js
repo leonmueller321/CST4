@@ -21,10 +21,6 @@ function showComponents(id){
 }
 
 
-function test(){
-	alert("hallo");
-}
-
 function selectLevel(elem){
     //set all buttons to green
     jQuery(elem).closest('.row').find('.button2').css("background-color", "#1f7a7a");
@@ -38,7 +34,10 @@ function selectLevel(elem){
 
 jQuery(document).ready(function () {
 	jQuery('.btn-primary').click(function(){
-		var $gesamtpreis= 0;
+		var $tmppreis= jQuery(this).closest('#site').find('#basispreis').text();
+                var $gesamtpreis = parseInt($tmppreis.substr($tmppreis.indexOf(": ") +1));
+                
+                //alert($gesamtpreis);
 		jQuery(this).closest('tr').each(function(){
                         var target = jQuery(this).find('td:nth-child(1)').text();
                         var occ = 1;                  
@@ -47,10 +46,20 @@ jQuery(document).ready(function () {
                                 occ ++;
                             }
                         });
+                        var preis = jQuery(this).find('td:nth-child(2)').text();
+                        //alert(preis);
+                        var area = jQuery(this).find('.area').val();
+                        if(area == null){
+                            area = "";
+                        }else{
+                            preis = (parseInt(preis) * parseInt(area)) + "€";
+                        }
+                        
 			var $element = {
 				elementid: jQuery(this).attr('id'),
 				elementname: jQuery(this).find('td:nth-child(1)').text(),
-				elementpreis: jQuery(this).find('td:nth-child(2)').text(),
+                                elementarea: area,
+				elementpreis: preis,
                                 levelid: levelid
 			}
 			list.push($element);
@@ -62,20 +71,23 @@ jQuery(document).ready(function () {
 			jQuery('#ordergesamt').text("Gesamt: "+ $gesamtpreis);
                         //get levelid of current component
                         levelid = val.levelid;
-                        jQuery('.'+levelid).after('<tr class="listcomponents" id='+ key +'><td>' + val.elementname+ '</td><td>' + val.elementpreis + '</td><td><button onclick="removeRow(this);" class="btn btn-danger" >X</button></td></tr>');
+                        jQuery('.'+levelid).after('<tr class="listcomponents" id='+ key +'><td>' + val.elementname+ '</td><td>' + val.elementpreis + '</td><td>' + val.elementarea + '</td><td><button onclick="removeRow(this);" class="btn btn-danger" >X</button></td></tr>');
 		});
 	});
 });
 
-function emptyList(){
+function emptyList(elem){
 	list.length = 0 ;
-	jQuery('#ordergesamt').text("Gesamt: 0");
+        var $temp = jQuery(elem).closest('#site').find('#basispreis').text();
+	var $gesamtpreis = parseInt($temp.substr($temp.indexOf(": ") +1));
+	jQuery('#ordergesamt').text("Gesamt: "+ $gesamtpreis);
 	jQuery('.listcomponents').text("");
 }
 
 function removeRow(elem){
 	//reset gesamtpreis
-	var $gesamtpreis = 0;
+        var $temp = jQuery(elem).closest('#site').find('#basispreis').text();
+	var $gesamtpreis = parseInt($temp.substr($temp.indexOf(": ") +1));
 	//find row id to remove
 	var trid = jQuery(elem).closest('tr').attr('id');
 	//remove row
@@ -101,9 +113,14 @@ function saveList(elem){
 	var $houseid = $temp.substr($temp.indexOf("_") +1 );
 	var $tmp = jQuery(elem).closest('#elementlist').find('#ordergesamt').text();
 	var $gesamtpreis = $tmp.substr($tmp.indexOf(": ") +1);
+        var $userid = parseInt(jQuery('.userKonfig').attr('id'));
+        var $name = jQuery(elem).closest('#elementlist').find('#houseconfigname').val();
+        
 	
+       
 	//create new houseconfig object
 	var houseconfig = {
+                name: $name,
 		houseid: $houseid,
 		items: list,
 		gesamtpreis: $gesamtpreis
@@ -111,33 +128,49 @@ function saveList(elem){
 	
 	//write object as JSON
 	var json = JSON.stringify(houseconfig);
-	
 	var jsonArray = list;
+        
+        if($userid === 0){
+            toasterDanger("Sie müssen eingeloggt sein um Ihre Hauskonfiguration zu speichern.");
+            return false;
+        } 
 	if(jsonArray.length < 1 ){
-		alert("there must be stuff in list");
+		toasterDanger("Bitte wählen Sie Hauskomponenten aus.");
+                return false;
 	}
+        if(jQuery(elem).closest('#elementlist').find('#houseconfigname').val().length === 0){
+            toasterDanger("Bitte geben Sie einen Namen für Ihre Hauskonfiguration an.");
+            return;
+        }
 	else{
+            alert("inside else");
 		jQuery.ajax({
 		type: "POST",
 		data: "json=" + json,
-		url: "?option=com_ajax&module=house&method=superAwesomeMethod&format=json",
-			success: function(result){	
-				//alert("json from php: "+result);
-				jQuery.each(result, function(key, val){
-					if(key == 'data')
-					alert("json from php: " + val);
-				})
-				//success toast
-				toaster();		
+		url: "?option=com_ajax&module=houseconfiguration&method=superAwesomeMethod&format=json",
+			success: function(data){
+				jQuery.each(data, function(key, val){
+                                        
+                                        toasterSuccess();
+				});		
 			}
 		});
 	}
 }
 
-function toaster(){
+function toasterSuccess(){
 	var x = document.getElementById("toast");
 	
 	x.className = "show";
 	
-	setTimeout(function(){x.className = x.className.replace("show", "");}, 3000);
+	setTimeout(function(){x.className = x.className.replace("show", "");}, 5000);
+}
+
+function toasterDanger(message){
+    var x = document.getElementById("toast");
+    
+    x.className = "show";
+    jQuery('#toast').css("background-color","#ef0b26");
+    jQuery('#toast').text(message);
+    setTimeout(function(){x.className = x.className.replace("show", "");}, 10000);
 }
