@@ -3,7 +3,6 @@
 	$doc = JFactory::getDocument();
 	JHtml::_('jquery.framework');	
 
-        include('model/comp_price.class.php');
         
 	$url = Juri::base() . 'templates/osprealestate/css/toast.css';
         $url2 = Juri::base() . 'templates/osprealestate/css/liststyle.css';
@@ -21,31 +20,16 @@
 	$db = new Database();
 	$item = $db->getHousepackage($_GET['choosePackage']);	
 	$levels = $db->getLevels($houseid);
-        $components = $db->getComponentsPieceHouse($houseid);
-        
+        $components = $db->getComponents();
         $buildModules = $db->getAllBuildModules();
         $prices = $db->getAllPrices();
-
         $cnt = 0;
-        $compWithArea = $db->getComponentsAreaHouse($houseid);
 
-        $tmpBuild = array();
-        $tmpBuildPiece = array();
-        foreach($compWithArea as $c){
-            array_push($tmpBuild, $c->build_modules_name);     
-        }
-        $buildModulesArea = array_unique($tmpBuild);
-        
-        foreach($components as $c){
-            array_push($tmpBuildPiece, $c->build_modules_name);     
-        }
-        $buildModules = array_unique($tmpBuildPiece);
-        echo "<br>";
- 
+
+     
 	foreach($levels as $lev){
            $cnt++; 
         }
-        
 	echo "<h3 class='userKonfig' id='$user->id'>Hauskonfiguration</h3>";
 	echo "<div class='row' id='site'>";
 	
@@ -87,14 +71,14 @@
 
                     echo "<table class='table' id='component_table'>"; 
                     foreach($buildModules as $b){
-                        echo "<tr id='baugruppe_$b' style='background-color: #20b2aa; color: white;'>";
-			echo "<th>$b</th><th>Preis</th><th></th></tr>";
-                            foreach($components as $c){     
-                                if($c->build_modules_name == $b){
+                        echo "<tr id='baugruppe_$b->id' style='background-color: #20b2aa; color: white;'>";
+			echo "<th>$b->name</th><th>Preis</th><th></th></tr>";
+                            foreach($comp_prices as $c){     
+                                if($c->build_module_id == $b->id){
                                     echo "<tr id='komponenten_per_piece_$c->id' class='nr'><td>";
                                     echo $c->name;
                                     echo "</td><td>";
-                                    echo $c->price . "€";
+                                    echo $c->preis . "€";
                                     echo "</td><td>";
                                     //onclick arraypush element
                                     echo "<button disabled='disabled' class='btn btn-primary' style='border-radius: 50%; background-color:  #1f7a7a; box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.4);'"

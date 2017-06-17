@@ -6,18 +6,34 @@ var houseconfig = {
 
 var levelid;
 
-function showComponents(id){
-	jQuery.ajax({
+function deleteHouseconfig(elem){
+    var packageid = jQuery(elem).closest('.bs-example-modal-sm').attr('id');
+    jQuery(elem).attr('data-dismiss', 'modal');
+
+    alert("Delete: " + packageid);
+    
+    jQuery.ajax({
 		type: "POST",
-		data: "levelid=" + id,
-		url: "?option=com_ajax&module=houseconfiguration&method=getComponentsMethod&format=json",
-                    success: function(result){	
-                        jQuery.each(result, function(key, val){
-                                if(key == 'data')
-                                alert("json from php: " + val);
-                        })		
-                    }
-	});
+		data: "housepackageid=" + packageid,
+		url: "?option=com_ajax&module=myHouseconfigs&method=deleteHousepackageMethod&format=json",
+			success: function(data){
+				jQuery.each(data, function(key, val){
+                                        if(key == 'data'){
+                                            var houseid = val;
+                                            var div = jQuery('#' + houseid).parent('#housediv').remove();
+                                            jQuery('#' + houseid).remove();
+                                        }
+				});       
+			}
+		});
+}
+
+function houseid(elem){
+     //alert(jQuery(elem).closest('#housediv').find('.thumbnail').attr('id'));
+     var packageid = jQuery(elem).closest('#housediv').find('.thumbnail').attr('id');
+     alert(packageid);
+     jQuery('.bs-example-modal-sm').attr('id', packageid);
+     //alert(jQuery('.bs-example-modal-sm').attr('id'));
 }
 
 
@@ -30,6 +46,7 @@ function selectLevel(elem){
     jQuery(elem).closest('#site').find('.btn-primary').removeAttr('disabled');
     //get levelid for append
     levelid = jQuery(elem).attr('id');
+   
 }
 
 jQuery(document).ready(function () {
@@ -116,7 +133,7 @@ function saveList(elem){
         var $userid = parseInt(jQuery('.userKonfig').attr('id'));
         var $name = jQuery(elem).closest('#elementlist').find('#houseconfigname').val();
         
-	
+	 
        
 	//create new houseconfig object
 	var houseconfig = {
@@ -129,6 +146,8 @@ function saveList(elem){
 	//write object as JSON
 	var json = JSON.stringify(houseconfig);
 	var jsonArray = list;
+        alert(json);
+        console.log("hallo");
         
         if($userid === 0){
             toasterDanger("Sie müssen eingeloggt sein um Ihre Hauskonfiguration zu speichern.");

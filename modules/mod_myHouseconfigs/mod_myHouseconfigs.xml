@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.2.0" client="site" method="install">
+    <name>Meine Hauskonfigurationen</name>
+    <author>Leon</author>
+    <version>0.0.1</version>
+    <description>Meine Hauskonfigurationen CRUD</description> 
+    <files>
+        <filename>mod_myHouseconfigs.xml</filename>
+        <filename module="mod_myHouseconfigs">mod_myHouseconfigs.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/bearbeiten.php</filename>
+        <filename>tmpl/index.html</filename>
+
+    </files>
+</extension>
