@@ -22,8 +22,7 @@
 	$levels = $db->getLevels($houseid);
         $components = $db->getComponentsPieceHouse($houseid);
         
-        $buildModules = $db->getAllBuildModules();
-        $prices = $db->getAllPrices();
+ 
 
         $cnt = 0;
         $compWithArea = $db->getComponentsAreaHouse($houseid);
@@ -86,11 +85,11 @@
 
                     echo "<table class='table' id='component_table'>"; 
                     foreach($buildModules as $b){
-                        echo "<tr id='baugruppe_$b' style='background-color: #20b2aa; color: white;'>";
+                        echo "<tr class='build' id='baugruppe_$b' style='background-color: #20b2aa; color: white;'>";
 			echo "<th>$b</th><th>Preis</th><th></th></tr>";
                             foreach($components as $c){     
                                 if($c->build_modules_name == $b){
-                                    echo "<tr id='komponenten_per_piece_$c->id' class='nr'><td>";
+                                    echo "<tr id='komponenten_$c->id:$c->build_modules_id/$c->price_id' class='nr'><td>";
                                     echo $c->name;
                                     echo "</td><td>";
                                     echo $c->price . "€";
@@ -119,7 +118,7 @@
                         echo "<th>$b</th><th>Preis/m²</th><th>m²</th><th></th></tr>";
                         foreach($compWithArea as $c){
                             if($c->build_modules_name == $b){
-                                 echo "<tr id='komponenten_with_area_$c->id' class='nr'><td>";
+                                 echo "<tr id='komponenten_$c->id:$c->build_modules_id/$c->price_id' class='nr'><td>";
                                     echo $c->name;
                                     echo "</td><td>";
                                     echo $c->price . "€";

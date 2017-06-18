@@ -7,9 +7,30 @@ defined('_JEXEC') or die;
         include('model/component.class.php');
         include('model/build_modules.class.php');
         include('model/prices.class.php');
-        include('model/houses.class.php');
         include('model/componentWithArea.class.php');
+        include('model/houses.class.php');
 	
+        
+        
+        function getGUID(){
+            if (function_exists('com_create_guid')){
+                return com_create_guid();
+            }else{
+                mt_srand((double)microtime()*10000);//optional for php 4.2.0 and up.
+                $charid = strtoupper(md5(uniqid(rand(), true)));
+                $hyphen = chr(45);// "-"
+                $uuid = chr(123)// "{"
+                    .substr($charid, 0, 8).$hyphen
+                    .substr($charid, 8, 4).$hyphen
+                    .substr($charid,12, 4).$hyphen
+                    .substr($charid,16, 4).$hyphen
+                    .substr($charid,20,12)
+                    .chr(125);// "}"
+                
+                $guid = substr($uuid, 1, -1);
+                return $guid;
+            }
+        }
 	class modMyHouseconfigsHelper{		
             public static function getComponentsMethodAjax(){
                     include_once JPATH_ROOT . '/components/com_content/helpers/route.php';
@@ -18,15 +39,111 @@ defined('_JEXEC') or die;
                     //decode json string
                     $levelid = json_decode($data);
                     
+                    //get all components
+                    $db = JFactory::getDbo();
+                    $query = $db->getQuery(true);
                     
 
 
                     return "levelid = " + $levelid;
             }
+            public static function updateMethodAjax($configid){
+                include_once JPATH_ROOT . '/components/com_content/helpers/route.php';
+
+                //get data from ajax post
+                $data = $_REQUEST['json2'];
+                
+                $houseconfig = json_decode($data);
+                $configid = $houseconfig->configid;
+                $time = date('Y-m-d H:i:s'); 
+                
+                $items = $houseconfig->items;
+                $itemsArray = array();
+                foreach($items as $item){
+                        array_push($itemsArray, $item);
+                }
+                
+                $items = json_encode($itemsArray);
+                
+                //connect to db
+                $db = JFactory::getDbo();
+                $sql = $db->getQuery(true);
+                $sql="UPDATE `houses`
+                       SET `houses`.`name` ='".$houseconfig->name."' 
+                       , `houses`.`gesamtpreis` ='". $houseconfig->gesamtpreis."'
+                       , `houses`.`items` = '". $items."'
+                       , `houses`.`updated_at` = '". $time."'
+                       WHERE 
+                       `houses`.`id` = ".$configid;
+                
+                $db->setQuery($sql);
+                
+                $result = $db->execute();
+                
+                //connect to db
+                $db = JFactory::getDbo();
+                $query = $db->getQuery(true);
+
+                $id = getGUID();
+                //insert into houses
+                $test = new stdClass();
+                $test->id = $id;
+                $test->tablename = "houses";
+                $test->rowid = $configid;
+                $test->operation = "update";
+                $result = JFactory::getDbo()->insertObject('changelog', $test);
+            }
             
-            public static function deleteHousepackageMethodAjax(){
+            public static function superAwesomeMethodAjax(){
                     include_once JPATH_ROOT . '/components/com_content/helpers/route.php';
 
+                    //get data from ajax post
+                    $data = $_REQUEST['json'];
+                    //decode json string
+                    $houseconfig = json_decode($data);
+                    $componentsarray = array();
+                    foreach($data->items as $item){
+                        array_push($componentsarray, $item);
+                    }
+                    
+                    $house_package_id = $houseconfig->houseid;
+                    $gesamtpreis = $houseconfig->gesamtpreis;
+                    //Get Current User
+                    $user = JFactory::getUser();
+                    $user_id = $user->id;  
+                    $time = date('Y-m-d H:i:s'); 
+                    $name = $houseconfig->name;
+                    
+                    $items = $houseconfig->items;
+                    $itemsArray = array();
+                    foreach($items as $item){
+                        array_push($itemsArray, $item);
+                    }
+                    
+
+                    //connect to db
+                    $db = JFactory::getDbo();
+                    $query = $db->getQuery(true);
+                    
+                    //insert into houses
+                    $test = new stdClass();
+                    $test->user_id = $user_id;
+                    $test->house_package_id = $house_package_id;
+                    $test->gesamtpreis = $gesamtpreis;
+                    $test->created_at = $time;
+                    $test->name = $name;
+                    $test->items = $items;
+                    $result = JFactory::getDbo()->insertObject('houses', $test);
+                    
+                    if($result == true && $user_id !=  0){
+                        return "success";
+                    }
+                    
+                    return "danger";
+            }
+            
+             public static function deleteHousepackageMethodAjax(){
+                    include_once JPATH_ROOT . '/components/com_content/helpers/route.php';
                     //get data from ajax post
                     $id = $_REQUEST['housepackageid'];
                     //decode json string
@@ -62,6 +179,33 @@ defined('_JEXEC') or die;
                 private $pricesArray = array();
                 private $componentsWithArea = array();
                 private $myHouses = array();
+                
+                function getHouseConfig($houseid){
+                    $db= JFactory::getDbo();
+                    $sql = $db->getQuery(true);
+                    
+                     $sql="SELECT
+                          `houses`.`id` as `id`, `houses`.`name` as `name`, `houses`.`gesamtpreis` as `gesamtpreis`, 
+                          `houses`.`items` as `items`, `houses`.`user_id`, `houses`.
+                          `house_package_id`, `house_packages`.`img_path` 
+                          FROM `houses` 
+                          JOIN `house_packages` on `houses`.`house_package_id` = `house_packages`.`id` where `houses`.`id` =".$houseid;
+                    
+                    $db->setQuery($sql);
+                    $row = $db->loadObject();
+                    
+                    $h = new House(
+                                $row->id,
+                                $row->name,
+                                $row->gesamtpreis,
+                                $row->house_package_id,
+                                $row->user_id,
+                                $row->items,
+                                $row->img_path
+                            );
+                    
+                    return $h;
+                }
                 
                 function getHouses($userid){
                     $db= JFactory::getDbo();
@@ -118,12 +262,13 @@ defined('_JEXEC') or die;
                     $db= JFactory::getDbo();
                     $sql = $db->getQuery(true);
                     $sql="select 
-                            `components_with_area`.`id` as `id`, `components_with_area`.`name` as `name`, `components_with_area`.`area` as `area`, 
+                            `components`.`id` as `id`, `components`.`name` as `name`, `components`.`area` as `area`, 
                             `build_modules`.`id` as `build_modules_id`, `build_modules`.`name` as `build_modules_name`, 
                             `prices`.`id` as `price_id` ,`prices`.`price` as `price`
-                            FROM `components_with_area` 
-                            JOIN `build_modules` on `components_with_area`.`build_module_id` = `build_modules`.`id` 
-                            JOIN `prices` on `components_with_area`.`price_id` = `prices`.`id`";
+                            FROM `components` 
+                            JOIN `build_modules` on `components`.`build_module_id` = `build_modules`.`id` 
+                            JOIN `prices` on `components`.`price_id` = `prices`.`id`
+                            where `area` IS NOT NULL";
                     
                     $db->setQuery($sql);
                     $result = $db->loadAssocList();
@@ -136,7 +281,8 @@ defined('_JEXEC') or die;
                                 $item['build_modules_id'],
                                 $item['build_modules_name'],
                                 $item['price_id'],
-                                $item['price']
+                                $item['price'],
+                                0
                                 );
                             array_push($this->componentsWithArea, $c);
                     }
@@ -199,9 +345,21 @@ defined('_JEXEC') or die;
 			return $h;
 		}
 		
-		
-		//get components from housepackage id
-		
+                function getBuildModuleName($id){
+                    // Get a db connection.
+			$db = JFactory::getDbo();
+			 
+			// Get the chosen house
+			$query = $db->getQuery(true);
+                        
+                        $query= "SELECT `name`
+                                from `build_modules` 
+                                where `build_modules`.`id` =".$id;
+                        $db->setQuery($query);
+                        $result = $db->loadResult();
+                        
+                        return $result;
+                }
 		
 		//get Levels
 		function getLevels($houseid){
@@ -258,6 +416,111 @@ defined('_JEXEC') or die;
                      return $this->componentsArray;
                 }
                 
+                function getComponentsAreaHouse($houseid){
+                     $db= JFactory::getDbo();
+                    $sql = $db->getQuery(true);
+                    $sql=" select 
+                            `components`.`id` as `id`, `components`.`name` as `name`, `components`.`area` as `area`, 
+                            `components_combinations`.`house_package_id` as `house_package_id`,
+                            `components_combinations`.`is_possible`,
+                            `build_modules`.`id` as `build_modules_id`, `build_modules`.`name` as `build_modules_name`, 
+                            `prices`.`id` as `price_id` ,`prices`.`price` as `price`
+
+                            FROM `components` 
+
+                            join `components_combinations` on `components`.`id` = `components_combinations`.`component_id`
+                            join `house_packages` on `components_combinations`.`house_package_id` = `house_packages`.`id`
+                            JOIN `build_modules` on `components`.`build_module_id` = `build_modules`.`id` 
+                            JOIN `prices` on `components`.`price_id` = `prices`.`id`
+                            where `components_combinations`.`is_possible` = 1 and `components`.`area` IS NOT NULL and `components_combinations`.`house_package_id` =".$houseid;
+                                    
+                    $db->setQuery($sql);
+                    $result = $db->loadAssocList();
+                    
+                    foreach($result as $item){
+                        $c = new ComponentWithArea(
+                                $item['id'],
+                                $item['name'],
+                                $item['area'],
+                                $item['build_modules_id'],
+                                $item['build_modules_name'],
+                                $item['price_id'],
+                                $item['price'],
+                                0
+                                );
+                            array_push($this->componentsWithArea, $c);
+                    }
+                    return $this->componentsWithArea;
+                }
+                
+                function getComponentsPieceHouse($houseid){
+                    $db= JFactory::getDbo();
+                    $sql = $db->getQuery(true);
+                    $sql=" select 
+                            `components`.`id` as `id`, `components`.`name` as `name`, `components`.`area` as `area`, 
+                            `components_combinations`.`house_package_id` as `house_package_id`,
+                            `components_combinations`.`is_possible`,
+                            `build_modules`.`id` as `build_modules_id`, `build_modules`.`name` as `build_modules_name`, 
+                            `prices`.`id` as `price_id` ,`prices`.`price` as `price`
+
+                            FROM `components` 
+
+                            join `components_combinations` on `components`.`id` = `components_combinations`.`component_id`
+                            join `house_packages` on `components_combinations`.`house_package_id` = `house_packages`.`id`
+                            JOIN `build_modules` on `components`.`build_module_id` = `build_modules`.`id` 
+                            JOIN `prices` on `components`.`price_id` = `prices`.`id`
+                            where `components_combinations`.`is_possible` = 1 and `components`.`area` IS NULL and `components_combinations`.`house_package_id` =".$houseid;
+                                    
+                    $db->setQuery($sql);
+                    $result = $db->loadAssocList();
+                    
+                    foreach($result as $item){
+                        $c = new ComponentWithArea(
+                                $item['id'],
+                                $item['name'],
+                                $item['area'],
+                                $item['build_modules_id'],
+                                $item['build_modules_name'],
+                                $item['price_id'],
+                                $item['price'],
+                                0
+                                );
+                            array_push($this->componentsArray, $c);
+                    }
+                    return $this->componentsArray;
+                }
+                function getComponentsPiece(){
+                    
+                    $db= JFactory::getDbo();
+                    $sql = $db->getQuery(true);
+                    $sql="select 
+                            `components`.`id` as `id`, `components`.`name` as `name`, `components`.`area` as `area`, 
+                            `build_modules`.`id` as `build_modules_id`, `build_modules`.`name` as `build_modules_name`, 
+                            `prices`.`id` as `price_id` ,`prices`.`price` as `price`
+                            FROM `components` 
+                            JOIN `build_modules` on `components`.`build_module_id` = `build_modules`.`id` 
+                            JOIN `prices` on `components`.`price_id` = `prices`.`id`
+                            where `area` IS NULL";
+                    
+                    $db->setQuery($sql);
+                    $result = $db->loadAssocList();
+                    
+                    foreach($result as $item){
+                        $c = new ComponentWithArea(
+                                $item['id'],
+                                $item['name'],
+                                $item['area'],
+                                $item['build_modules_id'],
+                                $item['build_modules_name'],
+                                $item['price_id'],
+                                $item['price'],
+                                0
+                                );
+                            array_push($this->componentsArray, $c);
+                    }
+                    return $this->componentsArray;
+                }
+                
                 function getAllBuildModules(){
                     $db = JFactory::getDbo();
                     $query = $db->getQuery(true);
@@ -279,217 +542,6 @@ defined('_JEXEC') or die;
 		
 	}
 		
-		/*
-                
-                 * $query->select(array('a.id','a.name', 'a.description', 'a.area', 'a.floors', 'a.image_path', 
-                                                'b.id', 'b.name','b.area', 'b.sketch', 'b.height'));
-                        //$query->select(array();
-			$query->from($db->quoteName('house_packages', 'a'))
-                              ->join('INNER', $db->quoteName('levels', 'b') . ' ON(' . $db->quoteName('a.id') . '=' . $db->quoteName('b.house_package_id'));
-			
-                 *  $l = new Level(
-                                        $item['b.id'],
-                                        $item['b.name'],
-                                        $item['b.area'],
-                                        $item['b.sketch'],
-                                        $item['b.height']
-                                        );
-                 * $JSON = json_encode(array('housepackage' => $housepackageArray) )
-                 
-		//get all elements
-		function getAllElements(){
-			$db = JFactory::getDbo();
-			$query = $db->getQuery(true);
-			$query->select(array('elementid','name', 'preis'));
-			$query->from($db->quoteName('elements'));
-			
-			$db->setQuery($query);
-			
-			$result = $db->loadAssocList();
-			
-			foreach($result as $item){
-				$e = new Element(
-						$item['elementid'],
-						$item['name'],
-						$item['preis']
-				);
-				array_push($this->elementArray, $e);
-			}
-			return $this->elementArray;
-		}
-		
-		
-		function getElement($elementid){
-			$db = JFactory::getDbo();
-
-			$query = $db->getQuery(true);
-			$query->select(array('elementid','name', 'preis'));
-			$query->from($db->quoteName('elements'));
-			$query->where($db->quoteName('elementid')." = ".$db->quote($elementid));
-			
-			$db->setQuery($query);
-			$row = $db->loadObject();
-			
-			$e = new Element(
-					$row->elementid,
-					$row->name,
-					$row->preis
-			);
-			
-			return $e;
-		}
-		
-		
-		
-		*/
-	
-	/*
-	class modHouseHelper{		
-			public static function superAwesomeMethodAjax(){
-				include_once JPATH_ROOT . '/components/com_content/helpers/route.php';
-				
-				//get data from ajax post
-				$data = $_REQUEST['json'];
-				
-				//decode json string
-				$houseconfig = json_decode($data);
-				
-				//Get Current User
-				$user = JFactory::getUser();
-	
-				//connect to db
-				$db = JFactory::getDbo();
-				$query = $db->getQuery(true);
-				
-				//insert houseconfiguration from user 
-				/*
-				$query
-					->select($db->quoteName(array('','','')))
-					->from($db->quoteName()
-				
-				
-				return "houseid= ".$houseconfig->houseid." userid= ".$user->id;
-			}
-	}
-	
-	
-    class Database{
-		
-		private $db;
-		private $housepackageArray = array();
-		private $elementArray = array();
-                private $levelArray = array();
-		
-		//get all housepackages as array of objects
-		function getAllHousepackages(){
-
-			$db= JFactory::getDbo();
-			$query = $db->getQuery(true);
-                        
-			$query->select(array('id','name', 'description', 'area', 'floors', 'image_path'));
-			$query->from($db->quoteName('house_packages'));
-			$db->setQuery($query);
-			
-			$result = $db->loadAssocList();
-			
-			foreach($result as $item){
-				$h = new Housepackage(
-						$item['id'],
-						$item['name'],
-						$item['description'],
-                                                $item['area'],
-                                                $item['floors'],
-                                                $item['image_path']
-				);
-                               
-				array_push($this->housepackageArray, $h);
-			}
-			return $this->housepackageArray;
-		}
-		/*
-                
-                 * $query->select(array('a.id','a.name', 'a.description', 'a.area', 'a.floors', 'a.image_path', 
-                                                'b.id', 'b.name','b.area', 'b.sketch', 'b.height'));
-                        //$query->select(array();
-			$query->from($db->quoteName('house_packages', 'a'))
-                              ->join('INNER', $db->quoteName('levels', 'b') . ' ON(' . $db->quoteName('a.id') . '=' . $db->quoteName('b.house_package_id'));
-			
-                 *  $l = new Level(
-                                        $item['b.id'],
-                                        $item['b.name'],
-                                        $item['b.area'],
-                                        $item['b.sketch'],
-                                        $item['b.height']
-                                        );
-                 * $JSON = json_encode(array('housepackage' => $housepackageArray) )
-                 
-		//get all elements
-		function getAllElements(){
-			$db = JFactory::getDbo();
-			$query = $db->getQuery(true);
-			$query->select(array('elementid','name', 'preis'));
-			$query->from($db->quoteName('elements'));
-			
-			$db->setQuery($query);
-			
-			$result = $db->loadAssocList();
-			
-			foreach($result as $item){
-				$e = new Element(
-						$item['elementid'],
-						$item['name'],
-						$item['preis']
-				);
-				array_push($this->elementArray, $e);
-			}
-			return $this->elementArray;
-		}
-		
-		
-		function getElement($elementid){
-			$db = JFactory::getDbo();
-
-			$query = $db->getQuery(true);
-			$query->select(array('elementid','name', 'preis'));
-			$query->from($db->quoteName('elements'));
-			$query->where($db->quoteName('elementid')." = ".$db->quote($elementid));
-			
-			$db->setQuery($query);
-			$row = $db->loadObject();
-			
-			$e = new Element(
-					$row->elementid,
-					$row->name,
-					$row->preis
-			);
-			
-			return $e;
-		}
-		
-		//get a housepackage by idate
-		function getHousePackage($houseid){
-			// Get a db connection.
-			$db = JFactory::getDbo();
-			 
-			// Get the chosen house
-			$query = $db->getQuery(true);
-			$query->select(array('houseid','name', 'description'));
-			$query->from($db->quoteName('houses'));
-			$query->where($db->quoteName('houseid')." = ".$db->quote($houseid));
-			
-			$db->setQuery($query);
-			$row = $db->loadObject();
-			
-			$h = new Housepackage(
-					$row->houseid,
-					$row->name,
-					$row->description
-			);
-			
-			return $h;
-		}
-		
-		*/
 	
     
     

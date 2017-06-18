@@ -89,6 +89,17 @@ defined('_JEXEC') or die;
                     $test->items = $items;
                     $result = JFactory::getDbo()->insertObject('houses', $test);
                     
+                    $rowid = $db->getRowID($user_id, $name);
+
+                    $id = getGUID();
+                    //insert into houses
+                    $test2 = new stdClass();
+                    $test2->id = $id;
+                    $test2->tablename = "houses";
+                    $test2->rowid = $id;
+                    $test2->operation = "insert";
+                    $result = JFactory::getDbo()->insertObject('changelog', $test2);
+                    
                     if($result == true && $user_id !=  0){
                         return "success";
                     }
@@ -107,6 +118,76 @@ defined('_JEXEC') or die;
                 private $buildArray = array();
                 private $pricesArray = array();
                 private $componentsWithArea = array();
+                private $myHouses = array();
+                
+                function getRowID($uid, $name){
+                    $db= JFactory::getDbo();
+                    $sql = $db->getQuery(true);
+                    $sql= "SELECT `houses`.`id` 
+                           FROM `houses` 
+                           WHERE `houses`.`user_id` =".$uid."
+                           AND `houses`.`name` = ".$name;
+                    $db->setQuery($sql);
+                    $result = $db->loadResult();
+                    return $result;
+                }
+                
+                function getHouseConfig($houseid){
+                    $db= JFactory::getDbo();
+                    $sql = $db->getQuery(true);
+                    
+                     $sql="SELECT
+                          `houses`.`id` as `id`, `houses`.`name` as `name`, `houses`.`gesamtpreis` as `gesamtpreis`, 
+                          `houses`.`items` as `items`, `houses`.`user_id`, `houses`.
+                          `house_package_id`, `house_packages`.`img_path` 
+                          FROM `houses` 
+                          JOIN `house_packages` on `houses`.`house_package_id` = `house_packages`.`id` where `houses`.`id` =".$houseid;
+                    
+                    $db->setQuery($sql);
+                    $row = $db->loadObject();
+                    
+                    $h = new House(
+                                $row->id,
+                                $row->name,
+                                $row->gesamtpreis,
+                                $row->house_package_id,
+                                $row->user_id,
+                                $row->items,
+                                $row->img_path
+                            );
+                    
+                    return $h;
+                }
+                
+                function getHouses($userid){
+                    $db= JFactory::getDbo();
+                    $sql = $db->getQuery(true);
+                    
+                    $sql="SELECT
+                          `houses`.`id` as `id`, `houses`.`name` as `name`, `houses`.`gesamtpreis` as `gesamtpreis`, 
+                          `houses`.`items` as `items`, `houses`.`user_id`, `houses`.
+                          `house_package_id`, `house_packages`.`img_path` 
+                          FROM `houses` 
+                          JOIN `house_packages` on `houses`.`house_package_id` = `house_packages`.`id` where `houses`.`user_id` =".$userid;
+                    
+                    $db->setQuery($sql);
+                    $result = $db->loadAssocList();
+                    
+                    foreach($result as $item){
+                        $h = new House(
+                                $item['id'],
+                                $item['name'],
+                                $item['gesamtpreis'],
+                                $item['house_package_id'],
+                                $item['user_id'],
+                                $item['items'],
+                                $item['img_path']
+                                );
+                            array_push($this->myHouses, $h);
+                    }
+                    return $this->myHouses;
+                    
+                }
                 
                 function getAllPrices(){
                     $db= JFactory::getDbo();
@@ -152,7 +233,8 @@ defined('_JEXEC') or die;
                                 $item['build_modules_id'],
                                 $item['build_modules_name'],
                                 $item['price_id'],
-                                $item['price']
+                                $item['price'],
+                                0
                                 );
                             array_push($this->componentsWithArea, $c);
                     }
@@ -306,7 +388,8 @@ defined('_JEXEC') or die;
                                 $item['build_modules_id'],
                                 $item['build_modules_name'],
                                 $item['price_id'],
-                                $item['price']
+                                $item['price'],
+                                0
                                 );
                             array_push($this->componentsWithArea, $c);
                     }
@@ -342,7 +425,8 @@ defined('_JEXEC') or die;
                                 $item['build_modules_id'],
                                 $item['build_modules_name'],
                                 $item['price_id'],
-                                $item['price']
+                                $item['price'],
+                                0
                                 );
                             array_push($this->componentsArray, $c);
                     }
@@ -372,7 +456,8 @@ defined('_JEXEC') or die;
                                 $item['build_modules_id'],
                                 $item['build_modules_name'],
                                 $item['price_id'],
-                                $item['price']
+                                $item['price'],
+                                0
                                 );
                             array_push($this->componentsArray, $c);
                     }

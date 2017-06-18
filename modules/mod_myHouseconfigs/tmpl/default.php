@@ -47,7 +47,7 @@ defined('_JEXEC') or die;
                                 echo "<button type='button' class='btn btn-danger' onclick='houseid(this);' data-toggle='modal' data-target='.bs-example-modal-sm'>Löschen</button>";
                             echo "</div>";
                             echo "<div class='btn-group' role='group'>";
-                                echo "<button type='button' class='btn btn-success'><a href='meine-hauskonfigurationen?choosePackage=$h->house_package_id' class='bearbeiten'>Bearbeiten</a></button>";
+                                echo "<button type='button' class='btn btn-success'><a href='meine-hauskonfigurationen?choosePackage=$h->id' class='bearbeiten'>Bearbeiten</a></button>";
                             echo "</div>";
                         echo "</div>";
                     echo "</div>";
