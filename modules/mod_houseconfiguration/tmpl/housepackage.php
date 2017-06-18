@@ -3,7 +3,6 @@
 	$doc = JFactory::getDocument();
 	JHtml::_('jquery.framework');	
 
-        include('model/comp_price.class.php');
         
 	$url = Juri::base() . 'templates/osprealestate/css/toast.css';
         $url2 = Juri::base() . 'templates/osprealestate/css/liststyle.css';

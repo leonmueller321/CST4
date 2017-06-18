@@ -6,15 +6,19 @@ var houseconfig = {
 
 var levelid;
 
+
+
 function deleteHouseconfig(elem){
-    var packageid = jQuery(elem).closest('.bs-example-modal-sm').attr('id');
+    
+    var $temp = jQuery(elem).closest('.bs-example-modal-sm').attr('id');
+    var configid = $temp.substr($temp.indexOf("_") +1 );
+    
     jQuery(elem).attr('data-dismiss', 'modal');
 
-    alert("Delete: " + packageid);
     
     jQuery.ajax({
 		type: "POST",
-		data: "housepackageid=" + packageid,
+		data: "housepackageid=" + configid,
 		url: "?option=com_ajax&module=myHouseconfigs&method=deleteHousepackageMethod&format=json",
 			success: function(data){
 				jQuery.each(data, function(key, val){
@@ -31,9 +35,7 @@ function deleteHouseconfig(elem){
 function houseid(elem){
      //alert(jQuery(elem).closest('#housediv').find('.thumbnail').attr('id'));
      var packageid = jQuery(elem).closest('#housediv').find('.thumbnail').attr('id');
-     alert(packageid);
-     jQuery('.bs-example-modal-sm').attr('id', packageid);
-     //alert(jQuery('.bs-example-modal-sm').attr('id'));
+     jQuery('.bs-example-modal-sm').attr('id', 'config_'+packageid);
 }
 
 
@@ -146,7 +148,6 @@ function saveList(elem){
 	//write object as JSON
 	var json = JSON.stringify(houseconfig);
 	var jsonArray = list;
-        alert(json);
         console.log("hallo");
         
         if($userid === 0){
@@ -169,19 +170,19 @@ function saveList(elem){
 		url: "?option=com_ajax&module=houseconfiguration&method=superAwesomeMethod&format=json",
 			success: function(data){
 				jQuery.each(data, function(key, val){
-                                        
-                                        toasterSuccess();
+                                        toasterSuccess("Hauskonfiguration erfolgreich gespeichert.");
 				});		
 			}
 		});
 	}
 }
 
-function toasterSuccess(){
+function toasterSuccess(message){
 	var x = document.getElementById("toast");
 	
 	x.className = "show";
-	
+        jQuery('#toast').css("background-color","#5cb85c");
+	jQuery('#toast').text(message);
 	setTimeout(function(){x.className = x.className.replace("show", "");}, 5000);
 }
 

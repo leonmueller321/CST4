@@ -5,11 +5,12 @@
         <group>
             <file>file:/C:/xampp/htdocs/JoomlaTest/modules/mod_houseconfiguration/tmpl/housepackage.php</file>
             <file>file:/C:/xampp/htdocs/JoomlaTest/modules/mod_houseconfiguration/helper.php</file>
-            <file>file:/C:/xampp/htdocs/JoomlaTest/modules/mod_houseconfiguration/tmpl/default.php</file>
-            <file>file:/C:/xampp/htdocs/JoomlaTest/templates/osprealestate/css/liststyle.css</file>
+            <file>file:/C:/xampp/htdocs/JoomlaTest/modules/mod_myHouseconfigs/tmpl/bearbeiten.php</file>
             <file>file:/C:/xampp/htdocs/JoomlaTest/templates/osprealestate/js/main.js</file>
-            <file>file:/C:/xampp/htdocs/JoomlaTest/modules/mod_houseconfiguration/index.html</file>
-            <file>file:/C:/xampp/htdocs/JoomlaTest/templates/osprealestate/index.php</file>
+            <file>file:/C:/xampp/htdocs/JoomlaTest/modules/mod_myHouseconfigs/tmpl/default.php</file>
+            <file>file:/C:/xampp/htdocs/JoomlaTest/templates/osprealestate/css/toast.css</file>
+            <file>file:/C:/xampp/htdocs/JoomlaTest/modules/mod_myHouseconfigs/css/houseconfigsStyle.css</file>
+            <file>file:/C:/xampp/htdocs/JoomlaTest/modules/mod_myHouseconfigs/helper.php</file>
         </group>
     </open-files>
 </project-private>

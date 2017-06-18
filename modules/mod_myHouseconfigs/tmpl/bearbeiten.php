@@ -73,6 +73,7 @@
                     foreach($buildModules as $b){
                         echo "<tr id='baugruppe_$b->id' style='background-color: #20b2aa; color: white;'>";
 			echo "<th>$b->name</th><th>Preis</th><th></th></tr>";
+                        /*
                             foreach($comp_prices as $c){     
                                 if($c->build_module_id == $b->id){
                                     echo "<tr id='komponenten_per_piece_$c->id' class='nr'><td>";
@@ -86,6 +87,8 @@
                                     echo "</td></tr>";
                                 }
                             }
+                         * 
+                         */
                     }
                 echo "</table>";
                  
@@ -99,6 +102,7 @@
                     echo "<h4 margin-right:50px;'>Flächenkomponenten</h4>";
                              
                     echo "<table class='table' id='componentWithArea_table'>"; 
+                    /*
                     foreach($buildModulesArea as $b){
                         echo "<tr id='baugruppe_$b' style='background-color: #20b2aa; color: white;'>";
                         echo "<th>$b</th><th>Preis/m²</th><th>m²</th><th></th></tr>";
@@ -118,6 +122,8 @@
                             }
                         }
                     } 
+                     * *
+                     */
                 echo "</table>";
                  
 

@@ -6,7 +6,7 @@
 	// Instantiate global document object
 	$doc = JFactory::getDocument();
 	
-    if(isset($_GET['choosePackage'])){
+    if(isset($_POST['submit'])){
         $layout = $params->get('layout', 'termin_success');
         require JModuleHelper::getLayoutPath('mod_termine', $layout); 
     }
