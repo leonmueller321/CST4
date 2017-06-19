@@ -95,15 +95,19 @@ function selectLevel(elem){
 }
 
 jQuery(document).ready(function () {
+
     var $tmppreis= jQuery('#site').find('#basispreis').text();
     var preis = parseInt($tmppreis.substr($tmppreis.indexOf(": ") +1));
     
     jQuery('.elemento').each(function(){
+        var tmp = jQuery(this).find('.preis').text();
+        var preisel = parseInt(tmp.substr(tmp.indexOf(": ") +1));
+        
         var element = {
             elementid: jQuery(this).find('.elementid').text(),
             elementname: jQuery(this).find('.name').text(),
             elementarea: jQuery(this).find('.area').text(),
-            elementpreis: jQuery(this).find('.preis').text(),
+            elementpreis: preisel,
             preisid: jQuery(this).find('.preisid').text(),
             buildmoduleid: jQuery(this).find('.build_module_id').text(),
             levelid: "level_"+ jQuery(this).find('.levelid').text()
@@ -111,6 +115,7 @@ jQuery(document).ready(function () {
         list.push(element);
     })
  
+    
     jQuery.each(list, function(key, val){         
             preis += parseInt(val.elementpreis);
             levelid = val.levelid;

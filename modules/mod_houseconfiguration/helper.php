@@ -89,16 +89,24 @@ defined('_JEXEC') or die;
                     $test->items = $items;
                     $result = JFactory::getDbo()->insertObject('houses', $test);
                     
-                    $rowid = $db->getRowID($user_id, $name);
-
+                    
+                    $db= JFactory::getDbo();
+                    $sql = $db->getQuery(true);
+                    $sql= "SELECT MAX(id)
+                            FROM `houses`";
+                    $db->setQuery($sql);
+                    $result = $db->loadResult();
+                    
+                    $rowid = $result;
+                    
                     $id = getGUID();
                     //insert into houses
                     $test2 = new stdClass();
                     $test2->id = $id;
                     $test2->tablename = "houses";
-                    $test2->rowid = $id;
+                    $test2->rowid = $rowid;
                     $test2->operation = "insert";
-                    $result = JFactory::getDbo()->insertObject('changelog', $test2);
+                    $result2 = JFactory::getDbo()->insertObject('change_log', $test2);
                     
                     if($result == true && $user_id !=  0){
                         return "success";
@@ -120,15 +128,14 @@ defined('_JEXEC') or die;
                 private $componentsWithArea = array();
                 private $myHouses = array();
                 
-                function getRowID($uid, $name){
+                function getRowID(){
                     $db= JFactory::getDbo();
                     $sql = $db->getQuery(true);
-                    $sql= "SELECT `houses`.`id` 
-                           FROM `houses` 
-                           WHERE `houses`.`user_id` =".$uid."
-                           AND `houses`.`name` = ".$name;
+                    $sql= "SELECT MAX(id)
+                            FROM `houses`";
                     $db->setQuery($sql);
                     $result = $db->loadResult();
+                    
                     return $result;
                 }
                 

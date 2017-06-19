@@ -3,7 +3,7 @@
 	$doc = JFactory::getDocument();
 	JHtml::_('jquery.framework');	
 
-        include('model/componentWithArea.class.php');
+        //include('model/componentWithArea.class.php');
         
 	$url = Juri::base() . 'templates/osprealestate/css/toast.css';
         $url2 = Juri::base() . 'templates/osprealestate/css/liststyle.css';
@@ -44,12 +44,17 @@
         
         $items = json_decode($houseconfig->items, true);
         $elementarray = array();
-
         
         foreach($items as $item){
             $bname = $db->getBuildModuleName($item['buildmoduleid']); 
             $levelid = $item['levelid'];
-            $levelid = $levelid[6];
+            $level = $levelid[6];
+            
+            if(strlen($levelid) > 7){
+                //echo strlen($levelid) . "</br>";
+                $level = $level . $levelid[7];
+            }
+            
             $e = new ComponentWithArea(
                     $item['elementid'],
                     $item['elementname'],
@@ -58,38 +63,12 @@
                     $bname,
                     $item['preisid'],
                     $item['elementpreis'],
-                    $levelid
+                    $level
                     );
-            echo "</br>";
             array_push($elementarray, $e);
         }
-        
-        echo "<table style='display:none' class='config'>";
-        echo "<th>id</th><th>name</th><th>area</th><th>price</th><th>priceid</th><th>bmid</th><th>bname</th><th>levelid</th>";
-        foreach($elementarray as $elem){
-            echo "<tr class='elemento'><td class='elementid'>";
-            echo $elem->id;
-            echo"</td><td class='name'>";
-            echo $elem->name;
-            echo"</td><td class='area'>";
-            echo $elem->area;
-            echo"</td><td class='preis'>";
-            echo $elem->price;
-            echo"</td><td class='preisid'>";
-            echo $elem->price_id;
-            echo"</td><td class='build_module_id'>";
-            echo $elem->build_modules_id;
-            echo"</td><td class='build_name'>";
-            echo $elem->build_modules_name;
-            echo"</td><td class='levelid'>";
-            echo $elem->levelid;
-            echo "</td></tr>";
-        }
-        echo "</table>";
      
-	foreach($levels as $lev){
-           $cnt++; 
-        }
+
 	echo "<h3 class='userKonfig' id='$user->id'>Hauskonfiguration</h3>";
 	echo "<div class='row' id='site'>";
 	
@@ -227,4 +206,31 @@
 	</div>
 	
 	<div id="toast">Hauskonfiguration erfolgreich gespeichert.</div>
+        
+        <?php
+        
+        echo "<table style='' class='config'>";
+        echo "<th>id</th><th>name</th><th>area</th><th>price</th><th>priceid</th><th>bmid</th><th>bname</th><th>levelid</th>";
+        foreach($elementarray as $elem){
+            echo "<tr class='elemento'><td class='elementid'>";
+            echo $elem->id;
+            echo"</td><td class='name'>";
+            echo $elem->name;
+            echo"</td><td class='area'>";
+            echo $elem->area;
+            echo"</td><td class='preis'>";
+            echo $elem->price;
+            echo"</td><td class='preisid'>";
+            echo $elem->price_id;
+            echo"</td><td class='build_module_id'>";
+            echo $elem->build_modules_id;
+            echo"</td><td class='build_name'>";
+            echo $elem->build_modules_name;
+            echo"</td><td class='levelid'>";
+            echo $elem->levelid;
+            echo "</td></tr>";
+        }
+        echo "</table>";
+        
+        
 

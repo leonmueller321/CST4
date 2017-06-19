@@ -26,8 +26,6 @@ defined('_JEXEC') or die;
        
 	//get root image path
 	$img =  JURI::root().'images/houses/';
-        echo "<p>Hello {$user->name}, your email is {$user->email} ID is {$user->id}</p>";
-
         
 	echo "<h3>Meine Hauskonfigurationen</h3>";
 	echo "<h4>Wähle eine Hauskonfiguration um diese zu bearbeiten</h4>";

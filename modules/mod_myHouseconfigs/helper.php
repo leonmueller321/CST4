@@ -91,7 +91,7 @@ defined('_JEXEC') or die;
                 $test->tablename = "houses";
                 $test->rowid = $configid;
                 $test->operation = "update";
-                $result = JFactory::getDbo()->insertObject('changelog', $test);
+                $result = JFactory::getDbo()->insertObject('change_log', $test);
             }
             
             public static function superAwesomeMethodAjax(){
@@ -135,6 +135,9 @@ defined('_JEXEC') or die;
                     $test->items = $items;
                     $result = JFactory::getDbo()->insertObject('houses', $test);
                     
+                    
+                    
+                    
                     if($result == true && $user_id !=  0){
                         return "success";
                     }
@@ -157,8 +160,20 @@ defined('_JEXEC') or die;
                             where id =".$housepackage;
                     
                     $db->setQuery($sql);
- 
                     $result = $db->execute();
+                    
+                    //connect to db
+                    $db = JFactory::getDbo();
+                    $query = $db->getQuery(true);
+
+                    $id = getGUID();
+                    //insert into houses
+                    $test = new stdClass();
+                    $test->id = $id;
+                    $test->tablename = "houses";
+                    $test->rowid = $housepackage;
+                    $test->operation = "delete";
+                    $result = JFactory::getDbo()->insertObject('change_log', $test);
                     
                     if($result == true){
                         return $housepackage;
